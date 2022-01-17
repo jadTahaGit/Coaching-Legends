@@ -1,0 +1,59 @@
+.Benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  background-color: white;
+}
+
+.start__changing {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+
+  h1,
+  p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .differences__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+.focus__on__help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .help__options__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .help__option {
+    max-width: 400px;
+  }
+}
+
+.request__a__coach {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}

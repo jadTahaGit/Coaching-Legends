@@ -1,0 +1,27 @@
+$black__color: #333;
+$white__color: #ffffff;
+$primary__color: #9a92e6;
+$secondary__color: #7ce577;
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 0 80px;
+}
+
+.left__header {
+  display: flex;
+  align-items: center;
+}
+
+.nav__lists {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  a {
+    color: $black__color;
+    text-decoration: none;
+  }
+}

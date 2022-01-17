@@ -1,0 +1,40 @@
+$black__color: #333;
+$white__color: #ffffff;
+$primary__color: #9a92e6;
+$secondary__color: #7ce577;
+
+.HeroSection {
+  padding: 0 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../assets/heroFoto.svg");
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+
+.hero__heading {
+  color: $white__color;
+  font-size: 42px;
+}
+
+.bold {
+  display: block;
+  font-weight: bold;
+}
+
+.search__wrapper {
+}
+.search__btn {
+  padding: 20px 30px;
+  background-color: $primary__color;
+  border: none;
+  color: $white__color;
+}
+
+.search__input {
+  padding: 20px 30px;
+  min-width: 25vw;
+  border: none;
+}
