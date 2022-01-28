@@ -5,11 +5,13 @@ const BecomeACoach = () => {
   return (
     <div className="BecomeACoach">
       <div className="left">
-        <h1>Become A Life Coach</h1>
-        <p>
-          Earn money sharing your expert knowledge. Sign up to start coaching
-          online with us.
-        </p>
+        <div className="info">
+          <h1>Become A Life Coach</h1>
+          <p>
+            Earn money sharing your expert knowledge. Sign up to start coaching
+            online with us.
+          </p>
+        </div>
         <ul>
           <li>Find new clients</li>
           <li>Grow your business</li>

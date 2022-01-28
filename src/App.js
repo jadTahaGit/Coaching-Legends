@@ -7,17 +7,13 @@ import HowWeWork from "./components/HowWeWork";
 import BecomeACoach from "./components/BecomeACoach";
 import HappyStart from "./components/HappyStart";
 import Footer from "./components/Footer";
+import BAC__HeroSection from "./components/BAC__HeroSection";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <HeroSection></HeroSection>
-      <CoachingsOverview></CoachingsOverview>
-      <Benefits></Benefits>
-      <HowWeWork></HowWeWork>
-      <BecomeACoach></BecomeACoach>
-      <HappyStart></HappyStart>
+      <BAC__HeroSection />
       <Footer></Footer>
     </div>
   );

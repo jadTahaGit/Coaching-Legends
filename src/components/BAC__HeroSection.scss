@@ -1,0 +1,70 @@
+$black__color: #333;
+$white__color: #ffffff;
+$primary__color: #9a92e6;
+$green__color: #7ce577;
+
+.BAC__HeroSection {
+  padding: 0 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../assets/BecomeACoach/boyStudent.png");
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+
+  .signUpForm {
+    background-color: $white__color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+    max-width: 25vw;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.08);
+
+    h1 {
+      margin: 0;
+      margin-bottom: -5px;
+    }
+
+    input {
+      display: block;
+      margin-bottom: 10px;
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      height: 50px;
+      width: 100%;
+      padding-left: 20px;
+    }
+    input:first-child {
+      margin-top: 20px;
+    }
+
+    .signUpBtn {
+      background-color: $primary__color;
+      color: white;
+      padding: 20px;
+      border: none;
+    }
+
+    .breakline span {
+      display: block;
+      background-color: #c4c4c4;
+      width: 261px;
+      height: 1px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 20px;
+
+      button {
+        background-color: $white__color;
+        padding: 20px;
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
