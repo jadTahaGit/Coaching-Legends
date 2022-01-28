@@ -5,6 +5,7 @@ import CoachingsOverview from "./components/CoachingsOverview";
 import Benefits from "./components/Benefits";
 import HowWeWork from "./components/HowWeWork";
 import BecomeACoach from "./components/BecomeACoach";
+import HappyStart from "./components/HappyStart";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Benefits></Benefits>
       <HowWeWork></HowWeWork>
       <BecomeACoach></BecomeACoach>
+      <HappyStart></HappyStart>
     </div>
   );
 }

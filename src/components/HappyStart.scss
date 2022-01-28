@@ -1,0 +1,23 @@
+$black__color: #333;
+$white__color: #ffffff;
+$primary__color: #9a92e6;
+$secondary__color: rgba(154, 146, 230, 0.3);
+$green__color: #7ce577;
+
+.HappyStart {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: $white__color;
+  margin: 80px;
+  overflow: hidden;
+
+  button {
+    border: none;
+    background-color: $primary__color;
+    color: $white__color;
+    padding: 20px;
+    width: 15%;
+  }
+}
