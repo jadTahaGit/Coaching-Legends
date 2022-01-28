@@ -46,12 +46,17 @@ $green__color: #7ce577;
     width: 684px;
     height: 310px;
   }
-}
 
-.left {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  .left {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+
+    .text__box {
+      max-width: 600px;
+    }
+  }
 }
 
 .number {

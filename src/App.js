@@ -6,6 +6,7 @@ import Benefits from "./components/Benefits";
 import HowWeWork from "./components/HowWeWork";
 import BecomeACoach from "./components/BecomeACoach";
 import HappyStart from "./components/HappyStart";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <HowWeWork></HowWeWork>
       <BecomeACoach></BecomeACoach>
       <HappyStart></HappyStart>
+      <Footer></Footer>
     </div>
   );
 }

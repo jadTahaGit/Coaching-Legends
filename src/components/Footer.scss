@@ -1,0 +1,40 @@
+$black__color: #333;
+$black__secondary__color: #32393f;
+$white__color: #ffffff;
+$primary__color: #9a92e6;
+$secondary__color: rgba(154, 146, 230, 0.3);
+$green__color: #7ce577;
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 60px;
+  background-color: $primary__color;
+  padding: 30px 80px;
+  overflow: hidden;
+  color: $white__color;
+}
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  h1 {
+    margin-bottom: -10px;
+  }
+
+  ul {
+    margin-left: -37px;
+  }
+}
+
+.copyright {
+  background-color: $black__secondary__color;
+  color: $white__color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
