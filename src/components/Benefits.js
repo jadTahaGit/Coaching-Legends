@@ -1,11 +1,21 @@
 import React from "react";
 import "./Benefits.scss";
+import global from ".././assets/benefits/global.svg";
+import expert from ".././assets/benefits/expert.svg";
+import verified from ".././assets/benefits/verified.svg";
+import clock from ".././assets/benefits/clock.svg";
+import dollar from ".././assets/benefits/dollar.svg";
+import search from ".././assets/benefits/search.svg";
+import calender from ".././assets/benefits/calender.svg";
+import thunder from ".././assets/benefits/thunder.svg";
+import confidence from ".././assets/benefits/confidence.svg";
+import globalViolet from ".././assets/benefits/global__violet.svg";
 
 const Benefits = () => {
   return (
     <div className="Benefits">
+      <img src={global} class="global__symbol" alt="" />
       <div className="start__changing">
-        {/* Logo */}
         <h1>Start Changing your life now.</h1>
         <p>Trust our network of thousand of coaches</p>
         <div className="differences__container">

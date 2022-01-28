@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import CoachingsOverview from "./components/CoachingsOverview";
 import Benefits from "./components/Benefits";
+import HowWeWork from "./components/HowWeWork";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection></HeroSection>
       <CoachingsOverview></CoachingsOverview>
       <Benefits></Benefits>
+      <HowWeWork></HowWeWork>
     </div>
   );
 }
