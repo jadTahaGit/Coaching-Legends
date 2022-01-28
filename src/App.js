@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import CoachingsOverview from "./components/CoachingsOverview";
 import Benefits from "./components/Benefits";
 import HowWeWork from "./components/HowWeWork";
+import BecomeACoach from "./components/BecomeACoach";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <CoachingsOverview></CoachingsOverview>
       <Benefits></Benefits>
       <HowWeWork></HowWeWork>
+      <BecomeACoach></BecomeACoach>
     </div>
   );
 }
