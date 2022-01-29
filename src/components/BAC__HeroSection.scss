@@ -1,5 +1,6 @@
 $black__color: #333;
 $white__color: #ffffff;
+$gray__color: rgba(0, 0, 0, 0.5);
 $primary__color: #9a92e6;
 $green__color: #7ce577;
 
@@ -29,7 +30,7 @@ $green__color: #7ce577;
 
     input {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       background: #ffffff;
       border: 1px solid #c4c4c4;
       box-sizing: border-box;
@@ -42,10 +43,12 @@ $green__color: #7ce577;
     }
 
     .signUpBtn {
+      margin-top: 10px;
       background-color: $primary__color;
       color: white;
       padding: 20px;
       border: none;
+      width: 100%;
     }
 
     .breakline span {
@@ -56,6 +59,7 @@ $green__color: #7ce577;
     }
 
     .btns {
+      margin-top: 20px;
       display: flex;
       gap: 20px;
 
@@ -65,6 +69,10 @@ $green__color: #7ce577;
         border: 1px solid #c4c4c4;
         box-sizing: border-box;
       }
+    }
+
+    p {
+      color: $gray__color;
     }
   }
 }
