@@ -1,15 +1,15 @@
 import React from "react";
 import "./Benefits.scss";
-import global from ".././assets/benefits/global.svg";
-import expert from ".././assets/benefits/expert.svg";
-import verified from ".././assets/benefits/verified.svg";
-import clock from ".././assets/benefits/clock.svg";
-import dollar from ".././assets/benefits/dollar.svg";
-import search from ".././assets/benefits/search.svg";
-import calender from ".././assets/benefits/calender.svg";
-import thunder from ".././assets/benefits/thunder.svg";
-import confidence from ".././assets/benefits/confidence.svg";
-import globalViolet from ".././assets/benefits/global__violet.svg";
+import global from "../../assets/client/benefits/global.svg";
+import expert from "../../assets/client/benefits/expert.svg";
+import verified from "../../assets/client/benefits/verified.svg";
+import clock from "../../assets/client/benefits/clock.svg";
+import dollar from "../../assets/client/benefits/dollar.svg";
+import search from "../../assets/client/benefits/search.svg";
+import calender from "../../assets/client/benefits/calender.svg";
+import thunder from "../../assets/client/benefits/thunder.svg";
+import confidence from "../../assets/client/benefits/confidence.svg";
+import globalViolet from "../../assets/client/benefits/global__violet.svg";
 
 const Benefits = () => {
   return (

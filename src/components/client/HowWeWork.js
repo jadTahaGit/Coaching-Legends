@@ -1,9 +1,9 @@
 import "./HowWeWork.scss";
-import woman from "./../assets/HowWeWork/woman.png";
-import shield from "./../assets/HowWeWork/shield.svg";
-import calender from "./../assets/HowWeWork/calender.png";
-import virtuelRoom from "./../assets/HowWeWork/virtuelRoom.png";
-import tools from "./../assets/HowWeWork/tools.png";
+import woman from "./../../assets/client/HowWeWork/woman.png";
+import shield from "./../../assets/client/HowWeWork/shield.svg";
+import calender from "./../../assets/client/HowWeWork/calender.png";
+import virtuelRoom from "./../../assets/client/HowWeWork/virtuelRoom.png";
+import tools from "./../../assets/client/HowWeWork/tools.png";
 
 const HowWeWork = () => {
   return (

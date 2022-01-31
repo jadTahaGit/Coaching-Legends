@@ -6,9 +6,26 @@ $secondary__color: rgba(154, 146, 230, 0.3);
 $green__color: #7ce577;
 
 .TeachStudents {
-  padding: 60px;
+  padding: 80px 120px;
   display: flex;
   flex-direction: column;
 
   background-color: $secondary__color;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 20px;
+      margin-left: -37px;
+    }
+  }
+
+  button {
+    max-width: 240px;
+    padding: 20px;
+    background-color: $primary__color;
+    color: $white__color;
+    border: none;
+  }
 }

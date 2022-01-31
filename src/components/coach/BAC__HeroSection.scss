@@ -1,0 +1,139 @@
+$black__color: #333;
+$white__color: #ffffff;
+$gray__color: rgba(0, 0, 0, 0.5);
+$primary__color: #9a92e6;
+$green__color: #7ce577;
+
+.BAC__HeroSection {
+  padding: 20px 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/client/BecomeACoach/boyStudent.png");
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .signUpForm {
+    background-color: $white__color;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 40vw;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.08);
+
+    .text-box {
+      h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+
+    .inputs {
+      width: 100%;
+      input {
+        display: block;
+        background: #ffffff;
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+        height: 50px;
+        width: 100%;
+        padding: 40px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      input:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    .signUpBtn {
+      margin-top: 10px;
+      background-color: $primary__color;
+      color: white;
+      padding: 20px;
+      border: none;
+      width: 100%;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .breakline {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .breakline span {
+      display: block;
+      min-width: 180px;
+      flex: 100%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: $gray__color;
+    }
+
+    .breakline > div {
+      display: block;
+      background-color: #c4c4c4;
+      width: 100%;
+      height: 1px;
+    }
+
+    .btns {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+
+      button {
+        background-color: $white__color;
+        padding: 20px 110px;
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+
+    .gray__text {
+      color: $gray__color;
+    }
+  }
+}

@@ -14,11 +14,11 @@ const TeachStudents = () => {
         <li>Steady stream of new students</li>
         <li>Interactive classroom</li>
         <li>Convenient payment methods</li>
-
         <li>Training webinars</li>
-
         <li>Supportive tutor community</li>
       </ul>
+
+      <button>Sign up to teach</button>
     </div>
   );
 };

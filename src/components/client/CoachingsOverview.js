@@ -1,13 +1,13 @@
 import "./CoachingsOverview.scss";
-import bag from "./../assets/bag.svg";
-import ball from "./../assets/ball.svg";
-import calender from "./../assets/calender.svg";
-import dollar from "./../assets/dollar.svg";
-import graduate from "./../assets/graduate.svg";
-import love from "./../assets/love.svg";
-import people from "./../assets/people.svg";
-import person from "./../assets/person.svg";
-import plus from "./../assets/plus.svg";
+import bag from "./../../assets/client/bag.svg";
+import ball from "./../../assets/client/ball.svg";
+import calender from "./../../assets/client/calender.svg";
+import dollar from "./../../assets/client/dollar.svg";
+import graduate from "./../../assets/client/graduate.svg";
+import love from "./../../assets/client/love.svg";
+import people from "./../../assets/client/people.svg";
+import person from "./../../assets/client/person.svg";
+import plus from "./../../assets/client/plus.svg";
 
 const CoachingsOverview = () => {
   return (
