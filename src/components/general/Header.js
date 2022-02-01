@@ -1,4 +1,5 @@
 import "./Header.scss";
+import info from "./../../assets/general/info.svg";
 
 const Header = () => {
   return (
@@ -18,6 +19,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="right__navbar">
+        <img src={info} alt="" />
         <select name="" id="" className="language__dropdown">
           <option value="English">English</option>
           <option value="German">German</option>
