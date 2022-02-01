@@ -8,7 +8,9 @@ $green__color: #7ce577;
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
-  // position: sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: #333;
 
   * {
