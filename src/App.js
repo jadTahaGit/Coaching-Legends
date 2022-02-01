@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.scss";
 import Header from "./components/general/Header";
 import HeroSection from "./components/client/HeroSection";
@@ -12,6 +13,7 @@ import CoachBenefits from "./components/coach/CoachBenefits";
 import TeachStudents from "./components/coach/TeachStudents";
 import QuoteSection from "./components/coach/QuoteSecion";
 import FAQ from "./components/coach/FAQ";
+import GetPaid from "./components/coach/GetPaid";
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
       <TeachStudents />
       <QuoteSection />
       <FAQ />
+      <GetPaid />
 
       <Footer />
     </div>
