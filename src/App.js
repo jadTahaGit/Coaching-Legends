@@ -14,6 +14,7 @@ import TeachStudents from "./components/coach/TeachStudents";
 import QuoteSection from "./components/coach/QuoteSecion";
 import FAQ from "./components/coach/FAQ";
 import GetPaid from "./components/coach/GetPaid";
+import SearchCoaches from "./components/Home/SearchCoaches";
 
 function App() {
   return (
@@ -34,7 +35,10 @@ function App() {
       <QuoteSection />
       <FAQ />
       <GetPaid />
+      <Footer />
 
+      <Header></Header>
+      <SearchCoaches />
       <Footer />
     </div>
   );
