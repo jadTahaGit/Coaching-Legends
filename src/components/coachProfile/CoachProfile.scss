@@ -1,0 +1,176 @@
+$black__color: #333;
+$white__color: #ffffff;
+$gray__color: rgba(0, 0, 0, 0.5);
+$gray__secondary__color: #6f757b;
+$primary__color: #9a92e6;
+$secondary__color: rgba(154, 146, 230, 0.3);
+$green__primary__color: #7ce577;
+$green__darker__color: #50bf16;
+$green__secondary__color: #eef7e9;
+
+.CoachProfile {
+  padding: 80px 300px;
+  background-color: $secondary__color;
+  display: flex;
+  gap: 20px;
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h1 {
+      font-size: 19px;
+      line-height: 29px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .SummaryBox {
+      background-color: $white__color;
+      display: flex;
+      gap: 20px;
+
+      .text-wrapper {
+        padding: 10px;
+        .title {
+          display: flex;
+          gap: 20px;
+
+          h2 {
+            font-size: 20px;
+            line-height: 29px;
+          }
+        }
+        .coach__type {
+          font-size: 16px;
+          line-height: 23px;
+          color: $gray__secondary__color;
+        }
+
+        .language {
+          margin-top: 10px;
+          display: flex;
+          gap: 10px;
+        }
+        .native {
+          background-color: $green__secondary__color;
+          color: $green__darker__color;
+        }
+      }
+    }
+
+    .mini-navbar {
+      background-color: $white__color;
+      padding: 10px 20px;
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        a {
+          text-decoration: none;
+          font-size: 13px;
+          line-height: 20px;
+          color: $black__color;
+        }
+      }
+    }
+
+    .About {
+      background-color: $white__color;
+      padding: 20px 40px;
+    }
+
+    .Schedule {
+      background-color: $white__color;
+      padding: 20px 40px;
+    }
+
+    .Resume {
+      background-color: $white__color;
+      padding: 20px 40px;
+    }
+
+    .Subjects {
+      background-color: $white__color;
+      padding: 20px 40px;
+    }
+  }
+
+  .right__sidebar {
+    .quickBox {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 40px;
+      background-color: $white__color;
+
+      .info {
+        padding: 10px;
+        display: flex;
+        gap: 5px;
+
+        .smallInfo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2px;
+          max-width: 50%;
+          background-color: $green__secondary__color;
+          color: $green__darker__color;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .wage {
+          font-size: 19px;
+          line-height: 29px;
+        }
+      }
+
+      .trailSession,
+      .message,
+      .saveToMyList {
+        padding: 10px 20px;
+        border: none;
+        font-size: 15px;
+        line-height: 23px;
+      }
+      .trailSession {
+        background-color: $primary__color;
+        color: $white__color;
+      }
+      .message {
+        border: 1px solid $primary__color;
+        background: none;
+        color: $primary__color;
+      }
+      .saveToMyList {
+        border: 1px solid $primary__color;
+        background: none;
+        color: $primary__color;
+      }
+
+      .bookedLessons,
+      .response {
+        p {
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

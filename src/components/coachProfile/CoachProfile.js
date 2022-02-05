@@ -1,0 +1,154 @@
+import "./CoachProfile.scss";
+import woman1 from "../../assets/coachProfile/woman1.png";
+import americaFlag from "../../assets/coachProfile/america.svg";
+import speaks from "../../assets/coachProfile/speaks.svg";
+
+const coachProfile = () => {
+  return (
+    <div className="CoachProfile">
+      <div className="main">
+        <div className="SummaryBox">
+          <img src={woman1} alt="" />
+          <div className="text-wrapper">
+            <div className="title">
+              <h2 className="Coach__Name">Kimberly C.</h2>
+              <img src={americaFlag} alt="" className="flag" />
+            </div>
+            <p className="coach__type">Motivational Coach</p>
+            <div className="unkown">
+              <img src="" alt="" />
+              <p className="unknown">unknown</p>
+            </div>
+            <div className="language">
+              <img src={speaks} alt="" />
+              <p>
+                Speaks <span>English</span>
+              </p>
+              <div className="native">Nativ</div>
+            </div>
+          </div>
+        </div>
+
+        <nav className="mini-navbar">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Schedule</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+            <li>
+              <a href="#">Subjects</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="About" id="About">
+          <h1>About the tutor</h1>
+          <p>
+            Ultrices vel nulla odio pellentesque id placerat. Turpis nunc id
+            quis aliquam commodo et, lectus id. Aenean diam porta sed quisque.
+            Habitasse mi quis lobortis semper. Eleifend dolor duis nunc, nisi
+            eget amet bibendum neque. Integer cras pretium nunc, sed rutrum.
+            Arcu, aenean diam ac eu. Feugiat viverra diam praesent senectus
+            malesuada. Sagittis, lectus ac sed integer phasellus. Faucibus
+            tortor pulvinar eu nulla elit tristique metus, feugiat.
+          </p>
+          <a href="#">Show more</a>
+        </div>
+
+        <div className="Schedule" id="Schedule">
+          <h1>Schedule</h1>
+          <h3>I have taught both in one on one and group settings.</h3>
+          <div className="info__timezone">
+            <img src="" alt="" />
+            Choose the time for your first lesson. The timings are displayed in
+            your local timezone.
+          </div>
+        </div>
+
+        <div className="Resume" id="Resume">
+          <h1>Resume</h1>
+          <div className="Education">
+            <div className="edu-1">
+              <div className="time__intervel">2019-2022</div>
+              <div className="text-wrapper">
+                <p>International Open Academy</p>
+                <p>TESOL</p>
+              </div>
+            </div>
+            <div className="edu-2">
+              <div className="time__intervel">2019-2022</div>
+              <div className="text-wrapper">
+                <p>International Open Academy</p>
+                <p>TESOL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="Subjects" id="Subjects">
+          <h1>Subjects</h1>
+          <div className="options">
+            <div className="option-1">
+              <h3>
+                Option <span>1</span>
+              </h3>
+              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
+            </div>
+            <div className="option-2">
+              <h3>
+                Option <span>2</span>
+              </h3>
+              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
+            </div>
+            <div className="option-3">
+              <h3>
+                Option <span>3</span>
+              </h3>
+              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
+            </div>
+            <div className="option-4">
+              <h3>
+                Option <span>4</span>
+              </h3>
+              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="right__sidebar">
+        <div className="quickBox">
+          <img src={woman1} alt="" />
+          <div className="info">
+            <div className="smallInfo">Newly Joined</div>
+            <div className="wage">
+              <p>$13 </p>
+              <p>per hour</p>
+            </div>
+          </div>
+          <button className="trailSession">Book A Trail Session</button>
+          <button className="message">Send message</button>
+          <button className="saveToMyList">Save To My List</button>
+
+          <div className="bookedLessons">
+            <img src="" alt="" />
+            <p>19 lessons booked in the last 48 hours</p>
+          </div>
+
+          <div className="response">
+            <img src="" alt="" />
+            <p>
+              Usually responds in <span>2</span> hrs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default coachProfile;
