@@ -1,0 +1,108 @@
+$black__color: #333;
+$white__color: #ffffff;
+$gray__primary__color: rgba(204, 107, 107, 0.5);
+$gray__secondary__color: #6f757b;
+$primary__color: #9a92e6;
+$secondary__color: rgba(154, 146, 230, 0.3);
+$green__color: #7ce577;
+
+.HomeBody {
+  padding: 40px 80px;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .Ideas {
+    display: flex;
+    gap: 40px;
+
+    .Idea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .numberOf__results {
+    margin-top: 20px;
+  }
+
+  .gig__collection {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    .gig {
+      background-color: $white__color;
+
+      .header__box {
+        background-image: url("../../assets/home/woman.jpg");
+        background-position: center;
+        background-size: cover;
+        min-height: 300px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        img {
+          width: 30px;
+          height: auto;
+        }
+      }
+      .middle__box {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .Second___Line {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-between;
+          .stars {
+            display: flex;
+            align-items: center;
+            p {
+              margin-left: 5px;
+            }
+            img {
+              width: 30px;
+            }
+          }
+        }
+      }
+      .bottom__box {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        .left,
+        .right {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            padding: 20px;
+            border: none;
+          }
+          .message {
+            background-color: $white__color;
+            border: 1px solid $primary__color;
+            color: $primary__color;
+          }
+          .book {
+            background-color: $primary__color;
+            color: $white__color;
+          }
+        }
+      }
+    }
+  }
+}

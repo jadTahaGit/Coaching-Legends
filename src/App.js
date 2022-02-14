@@ -14,6 +14,7 @@ import TeachStudents from "./components/coach/TeachStudents";
 import QuoteSection from "./components/coach/QuoteSecion";
 import FAQ from "./components/coach/FAQ";
 import GetPaid from "./components/coach/GetPaid";
+import HomeBody from "./components/Home/HomeBody";
 import SearchCoaches from "./components/Home/SearchCoaches";
 import CoachProfile from "./components/coachProfile/CoachProfile";
 
@@ -39,12 +40,14 @@ function App() {
       <Footer />
 
       <Header></Header>
+      {/* <HeroSection /> */}
       <SearchCoaches />
+      <HomeBody />
       <Footer />
 
-      <Header></Header>
+      {/* <Header></Header>
       <CoachProfile />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
