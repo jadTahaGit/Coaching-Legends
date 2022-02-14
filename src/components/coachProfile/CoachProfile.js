@@ -2,6 +2,9 @@ import "./CoachProfile.scss";
 import woman1 from "../../assets/coachProfile/woman1.png";
 import americaFlag from "../../assets/coachProfile/america.svg";
 import speaks from "../../assets/coachProfile/speaks.svg";
+import arrow from "../../assets/coachProfile/arrow.svg";
+import circle from "../../assets/coachProfile/circle.svg";
+import star from "../../assets/coachProfile/star.svg";
 
 const coachProfile = () => {
   return (
@@ -121,10 +124,13 @@ const coachProfile = () => {
         </div>
       </div>
       <div className="right__sidebar">
+        <div className="image__wrapper"></div>
         <div className="quickBox">
-          <img src={woman1} alt="" />
           <div className="info">
-            <div className="smallInfo">Newly Joined</div>
+            <div className="smallInfo">
+              <p>Newly</p>
+              <p>Joined</p>
+            </div>
             <div className="wage">
               <p>$13 </p>
               <p>per hour</p>
@@ -135,15 +141,23 @@ const coachProfile = () => {
           <button className="saveToMyList">Save To My List</button>
 
           <div className="bookedLessons">
-            <img src="" alt="" />
+            <img src={arrow} alt="" />
             <p>19 lessons booked in the last 48 hours</p>
           </div>
 
           <div className="response">
-            <img src="" alt="" />
+            <img src={circle} alt="" />
             <p>
               Usually responds in <span>2</span> hrs
             </p>
+          </div>
+        </div>
+
+        <div className="popularity">
+          <img src={star} alt="" />
+          <div className="text__Box">
+            <p>Super popular</p>
+            <p>24 people contacted this coach in the last 48 hours</p>
           </div>
         </div>
       </div>
