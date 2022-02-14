@@ -9,6 +9,10 @@ $green__color: #7ce577;
 .SearchCoaches {
   background-color: $secondary__color;
   padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   * {
     margin: 0;
@@ -30,6 +34,28 @@ $green__color: #7ce577;
   }
 
   .filter__box {
+    padding: 20px 40px;
     background-color: $white__color;
+    border: none;
+    display: flex;
+    gap: 80px;
+    border-radius: 20px;
+
+    input,
+    select {
+      padding: 20px;
+      border: none;
+    }
+
+    .search__filter,
+    .price__filter,
+    .countries__filter,
+    .time__filter {
+      label {
+        color: $gray__secondary__color;
+      }
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
