@@ -1,23 +1,28 @@
 const express = require("express");
 const app = express();
+
+// easily access some something  outside of our server form our server.
 const cors = require("cors");
-require("dotenv").config({ path: "./config.env" });
+
+// helps us to connect to MongoDB
+const mongoose = require("mongoose");
+
+// it loads enviroment variables form a .env file into process.env
+require("dotenv").config();
 const port = process.env.PORT || 3000;
-app.use(cors());
-app.use(express.json());
-app.use(require("./routes/record"));
 
-// get driver connection
-const dbo = require("./db/conn");
+app.use(cors()); // cors middleware
+app.use(express.json()); // For parsing JSON
 
-app.get("/api/hello", (req, res) => {
-  res.send("hello kariommooooo");
-});
+// Connection to DB
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, {});
+const connection = mongoose.connection;
+connection.once("open", () => {
+  console.log("MongoDB connection established Successfully!");
+}); // once Connection is oppened -> log ...
 
-app.listen(port, () => {
-  // perform a database connection when server starts
-  dbo.connectToServer((err) => {
-    if (err) console.log(err);
-  });
-  console.log(`Server is running on port: ${port}!`);
-});
+app.get("/", (req, res) => res.send("Hello Coachync!"));
+
+// Starts the server by start to Listning on a certain port
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
