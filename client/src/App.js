@@ -17,6 +17,7 @@ import GetPaid from "./components/coach/GetPaid";
 import HomeBody from "./components/Home/HomeBody";
 import SearchCoaches from "./components/Home/SearchCoaches";
 import CoachProfile from "./components/coachProfile/CoachProfile";
+import Chat from "./components/chat/Chat";
 
 function App() {
   return (
@@ -47,6 +48,10 @@ function App() {
 
       <Header></Header>
       <CoachProfile />
+      <Footer />
+
+      <Header></Header>
+      <Chat></Chat>
       <Footer />
     </div>
   );

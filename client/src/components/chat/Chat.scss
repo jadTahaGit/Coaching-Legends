@@ -1,0 +1,120 @@
+$black__color: #333;
+$white__color: #ffffff;
+$gray__primary__color: rgba(204, 107, 107, 0.5);
+$gray__secondary__color: #6f757b;
+$primary__color: #9a92e6;
+$secondary__color: rgba(154, 146, 230, 0.3);
+$green__color: #7ce577;
+
+.Chat {
+  padding: 40px 80px;
+  display: flex;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .left__sidebar {
+    width: 20%;
+    background-color: $white__color;
+    .headOf__sidebar {
+      max-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+      background-color: $primary__color;
+      color: $white__color;
+      font-weight: bold;
+      font-size: 40px;
+
+      .profile__photo {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .right__options {
+        display: flex;
+        gap: 15px;
+      }
+    }
+
+    .mainOf__sidebar {
+      display: flex;
+      flex-direction: column;
+
+      .chat__overview {
+        display: flex;
+        padding: 5px 10px;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray__secondary__color;
+        align-items: center;
+
+        .profile__photo {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .textBox {
+          // near to profile photo
+          margin-left: -50px;
+
+          .contactName {
+            font-weight: bold;
+          }
+        }
+        .imortant__info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .unread__messages {
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary__color;
+            border-radius: 50%;
+            color: $white__color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .main__chat {
+    background-color: #6f757b;
+    width: 100%;
+
+    .headOf__mainChat {
+      max-height: 70px;
+      background-color: $secondary__color;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .profile__photo {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .textbox {
+        .contactName {
+          color: $white__color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
