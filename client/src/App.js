@@ -1,4 +1,5 @@
 import React from "react";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/general/Header";
 import HeroSection from "./components/client/HeroSection";
@@ -21,6 +22,15 @@ import Chat from "./components/chat/Chat";
 
 function App() {
   return (
+    // <Router>
+    //   <Navbar />
+    //   <br />
+    //   <Route path="/" exact component={Services} />
+    //   <Route path="/edit/:id" component={EditServices} />
+    //   <Route path="/create" component={createServices} />
+    //   <Route path="/user" component={createUser} />
+
+    // {
     <div className="App">
       <Header></Header>
       <HeroSection />
@@ -30,7 +40,6 @@ function App() {
       <BecomeACoach />
       <HappyStart />
       <Footer></Footer>
-
       <Header></Header>
       <BAC__HeroSection />
       <CoachBenefits></CoachBenefits>
@@ -39,21 +48,20 @@ function App() {
       <FAQ />
       <GetPaid />
       <Footer />
-
       <Header></Header>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <SearchCoaches />
       <HomeBody />
       <Footer />
-
       <Header></Header>
       <CoachProfile />
       <Footer />
-
       <Header></Header>
       <Chat></Chat>
       <Footer />
     </div>
+    // }
+    // </Router>
   );
 }
 

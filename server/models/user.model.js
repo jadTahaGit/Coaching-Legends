@@ -1,57 +1,82 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-// bcrypt = require("bcrypt");
-// SALT_WORK_FACTOR = 10;
+
+const validateEmail = (email) => {
+  var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return re.test(email);
+};
 
 const userSchema = new Schema(
   {
-    username: String,
-  }
-
-  //   {
-  //     username: {
-  //       type: String,
-  //       // required: true,
-  //       // unique: true,
-  //       // trim: true,
-  //       // minlength: 3,
-  //     },
-  //     password: {
-  //       type: String,
-  //       // required: true,
-  //     },
-  //     // to continue
-  //   },
-  //   { timestamps: true }
+    username: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+      minlength: 3,
+    },
+    name: {
+      type: String,
+      required: true,
+      minlength: 3,
+    },
+    email: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      unique: true,
+      required: "Email address is required",
+      validate: [validateEmail, "Please fill a valid email address"],
+      match: [
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+        "Please fill a valid email address",
+      ],
+    },
+    birthDay: {
+      type: Date,
+    },
+    email__verified: {
+      type: Boolean,
+    },
+    category: {
+      type: String,
+    },
+    phoneNumber: {
+      type: Number,
+    },
+    isCoach: {
+      type: Boolean,
+    },
+    languages: {
+      type: String,
+    },
+    description: {
+      type: String,
+    },
+    rating: {
+      type: Number,
+    },
+    level: {
+      type: Number,
+    },
+    percatageOfCompletion: {
+      type: Number,
+    },
+    Country: {
+      type: String,
+    },
+    AccountCreationDate: {
+      type: Date,
+    },
+    AvgResponseTime: {
+      type: Number,
+    },
+    lastSession: {
+      type: Number,
+    },
+  },
+  { timestamps: true }
 );
-
-// Some Cryptography after Saving
-// userSchema.pre("save", (next) => {
-//   let user = this;
-
-//   // only hash the password if it has been modified (or is new)
-//   if (!user.isModified("password")) return next();
-
-//   // generate a salt
-//   bcrypt.genSalt(SALT_WORK_FACTOR, (err, salt) => {
-//     if (err) return next(err);
-
-//     // hash password using our new salt
-//     bcrypt.hash(user.password, salt, (err, hash) => {
-//       if (err) return next(err);
-//       // override the cleartext password with the hashed one
-//       user.password = hash;
-//       next();
-//     });
-//   });
-// });
-
-// userSchema.methods.comparePassword = (candidatePassword, cb) => {
-//   bcrypt.comare(candidatePassword, this.password, (err, isMatch) => {
-//     if (err) return cb(err);
-//     cb(null, isMatch);
-//   });
-// };
 
 const User = mongoose.model("User", userSchema);
 module.exports = User;

@@ -131,6 +131,11 @@ const Chat = () => {
             <div className="contactName">Pedro</div>
           </div>
         </div>
+        <div className="bodyOF__mainChat">
+          <div className="message__box">Hey Man how are you doing? </div>
+          <div className="message__box">I am Jad</div>
+          <div className="message__box">.</div>
+        </div>
       </div>
     </div>
   );

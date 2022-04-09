@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 
 // it loads enviroment variables form a .env file into process.env
 require("dotenv").config();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 
 app.use(cors()); // cors middleware
 app.use(express.json()); // For parsing JSON
@@ -22,13 +22,11 @@ connection.once("open", () => {
   console.log("MongoDB connection established Successfully!");
 }); // once Connection is oppened -> log ...
 
-// Routers
+// const exerciseRouter = require("./routes/exercises");
 const usersRouter = require("./routes/users");
-const servicesRouter = require("./routes/services");
-app.use("/users", usersRouter);
-app.use("/services", servicesRouter);
 
-app.get("/", (req, res) => res.send("Hello Coachync!"));
+// app.use("/exercises", exerciseRouter);
+app.use("/users", usersRouter);
 
 // Starts the server by start to Listning on a certain port
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
