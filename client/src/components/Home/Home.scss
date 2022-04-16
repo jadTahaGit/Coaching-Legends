@@ -1,13 +1,14 @@
-$black__color: #333;
+$black__secondary__color: #32393f;
 $white__color: #ffffff;
-$gray__primary__color: rgba(204, 107, 107, 0.5);
-$gray__secondary__color: #6f757b;
-$primary__color: #9a92e6;
-$secondary__color: rgba(154, 146, 230, 0.3);
+$gray__color: rgba(0, 0, 0, 0.5);
+$light__gray__color: rgb(151, 151, 151);
+$primary__color: #2163a5;
+$light__primary__color: #b1d8ff;
+$secondary__color: #84dfff;
 $green__color: #7ce577;
 
 .HomeBody {
-  padding: 40px 80px;
+  padding: 0 240px 80px;
   * {
     margin: 0;
     padding: 0;
@@ -42,10 +43,12 @@ $green__color: #7ce577;
       background-color: $white__color;
 
       .header__box {
+        overflow: hidden;
         background-image: url("../../assets/home/woman.jpg");
         background-position: center;
         background-size: cover;
-        min-height: 300px;
+        height: 185px;
+        width: 275px;
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -59,47 +62,39 @@ $green__color: #7ce577;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        .Second___Line {
+        .userInfo {
           display: flex;
           gap: 10px;
           align-items: center;
-          justify-content: space-between;
-          .stars {
-            display: flex;
-            align-items: center;
-            p {
-              margin-left: 5px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+          .textBox {
+            .fullName {
+              font-weight: bold;
             }
-            img {
-              width: 30px;
+            .rank {
+              color: $light__gray__color;
             }
           }
         }
-      }
-      .bottom__box {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        .left,
-        .right {
+        .stars {
           display: flex;
-          flex-direction: column;
-          gap: 10px;
-
-          button {
-            padding: 20px;
-            border: none;
+          align-items: center;
+          p {
+            margin-left: 4px;
+            color: #f7b24a;
+            font-size: 24px;
+            font-weight: bold;
           }
-          .message {
-            background-color: $white__color;
-            border: 1px solid $primary__color;
-            color: $primary__color;
+          .gray {
+            color: $light__gray__color;
           }
-          .book {
-            background-color: rgb(255, 7, 7);
-            color: $white__color;
+          img {
+            width: 24px;
           }
         }
       }

@@ -13,6 +13,7 @@ router.post("/add", (req, res) => {
   const username = req.body.username;
   const name = req.body.name;
   const email = req.body.email;
+  const password = req.body.password;
   const birthDay = req.body.birthDay;
   const email__verified = req.body.email__verified;
   const category = req.body.category;
@@ -32,6 +33,7 @@ router.post("/add", (req, res) => {
     username: username,
     name: name,
     email: email,
+    password: password,
     birthDay: birthDay,
     email__verified: email__verified,
     category: category,

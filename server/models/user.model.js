@@ -10,14 +10,14 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      required: true,
+      // required: true,
       unique: true,
       trim: true,
       minlength: 3,
     },
     name: {
       type: String,
-      required: true,
+      // required: true,
       minlength: 3,
     },
     email: {
@@ -31,6 +31,11 @@ const userSchema = new Schema(
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
         "Please fill a valid email address",
       ],
+    },
+    password: {
+      type: String,
+      // required: true,
+      minlength: 5,
     },
     birthDay: {
       type: Date,

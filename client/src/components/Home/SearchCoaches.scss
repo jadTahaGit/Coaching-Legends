@@ -1,9 +1,10 @@
-$black__color: #333;
+$black__secondary__color: #32393f;
 $white__color: #ffffff;
-$gray__primary__color: rgba(204, 107, 107, 0.5);
-$gray__secondary__color: #6f757b;
-$primary__color: #9a92e6;
-$secondary__color: rgba(154, 146, 230, 0.3);
+$gray__color: rgba(0, 0, 0, 0.5);
+$light__gray__color: rgb(151, 151, 151);
+$primary__color: #2163a5;
+$light__primary__color: #b1d8ff;
+$secondary__color: #84dfff;
 $green__color: #7ce577;
 
 .SearchCoaches {
@@ -29,7 +30,7 @@ $green__color: #7ce577;
   p {
     font-size: 14px;
     line-height: 20px;
-    color: $gray__secondary__color;
+    color: $light__gray__color;
     margin-bottom: 10px;
   }
 
@@ -52,7 +53,7 @@ $green__color: #7ce577;
     .countries__filter,
     .time__filter {
       label {
-        color: $gray__secondary__color;
+        color: $light__gray__color;
       }
       display: flex;
       flex-direction: column;

@@ -62,29 +62,18 @@ const HomeBody = () => {
                 </div>
               </div>
               <div className="middle__box">
-                <p className="title">Pedro Fed</p>
-                <div className="Second___Line">
-                  <p className="rank">Rank 1</p>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(4.1)</p>
+                <div className="userInfo">
+                  <img src={woman} alt="" />
+                  <div className="textBox">
+                    <p className="fullName">Pedro Fed</p>
+                    <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">Life Coaching</p>
-              </div>
-              <hr />
-              <div className="bottom__box">
-                <div className="left">
-                  <p>$500 per hour</p>
-                  <p>10 active clients</p>
-                  <p>500 hour on Coachync</p>
-                </div>
-                <div className="right">
-                  <button className="message">Message Coach</button>
-                  <button className="book">Book Session</button>
+                <p className="catagory">I will be you Life Coach</p>
+                <div className="stars">
+                  <img src={star} alt="" />
+                  <p>4.1</p>
+                  <p className="gray">(106)</p>
                 </div>
               </div>
             </div>
@@ -98,29 +87,18 @@ const HomeBody = () => {
                 </div>
               </div>
               <div className="middle__box">
-                <p className="title">Pedro Fed</p>
-                <div className="Second___Line">
-                  <p className="rank">Rank 1</p>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(4.1)</p>
+                <div className="userInfo">
+                  <img src={woman} alt="" />
+                  <div className="textBox">
+                    <p className="fullName">Pedro Fed</p>
+                    <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">Life Coaching</p>
-              </div>
-              <hr />
-              <div className="bottom__box">
-                <div className="left">
-                  <p>$500 per hour</p>
-                  <p>10 active clients</p>
-                  <p>500 hour on Coachync</p>
-                </div>
-                <div className="right">
-                  <button className="message">Message Coach</button>
-                  <button className="book">Book Session</button>
+                <p className="catagory">I will be you Life Coach</p>
+                <div className="stars">
+                  <img src={star} alt="" />
+                  <p>4.1</p>
+                  <p className="gray">(106)</p>
                 </div>
               </div>
             </div>
@@ -134,29 +112,18 @@ const HomeBody = () => {
                 </div>
               </div>
               <div className="middle__box">
-                <p className="title">Pedro Fed</p>
-                <div className="Second___Line">
-                  <p className="rank">Rank 1</p>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(4.1)</p>
+                <div className="userInfo">
+                  <img src={woman} alt="" />
+                  <div className="textBox">
+                    <p className="fullName">Pedro Fed</p>
+                    <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">Life Coaching</p>
-              </div>
-              <hr />
-              <div className="bottom__box">
-                <div className="left">
-                  <p>$500 per hour</p>
-                  <p>10 active clients</p>
-                  <p>500 hour on Coachync</p>
-                </div>
-                <div className="right">
-                  <button className="message">Message Coach</button>
-                  <button className="book">Book Session</button>
+                <p className="catagory">I will be you Life Coach</p>
+                <div className="stars">
+                  <img src={star} alt="" />
+                  <p>4.1</p>
+                  <p className="gray">(106)</p>
                 </div>
               </div>
             </div>
@@ -170,32 +137,21 @@ const HomeBody = () => {
                 </div>
               </div>
               <div className="middle__box">
-                <p className="title">Pedro Fed</p>
-                <div className="Second___Line">
-                  <p className="rank">Rank 1</p>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(4.1)</p>
+                <div className="userInfo">
+                  <img src={woman} alt="" />
+                  <div className="textBox">
+                    <p className="fullName">Pedro Fed</p>
+                    <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">Life Coaching</p>
-              </div>
-              <hr />
-              <div className="bottom__box">
-                <div className="left">
-                  <p>$500 per hour</p>
-                  <p>10 active clients</p>
-                  <p>500 hour on Coachync</p>
-                </div>
-                <div className="right">
-                  <button className="message">Message Coach</button>
-                  <button className="book">Book Session</button>
+                <p className="catagory">I will be you Life Coach</p>
+                <div className="stars">
+                  <img src={star} alt="" />
+                  <p>4.1</p>
+                  <p className="gray">(106)</p>
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div className="gig">
               <div className="header__box">
                 <div className="flag">
@@ -206,68 +162,21 @@ const HomeBody = () => {
                 </div>
               </div>
               <div className="middle__box">
-                <p className="title">Pedro Fed</p>
-                <div className="Second___Line">
-                  <p className="rank">Rank 1</p>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(4.1)</p>
+                <div className="userInfo">
+                  <img src={woman} alt="" />
+                  <div className="textBox">
+                    <p className="fullName">Pedro Fed</p>
+                    <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">Life Coaching</p>
-              </div>
-              <hr />
-              <div className="bottom__box">
-                <div className="left">
-                  <p>$500 per hour</p>
-                  <p>10 active clients</p>
-                  <p>500 hour on Coachync</p>
-                </div>
-                <div className="right">
-                  <button className="message">Message Coach</button>
-                  <button className="book">Book Session</button>
+                <p className="catagory">I will be you Life Coach</p>
+                <div className="stars">
+                  <img src={star} alt="" />
+                  <p>4.1</p>
+                  <p className="gray">(106)</p>
                 </div>
               </div>
             </div>
-            {/* <div className="gig">
-              <div className="header__box">
-                <div className="flag">
-                  <img src={america} alt="" />
-                </div>
-                <div className="addToFav">
-                  <img src={heart} alt="" />
-                </div>
-              </div>
-              <div className="middle__box">
-                <p className="title">Pedro Fed</p>
-                <div className="Second___Line">
-                  <p className="rank">Rank 1</p>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <p>(4.1)</p>
-                  </div>
-                </div>
-                <p className="catagory">Life Coaching</p>
-              </div>
-              <hr />
-              <div className="bottom__box">
-                <div className="left">
-                  <p>$500 per hour</p>
-                  <p>10 active clients</p>
-                  <p>500 hour on Coachync</p>
-                </div>
-                <div className="right">
-                  <button className="message">Message Coach</button>
-                  <button className="book">Book Session</button>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="left__sidebar"></div>
