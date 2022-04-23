@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express();
 let User = require("../models/user.model");
+const authControllers = require("../controllers/authControllers");
 
 // show a list of all users (no filter yet)
 router.get("/", (req, res) => {
@@ -50,7 +51,12 @@ router.post("/add", async (req, res) => {
       AvgResponseTime: AvgResponseTime,
       lastSession: lastSession,
     });
-    res.status(201).json(user);
+    const token = authControllers.createToken(user._id);
+    res.cookie("jwt", token, {
+      httpOnly: true,
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+    });
+    res.status(201).json({ user: user._id });
   } catch (error) {
     res.status(400).send("error: " + error);
   }

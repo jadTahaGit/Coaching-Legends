@@ -1,17 +1,16 @@
 const express = require("express");
 const app = express();
-// easily access some something  outside of our server form our server.
-const cors = require("cors");
-// helps us to connect to MongoDB
+const cors = require("cors"); //to access another Servers files
 const mongoose = require("mongoose");
-// it loads enviroment variables form a .env file into process.env
-require("dotenv").config();
-const exerciseRouter = require("./routes/exercises");
+require("dotenv").config(); // for the enviroment variables
+// const exerciseRouter = require("./routes/exercises");
 const usersRouter = require("./routes/users");
+const cookieParser = require("cookie-parser");
 
 const port = process.env.PORT || 3001;
 app.use(cors()); // cors middleware
 app.use(express.json()); // For parsing JSON
+app.use(cookieParser());
 
 // Connection to DB
 const uri = process.env.ATLAS_URI;
@@ -26,8 +25,14 @@ app.use("/users", usersRouter);
 
 // cookies:
 app.get("/set-cookies", (req, res) => {
-  res.setHeader("Set-Cookie", "newUser=true");
-  res.send("you got the the coockies");
+  // res.cookie("isClient", true, { maxAge: 1000 * 60 * 60 * 24, httpOnly: true });
+  res.send("Here are cookies");
+});
+
+app.get("/read-cookies", (req, res) => {
+  const cookies = req.cookies;
+  console.log(cookies);
+  res.json(cookies);
 });
 
 // Starts the server by start to Listning on a certain port
