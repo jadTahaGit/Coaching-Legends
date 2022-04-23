@@ -10,9 +10,9 @@ import heart from "../../assets/home/heart.svg";
 import woman from "../../assets/home/woman.jpg";
 import star from "../../assets/home/star.svg";
 
-const HomeBody = () => {
+const HomeBody = (opacity, setOpacity) => {
   return (
-    <div className="HomeBody">
+    <div className="HomeBody" style={{ opacity: opacity }}>
       <div className="Ideas">
         <div className="Idea">
           <div className="image__wrapper">

@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     .catch((err) => res.status(400).json("Error" + err));
 });
 
-router.post("/add", (req, res) => {
+router.post("/add", async (req, res) => {
   const username = req.body.username;
   const name = req.body.name;
   const email = req.body.email;
@@ -29,34 +29,31 @@ router.post("/add", (req, res) => {
   const AvgResponseTime = req.body.AvgResponseTime;
   const lastSession = req.body.lastSession;
 
-  const newUser = new User({
-    username: username,
-    name: name,
-    email: email,
-    password: password,
-    birthDay: birthDay,
-    email__verified: email__verified,
-    category: category,
-    phoneNumber: phoneNumber,
-    isCoach: isCoach,
-    languages: languages,
-    description: description,
-    rating: rating,
-    level: level,
-    percatageOfCompletion: percatageOfCompletion,
-    Country: Country,
-    AccountCreationDate: AccountCreationDate,
-    AvgResponseTime: AvgResponseTime,
-    lastSession: lastSession,
-  });
-
-  newUser
-    .save()
-    .then(() => {
-      res.json("User Added Successfully! :) ");
-      //   res.send(newUser);
-    })
-    .catch((err) => res.status(400).json("Error" + err));
+  try {
+    const user = await User.create({
+      username: username,
+      name: name,
+      email: email,
+      password: password,
+      birthDay: birthDay,
+      email__verified: email__verified,
+      category: category,
+      phoneNumber: phoneNumber,
+      isCoach: isCoach,
+      languages: languages,
+      description: description,
+      rating: rating,
+      level: level,
+      percatageOfCompletion: percatageOfCompletion,
+      Country: Country,
+      AccountCreationDate: AccountCreationDate,
+      AvgResponseTime: AvgResponseTime,
+      lastSession: lastSession,
+    });
+    res.status(201).json(user);
+  } catch (error) {
+    res.status(400).send("error: " + error);
+  }
 });
 
 module.exports = router;

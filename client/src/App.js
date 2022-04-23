@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Link,
@@ -14,17 +14,31 @@ import Benefits from "./components/client/Benefits";
 import HowWeWork from "./components/client/HowWeWork";
 import HappyStart from "./components/client/HappyStart";
 import Footer from "./components/general/Footer";
-import SignUp from "./components/SignUp";
+import Coaches from "./components/Coaches";
 import HomeBody from "./components/Home/HomeBody";
 import SearchCoaches from "./components/Home/SearchCoaches";
 import CoachProfile from "./components/coachProfile/CoachProfile";
 import Chat from "./components/chat/Chat";
+import SignIn from "./components/general/SignIn";
+import SignUpFrom from "./components/general/SignUpForm";
+import OutsideAlerter from "./components/general/OutsideAlerter";
 
 function App() {
+  const [signInFormPopUp, setSignInFormPopUp] = useState(false);
+  const [signUpFormPopUp, setSignUpFormPopUp] = useState(false);
+  const [opacity, setOpacity] = useState("100%");
+  const [position, setPosition] = useState("");
+
   return (
     <Router>
-      <div className="App">
-        <Navbar></Navbar>
+      <div className="App" id="App" style={{ position: position }}>
+        <Navbar
+          opacity={opacity}
+          setOpacity={setOpacity}
+          setPosition={setPosition}
+          setSignInFormPopUp={setSignInFormPopUp}
+          setSignUpFormPopUp={setSignUpFormPopUp}
+        ></Navbar>
         <br />
         <Routes>
           <Route
@@ -32,8 +46,8 @@ function App() {
             element={
               <>
                 <SearchCoaches />
-                <HomeBody />
-                <Footer />
+                <HomeBody opacity={opacity} />
+                <Footer opacity={opacity} />
               </>
             }
           ></Route>
@@ -51,10 +65,10 @@ function App() {
             }
           ></Route>
           <Route
-            path="/SignUp"
+            path="/Coaches"
             element={
               <>
-                <SignUp />
+                <Coaches />
                 <Footer />
               </>
             }
@@ -63,9 +77,9 @@ function App() {
             path="/search"
             element={
               <>
-                <SearchCoaches />
-                <HomeBody />
-                <Footer />
+                <SearchCoaches opacity={opacity} />
+                <HomeBody opacity={opacity} />
+                <Footer opacity={opacity} />
               </>
             }
           ></Route>
@@ -79,6 +93,32 @@ function App() {
             }
           ></Route>
         </Routes>
+
+        <OutsideAlerter
+          setSignInFormPopUp={setSignInFormPopUp}
+          setOpacity={setOpacity}
+          setPosition={setPosition}
+        >
+          <SignIn
+            trigger={signInFormPopUp}
+            setSignInFormPopUp={setSignInFormPopUp}
+            setOpacity={setOpacity}
+            setPosition={setPosition}
+          ></SignIn>
+        </OutsideAlerter>
+
+        <OutsideAlerter
+          setSignUpFormPopUp={setSignUpFormPopUp}
+          setOpacity={setOpacity}
+          setPosition={setPosition}
+        >
+          <SignUpFrom
+            trigger={signUpFormPopUp}
+            setSignUpFormPopUp={setSignUpFormPopUp}
+            setOpacity={setOpacity}
+            setPosition={setPosition}
+          ></SignUpFrom>
+        </OutsideAlerter>
 
         {/* 
         <CoachProfile />

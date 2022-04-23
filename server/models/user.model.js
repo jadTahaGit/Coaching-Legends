@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const bcrypt = require("bcrypt");
 
 const validateEmail = (email) => {
   var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -10,22 +11,26 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      // required: true,
-      unique: true,
+      index: {
+        unique: [true, "This username already exists"],
+        dropDups: true,
+      },
       trim: true,
       minlength: 3,
     },
     name: {
       type: String,
-      // required: true,
       minlength: 3,
     },
     email: {
       type: String,
       trim: true,
       lowercase: true,
-      unique: true,
-      required: "Email address is required",
+      index: {
+        unique: [true, "This Email address already exists"],
+        dropDups: true,
+      },
+      required: [true, "Email address is required"],
       validate: [validateEmail, "Please fill a valid email address"],
       match: [
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
@@ -34,8 +39,8 @@ const userSchema = new Schema(
     },
     password: {
       type: String,
-      // required: true,
-      minlength: 5,
+      required: true,
+      minlength: 6,
     },
     birthDay: {
       type: Date,
@@ -82,6 +87,12 @@ const userSchema = new Schema(
   },
   { timestamps: true }
 );
+
+userSchema.pre("save", async function (next) {
+  const salt = await bcrypt.genSalt();
+  this.password = await bcrypt.hash(this.password, salt);
+  next();
+});
 
 const User = mongoose.model("User", userSchema);
 module.exports = User;

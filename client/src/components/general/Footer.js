@@ -1,8 +1,8 @@
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = (opacity) => {
   return (
-    <div className="Footer">
+    <div className="Footer" style={{ opacity: opacity }}>
       <div className="nav">
         <div className="links-box">
           <h1>ABOUT US</h1>
