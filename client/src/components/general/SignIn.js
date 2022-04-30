@@ -21,21 +21,33 @@ const SignIn = ({ trigger, setSignInFormPopUp, setOpacity, setPosition }) => {
     });
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     setErrors(validation(values));
-
     console.log(values);
-
-    // axios
-    //   .post("http://localhost:3000/users/add/", values)
-    //   .then((res) => console.log(res.data));
-
+    try {
+      axios
+        .post("http://localhost:3000/users/login", values, {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        })
+        .then((res) => {
+          // console.log(res.data);
+          if (res.data.user) {
+            window.location.assign("/");
+          }
+        });
+    } catch (error) {
+      console.log(error);
+    }
     setValues({
       email: "",
       password: "",
     });
   };
+
   if (trigger) {
     return (
       <div className="SignIn">

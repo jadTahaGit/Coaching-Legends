@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./SignUpForm.scss";
 import axios from "axios";
 import validation from "./validation";
@@ -25,16 +25,29 @@ const SignUpForm = ({
     });
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     setErrors(validation(values));
 
     console.log(values);
 
-    axios
-      .post("http://localhost:3000/users/add/", values)
-      .then((res) => console.log(res.data));
-
+    try {
+      axios
+        .post("http://localhost:3000/users/signup/", values, {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        })
+        .then((res) => {
+          // console.log(res.data);
+          // if (res.data.user) {
+          //   window.location.assign("/");
+          // }
+        });
+    } catch (error) {
+      console.log(error);
+    }
     setValues({
       email: "",
       password: "",

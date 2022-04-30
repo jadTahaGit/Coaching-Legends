@@ -14,6 +14,7 @@ app.use(cookieParser());
 
 // Connection to DB
 const uri = process.env.ATLAS_URI;
+console.log(uri);
 mongoose.connect(uri, {});
 const connection = mongoose.connection;
 connection.once("open", () => {
@@ -23,9 +24,9 @@ connection.once("open", () => {
 // app.use("/exercises", exerciseRouter);
 app.use("/users", usersRouter);
 
-// cookies:
+// cookies (Can be Removed - Just for testing):
 app.get("/set-cookies", (req, res) => {
-  // res.cookie("isClient", true, { maxAge: 1000 * 60 * 60 * 24, httpOnly: true });
+  res.cookie("isClient", true, { maxAge: 1000 * 60 * 60 * 24, httpOnly: true });
   res.send("Here are cookies");
 });
 

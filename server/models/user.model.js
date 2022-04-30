@@ -11,10 +11,6 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      index: {
-        unique: [true, "This username already exists"],
-        dropDups: true,
-      },
       trim: true,
       minlength: 3,
     },
@@ -24,12 +20,9 @@ const userSchema = new Schema(
     },
     email: {
       type: String,
+      unique: true,
       trim: true,
       lowercase: true,
-      index: {
-        unique: [true, "This Email address already exists"],
-        dropDups: true,
-      },
       required: [true, "Email address is required"],
       validate: [validateEmail, "Please fill a valid email address"],
       match: [
@@ -93,6 +86,20 @@ userSchema.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, salt);
   next();
 });
+
+// static Mehtod to login user
+userSchema.statics.login = async function (email, password) {
+  const user = await User.findOne({ email: email });
+  if (user) {
+    // compares hashed passwords!
+    const auth = await bcrypt.compare(password, user.password);
+    if (auth) {
+      return user;
+    }
+    throw Error("Wrong Password!");
+  }
+  throw Error("Incorrect Email!");
+};
 
 const User = mongoose.model("User", userSchema);
 module.exports = User;
