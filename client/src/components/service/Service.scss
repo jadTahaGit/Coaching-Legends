@@ -1,0 +1,144 @@
+$black__color: #333;
+$black__secondary__color: #32393f;
+$white__color: #ffffff;
+$gray__color: rgba(0, 0, 0, 0.5);
+$primary__color: #2163a5;
+$light__primary__color: #b1d8ff;
+$secondary__color: #84dfff;
+$green__color: #7ce577;
+$star__color: #ffaa46;
+
+.Service {
+  padding: 40px 240px 80px;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .Service_body {
+    .Left_side {
+      .Overview {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .Info_box {
+          .catagory {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 15px;
+            /* identical to box height */
+            margin-bottom: 8px;
+
+            color: #3363de;
+          }
+          .title {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 28px;
+            /* identical to box height */
+
+            letter-spacing: 0.01em;
+            margin-bottom: 8px;
+
+            color: #38393c;
+          }
+          .profile_Info {
+            display: flex;
+            align-items: center;
+            img {
+              border-radius: 50%;
+              width: 40px;
+              height: auto;
+              margin-right: 8px;
+            }
+            .username {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 15px;
+              /* identical to box height */
+
+              letter-spacing: 0.01em;
+
+              color: #000000;
+              margin-right: 6px;
+            }
+            .level {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 15px;
+              /* identical to box height */
+              letter-spacing: 0.01em;
+
+              color: #57595f;
+              margin-right: 4px;
+            }
+            .rating {
+              margin-right: 4px;
+              display: flex;
+              align-items: center;
+              margin-left: 10px; // remove margin left from star 1
+              .stars {
+                img {
+                  margin-left: -10px;
+                  width: 20px;
+                  height: auto;
+                }
+              }
+              .avg_rating {
+                margin-right: 4px;
+                color: $star__color;
+                margin-left: -6px;
+              }
+              .num_of_orders {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                /* identical to box height */
+                letter-spacing: 0.01em;
+
+                color: #57595f;
+                margin-right: 4px;
+              }
+            }
+            .orders_in_Queue {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 15px;
+              /* identical to box height */
+              letter-spacing: 0.01em;
+
+              color: #57595f;
+              margin-right: 4px;
+            }
+          }
+        }
+        .Slider {
+          display: flex;
+          align-items: center;
+          .service_image {
+            width: 527.41px;
+            height: auto;
+          }
+        }
+        .Highlights {
+          display: flex;
+          gap: 10px;
+          img {
+            width: 75.56px;
+            height: 50.78px;
+          }
+        }
+        .Review_slider {
+        }
+      }
+    }
+  }
+}

@@ -32,7 +32,7 @@ const handleErrors = (err) => {
 };
 
 const createToken = (id) => {
-  const maxAge = 3 * 24 * 60 * 60; //in seconds
+  const maxAge = 7 * 24 * 60 * 60; //in seconds
   return jwt.sign({ id }, "jad", {
     expiresIn: maxAge,
   });
@@ -87,7 +87,7 @@ module.exports.signup_post = async (req, res) => {
     });
     const token = createToken(user._id);
     res.cookie("jwt", token, {
-      maxAge: 3 * 24 * 60 * 60 * 1000,
+      maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
     });
     res.status(200).json({ user: user._id });

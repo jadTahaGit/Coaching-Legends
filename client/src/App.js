@@ -22,6 +22,7 @@ import Chat from "./components/chat/Chat";
 import SignIn from "./components/general/SignIn";
 import SignUpFrom from "./components/general/SignUpForm";
 import OutsideAlerter from "./components/general/OutsideAlerter";
+import Service from "./components/service/Service";
 
 function App() {
   const [signInFormPopUp, setSignInFormPopUp] = useState(false);
@@ -88,6 +89,15 @@ function App() {
             element={
               <>
                 <CoachProfile />
+                <Footer />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/service"
+            element={
+              <>
+                <Service />
                 <Footer />
               </>
             }
