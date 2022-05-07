@@ -42,7 +42,7 @@ function App() {
         <br />
         <Routes>
           <Route
-            path="/"
+            path="/loggedin"
             element={
               <>
                 <SearchCoaches />
@@ -52,7 +52,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/moreAboutUs"
+            path="/"
             element={
               <>
                 <HeroSection />

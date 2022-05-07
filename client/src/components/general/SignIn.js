@@ -36,7 +36,7 @@ const SignIn = ({ trigger, setSignInFormPopUp, setOpacity, setPosition }) => {
         .then((res) => {
           // console.log(res.data);
           if (res.data.user) {
-            window.location.assign("/");
+            window.location.assign("/loggedin");
           }
         });
     } catch (error) {

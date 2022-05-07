@@ -41,9 +41,9 @@ const SignUpForm = ({
         })
         .then((res) => {
           // console.log(res.data);
-          // if (res.data.user) {
-          //   window.location.assign("/");
-          // }
+          if (res.data.user) {
+            window.location.assign("/loggedin");
+          }
         });
     } catch (error) {
       console.log(error);
