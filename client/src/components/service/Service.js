@@ -2,6 +2,7 @@ import "./Service.scss";
 import Star from "./../../assets/service/star.svg";
 import leftArrow from "./../../assets/service/left_arrow.svg";
 import rightArrow from "./../../assets/service/right_arrow.svg";
+import blueTick from "./../../assets/service/blueTick.svg";
 import userProfilePhoto from "./../../assets/service/user_profile_photo.webp";
 import servicePic_01 from "./../../assets/service/servicePic_01.png";
 import servicePic_02 from "./../../assets/service/servicePic_02.png";
@@ -72,7 +73,28 @@ const Service = () => {
           <div className="Reviews"></div>
         </div>
         <div className="Right_side">
-          <div className="Plans_Wrapper"></div>
+          <div className="Plans_Wrapper">
+            <div className="btns">
+              <button className="btn basic">Basic</button>
+              <button className="btn standard">Standard</button>
+              <button className="btn premium">Premium</button>
+            </div>
+            <div className="package_skeleton">
+              <h2 className="Price">US$75</h2>
+              <p className="description">
+                One Off Call - Advice & Analysis We’ll discuss your life, mental
+                blocks & goals - 45 Minutes Duration (Subscribe for 1 call a
+                month)
+              </p>
+              <p className="delivery">
+                <span> {"30"}</span>Days Delivery
+              </p>
+              <p className="session">
+                <span> {"1"}</span>Session
+              </p>
+              <button className="continue">Continue </button>
+            </div>
+          </div>
           <div className="Contact_seller_btn">
             <button>Contact Seller</button>
           </div>

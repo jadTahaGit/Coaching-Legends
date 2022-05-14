@@ -20,6 +20,9 @@ $star__color: #ffaa46;
   }
 
   .Service_body {
+    display: flex;
+    justify-content: space-between;
+
     .Left_side {
       .Overview {
         display: flex;
@@ -137,6 +140,57 @@ $star__color: #ffaa46;
           }
         }
         .Review_slider {
+        }
+      }
+    }
+
+    .Right_side {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .Plans_Wrapper {
+        width: 50%;
+
+        .btns {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+
+          .btn {
+            background: none;
+            border: 1px solid $gray__color;
+            padding: 10px;
+          }
+        }
+
+        .package_skeleton {
+          .Price {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+          }
+          .description {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          .delivery {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          .session {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            /* identical to box height, or 133% */
+
+            color: #aeb0b3;
+          }
+          .continue {
+          }
         }
       }
     }
