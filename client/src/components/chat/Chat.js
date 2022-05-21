@@ -132,9 +132,28 @@ const Chat = () => {
           </div>
         </div>
         <div className="bodyOF__mainChat">
-          <div className="message__box">Hey Man how are you doing? </div>
-          <div className="message__box">I am Jad</div>
-          <div className="message__box">.</div>
+          <div className="message__box sent">Hey Man how are you doing? </div>
+          <div className="message__box sent">I am Jad</div>
+          <div className="message__box sent">.</div>
+          <div className="message__box received">Hey</div>
+          <div className="message__box received">Ready for today's session?.</div>
+          <div className="message__box sent">Oh yeah!</div>
+          <div className="message__box sent">I am so excited</div>
+          <div className="message__box received">So let's start</div>
+          <div className="message__box sent">Hey Man how are you doing? </div>
+          <div className="message__box sent">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
+          <div className="message__box sent">.</div>
+          <div className="message__box received">Hey</div>
+          <div className="message__box received">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
+          <div className="message__box sent">Oh yeah!</div>
+          <div className="message__box sent">I am so excited</div>
+          <div className="message__box received">So let's start</div>
+        </div>
+        <div className="footerOf__mainChat">
+          <div className="form-group">
+            <input type="text" className="new__message__input" placeholder="Message" />
+            <button className="btn-primary">Send</button>
+          </div>
         </div>
       </div>
     </div>

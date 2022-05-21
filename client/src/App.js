@@ -102,6 +102,14 @@ function App() {
               </>
             }
           ></Route>
+          <Route
+            path="/Chat"
+            element={
+              <>
+              <Chat />
+              </>
+            }
+          ></Route>
         </Routes>
 
         <OutsideAlerter
@@ -134,7 +142,6 @@ function App() {
         <CoachProfile />
         <Footer />
         <Navbar></Navbar>
-        <Chat></Chat>
         <Footer />  */}
       </div>
     </Router>
