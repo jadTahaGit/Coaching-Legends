@@ -2,6 +2,7 @@ $black__color: #333;
 $black__secondary__color: #32393f;
 $white__color: #ffffff;
 $gray__color: rgba(0, 0, 0, 0.5);
+$light__gray__color: rgb(128, 126, 126);
 $primary__color: #2163a5;
 $light__primary__color: #b1d8ff;
 $secondary__color: #84dfff;
@@ -142,15 +143,19 @@ $star__color: #ffaa46;
         .Review_slider {
         }
       }
+
+      
     }
 
     .Right_side {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      align-items: center;
 
       .Plans_Wrapper {
         width: 50%;
+        border: 1px solid #e5e5e5;
 
         .btns {
           display: grid;
@@ -158,39 +163,74 @@ $star__color: #ffaa46;
 
           .btn {
             background: none;
-            border: 1px solid $gray__color;
+            border: none;
+            border: 0.1px solid #e5e5e5;
             padding: 10px;
           }
         }
 
         .package_skeleton {
+          padding: 30px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
           .Price {
             font-weight: 700;
             font-size: 18px;
             line-height: 22px;
           }
+
           .description {
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 16px;
-          }
-
-          .delivery {
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 16px;
-          }
-
-          .session {
             font-weight: 400;
             font-size: 12px;
             line-height: 16px;
-            /* identical to box height, or 133% */
 
-            color: #aeb0b3;
+            span {
+              font-weight: 700;
+            }
           }
+
+          .more_info {
+            div {
+              display: flex;
+              gap: 4px;
+              margin-bottom: 4px;
+            }
+
+            .delivery {
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 16px;
+            }
+
+            .session {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              /* identical to box height, or 133% */
+              color: #aeb0b3;
+            }
+          }
+
           .continue {
+            padding: 10px;
+            border: none;
+            background: none;
+            background-color: $primary__color;
+            color: $white__color;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
           }
+        }
+      }
+
+      .Contact_seller_btn {
+        button {
+          padding: 10px 140px;
+          background: none;
+          border: 1px solid $light__gray__color;
         }
       }
     }

@@ -82,16 +82,22 @@ const Service = () => {
             <div className="package_skeleton">
               <h2 className="Price">US$75</h2>
               <p className="description">
-                One Off Call - Advice & Analysis We’ll discuss your life, mental
-                blocks & goals - 45 Minutes Duration (Subscribe for 1 call a
-                month)
+                <span>One Off Call - Advice & Analysis </span>
+                We’ll discuss your life, mental blocks & goals - 45 Minutes
+                Duration (Subscribe for 1 call a month)
               </p>
-              <p className="delivery">
-                <span> {"30"}</span>Days Delivery
-              </p>
-              <p className="session">
-                <span> {"1"}</span>Session
-              </p>
+              <div className="more_info">
+                <div>
+                  <img src={blueTick} alt="" />
+                  <p className="delivery">30 Days Delivery</p>
+                </div>
+                <div>
+                  <img src={blueTick} alt="" />
+                  <p className="session">
+                    <span> {"1"}</span> Session
+                  </p>
+                </div>
+              </div>
               <button className="continue">Continue </button>
             </div>
           </div>

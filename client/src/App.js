@@ -102,6 +102,15 @@ function App() {
               </>
             }
           ></Route>
+          <Route
+            path="/chat"
+            element={
+              <>
+                <Chat />
+                <Footer />
+              </>
+            }
+          ></Route>
         </Routes>
 
         <OutsideAlerter
