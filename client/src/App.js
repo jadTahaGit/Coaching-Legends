@@ -107,7 +107,6 @@ function App() {
             element={
               <>
                 <Chat />
-                <Footer />
               </>
             }
           ></Route>
@@ -143,7 +142,6 @@ function App() {
         <CoachProfile />
         <Footer />
         <Navbar></Navbar>
-        <Chat></Chat>
         <Footer />  */}
       </div>
     </Router>
