@@ -18,7 +18,8 @@
     .Left_side {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 60px;
+      max-width: 50%;
     }
 
     .Right_side {
@@ -26,7 +27,7 @@
       flex-direction: column;
       gap: 20px;
       align-items: center;
-
+      max-width: 50%;
       .Plans_Wrapper {
         width: 50%;
         border: 1px solid #e5e5e5;

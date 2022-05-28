@@ -15,7 +15,7 @@ const AboutTheSeller = () => {
           <p className="skills_Adjectives">
             Life Consultant, Entrepreneur, Creative, Advertiser
           </p>
-          <div className="rating">
+          <div className="ratting">
             <div className="stars">
               <img src={Star} alt="star" />
               <img src={Star} alt="star" />
@@ -26,9 +26,9 @@ const AboutTheSeller = () => {
             <span className="avg_rating">5</span>
             <span className="num_of_orders">({"104"})</span>
           </div>
+          <button className="contactMe_Btn">Contact Me</button>
         </div>
       </div>
-      <button className="contactMe_Btn">Contact Me</button>
       <div className="infoBox">
         <div className="upper_Part">
           <div className="left">
@@ -56,6 +56,7 @@ const AboutTheSeller = () => {
             </div>
           </div>
         </div>
+        <hr />
         <div className="bottom_Part">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laborum
           voluptatum. Porro dolores nisi suscipit ipsum itaque velit nesciunt

@@ -9,4 +9,89 @@
     font-style: normal;
     font-weight: normal;
   }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .importantInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    .image_Wrapper img {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+    }
+    .text_Box {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      h3 {
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .ratting {
+        display: flex;
+        .avg_rating {
+          color: $star__color;
+          margin-right: 5px;
+        }
+        margin-bottom: 10px;
+      }
+      .contactMe_Btn {
+        border: 1px solid $gray__color;
+        border-radius: 5px;
+        background: none;
+        padding: 10px;
+        max-width: 30%;
+        color: $gray__color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .infoBox {
+    border: 1px solid $gray__color;
+    padding: 30px;
+    .upper_Part {
+      display: flex;
+      gap: 30%;
+      margin-bottom: 10px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .country,
+        .response_Time {
+          .value,
+          .value span {
+            font-weight: 600;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .membership_Date,
+        .last_Delivery {
+          .value,
+          .value span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    hr {
+      margin-bottom: 10px;
+    }
+    .bottom_Part {
+    }
+  }
 }
