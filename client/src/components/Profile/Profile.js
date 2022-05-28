@@ -1,4 +1,4 @@
-import "./CoachProfile.scss";
+import "./Profile.scss";
 import woman1 from "../../assets/coachProfile/woman1.png";
 import americaFlag from "../../assets/coachProfile/america.svg";
 import speaks from "../../assets/coachProfile/speaks.svg";

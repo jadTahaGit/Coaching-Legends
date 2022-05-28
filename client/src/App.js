@@ -16,12 +16,12 @@ import HappyStart from "./components/Home/HappyStart";
 import Footer from "./components/general/Footer";
 import Coaches from "./components/Coaches";
 import HomeBody from "./components/Services/HomeBody";
-import CoachProfile from "./components/coachProfile/CoachProfile";
+import CoachProfile from "./components/Profile/Profile";
 import Chat from "./components/chat/Chat";
 import SignIn from "./components/general/SignIn";
 import SignUpFrom from "./components/general/SignUpForm";
 import OutsideAlerter from "./components/general/OutsideAlerter";
-import Service from "./components/service/Service";
+import Service from "./components/servicePage/Service";
 
 function App() {
   const [signInFormPopUp, setSignInFormPopUp] = useState(false);
