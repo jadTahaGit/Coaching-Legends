@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
-import info from "./../../assets/general/info.svg";
-import LOGO from "./../../assets/logo.png";
+import Light_Logo from "./../../assets/logo-light.svg";
+import searchIcon from "./../../assets/general/search.svg";
 
 const Navbar = ({
   setSignInFormPopUp,
@@ -12,48 +12,55 @@ const Navbar = ({
 }) => {
   return (
     <nav className="Navbar" style={{ opacity: opacity }}>
-      <div className="left__navbar">
-        <Link to="/" className="logo__wrapper">
-          <img src={LOGO} alt="" />
-        </Link>
-        <ul className="nav__lists">
-          <li className="nav__list">
-            <Link to="/search">Find A Coach</Link>
-          </li>
-          <li className="nav__list">
-            <button
-              onClick={() => {
-                setSignUpFormPopUp(true);
-                setOpacity("20%");
-                setPosition("fixed");
-              }}
-            >
-              JOIN
-            </button>
-          </li>
-          <li className="nav__list">
-            <button
-              onClick={() => {
-                setSignInFormPopUp(true);
-                setOpacity("20%");
-                setPosition("fixed");
-              }}
-            >
-              Sign In
-            </button>
-          </li>
-        </ul>
+      <Link to="/" className="logo__wrapper">
+        <img src={Light_Logo} alt="" />
+      </Link>
+      <div className="Searchbar">
+        <div className="iconWrapper">
+          <img src={searchIcon} alt="" />
+        </div>
+        <input type="search" placeholder='Try "Life Coach"' />
+        <button className="search">Search</button>
       </div>
-      <div className="right__navbar">
-        <img src={info} alt="" />
-        <select name="" id="" className="language__dropdown">
-          <option value="English">English</option>
-          <option value="German">German</option>
-          <option value="Arabic">Arabic</option>
-          <option value="Portogese">Portogese</option>
-          <option value="Spanish">Spanish</option>
-        </select>
-      </div>
+
+      <ul className="nav__lists">
+        <li className="nav__list">
+          <Link to="/search">Home</Link>
+        </li>
+        <li className="nav__list">
+          <Link to="/search">About US</Link>
+        </li>
+        <li className="nav__list">
+          <Link to="/search">BLOG</Link>
+        </li>
+        <li className="nav__list">
+          <Link to="/search">CONTACT</Link>
+        </li>
+        <li className="nav__list">
+          <button
+            className="loginBtn"
+            onClick={() => {
+              setSignInFormPopUp(true);
+              setOpacity("20%");
+              setPosition("fixed");
+            }}
+          >
+            LOGIN
+          </button>
+        </li>
+        <li className="nav__list">
+          <button
+            className="registerBtn"
+            onClick={() => {
+              setSignUpFormPopUp(true);
+              setOpacity("20%");
+              setPosition("fixed");
+            }}
+          >
+            REGISTER
+          </button>
+        </li>
+      </ul>
     </nav>
   );
 };
