@@ -1,4 +1,5 @@
 import "./FAQ.scss";
+import Faq from "react-faq-component";
 const FAQ = () => {
   return (
     <div className="FAQ">
