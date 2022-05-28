@@ -4,6 +4,7 @@ import blueTick from "./../../assets/service/blueTick.svg";
 import Overview from "./leftSide/Overview";
 import Description from "./leftSide/Description";
 import AboutTheSeller from "./leftSide/AboutTheSeller";
+import FAQ from "./leftSide/FAQ";
 
 const Service = () => {
   return (
@@ -14,6 +15,7 @@ const Service = () => {
           <Overview></Overview>
           <Description></Description>
           <AboutTheSeller></AboutTheSeller>
+          <FAQ></FAQ>
 
           <div className="Compare_packages"></div>
           <div className="Recommendations"></div>
