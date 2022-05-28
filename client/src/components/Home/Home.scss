@@ -1,11 +1,4 @@
-$black__secondary__color: #32393f;
-$white__color: #ffffff;
-$gray__color: rgba(0, 0, 0, 0.5);
-$light__gray__color: rgb(151, 151, 151);
-$primary__color: #2163a5;
-$light__primary__color: #b1d8ff;
-$secondary__color: #84dfff;
-$green__color: #7ce577;
+@import "../Globals.scss";
 
 .HomeBody {
   padding: 0 240px 80px;
