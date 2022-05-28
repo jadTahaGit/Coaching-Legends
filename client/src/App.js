@@ -15,7 +15,7 @@ import HowWeWork from "./components/client/HowWeWork";
 import HappyStart from "./components/client/HappyStart";
 import Footer from "./components/general/Footer";
 import Coaches from "./components/Coaches";
-import HomeBody from "./components/Home/HomeBody";
+import HomeBody from "./components/Services/HomeBody";
 import CoachProfile from "./components/coachProfile/CoachProfile";
 import Chat from "./components/chat/Chat";
 import SignIn from "./components/general/SignIn";
