@@ -16,6 +16,9 @@
     justify-content: space-between;
 
     .Left_side {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
       .Overview {
         display: flex;
         flex-direction: column;
@@ -134,8 +137,6 @@
         .Review_slider {
         }
       }
-
-      
     }
 
     .Right_side {

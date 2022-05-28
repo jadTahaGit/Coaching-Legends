@@ -11,6 +11,7 @@ import servicePic_04 from "./../../assets/service/servicePic_04.png";
 import servicePic_05 from "./../../assets/service/servicePic_05.png";
 
 import Description from "./leftSide/Description";
+import AboutTheSeller from "./leftSide/AboutTheSeller";
 
 const Service = () => {
   return (
@@ -67,8 +68,8 @@ const Service = () => {
           </div>
 
           <Description></Description>
+          <AboutTheSeller></AboutTheSeller>
 
-          <div className="About_the_seller"></div>
           <div className="Compare_packages"></div>
           <div className="Recommendations"></div>
           <div className="FAQ"></div>
