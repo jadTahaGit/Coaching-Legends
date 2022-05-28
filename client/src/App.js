@@ -16,7 +16,6 @@ import HappyStart from "./components/client/HappyStart";
 import Footer from "./components/general/Footer";
 import Coaches from "./components/Coaches";
 import HomeBody from "./components/Home/HomeBody";
-import SearchCoaches from "./components/Home/SearchCoaches";
 import CoachProfile from "./components/coachProfile/CoachProfile";
 import Chat from "./components/chat/Chat";
 import SignIn from "./components/general/SignIn";
@@ -46,7 +45,6 @@ function App() {
             path="/loggedin"
             element={
               <>
-                <SearchCoaches />
                 <HomeBody opacity={opacity} />
                 <Footer opacity={opacity} />
               </>
@@ -78,7 +76,6 @@ function App() {
             path="/search"
             element={
               <>
-                <SearchCoaches opacity={opacity} />
                 <HomeBody opacity={opacity} />
                 <Footer opacity={opacity} />
               </>

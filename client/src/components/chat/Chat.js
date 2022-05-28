@@ -2,13 +2,7 @@ import "./Chat.scss";
 
 import woman from "../../assets/home/woman.jpg";
 import ideal from "../../assets/home/ideal.svg";
-import pay from "../../assets/home/pay.svg";
-import online from "../../assets/home/online.svg";
-import books from "../../assets/home/books.svg";
 import verified from "../../assets/home/verified.svg";
-import america from "../../assets/home/america.svg";
-import heart from "../../assets/home/heart.svg";
-import star from "../../assets/home/star.svg";
 
 const Chat = () => {
   return (
@@ -213,7 +207,11 @@ const Chat = () => {
         </div>
         <div className="footerOf__mainChat">
           <div className="form-group">
-            <input type="text" className="new__message__input" placeholder="Message" />
+            <input
+              type="text"
+              className="new__message__input"
+              placeholder="Message"
+            />
             <button className="btn-primary">Send</button>
           </div>
         </div>
