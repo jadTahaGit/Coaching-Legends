@@ -19,9 +19,7 @@ const Service = () => {
           <div className="Overview">
             <div className="Info_box">
               <div className="catagory">Life Coaching</div>
-              <div className="title">
-                I will be your life coach and accountability coach
-              </div>
+              <div className="title">Life coach and accountability coach</div>
               <div className="profile_Info">
                 <img src={userProfilePhoto} alt="" />
                 <div className="username">pedro10</div>
