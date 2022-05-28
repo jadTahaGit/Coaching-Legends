@@ -8,11 +8,11 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import Navbar from "./components/general/Navbar";
-import HeroSection from "./components/client/HeroSection";
-import CoachingsOverview from "./components/client/CoachingsOverview";
-import Benefits from "./components/client/Benefits";
-import HowWeWork from "./components/client/HowWeWork";
-import HappyStart from "./components/client/HappyStart";
+import HeroSection from "./components/Home/HeroSection";
+import CoachingsOverview from "./components/Home/CoachingsOverview";
+import Benefits from "./components/Home/Benefits";
+import HowWeWork from "./components/Home/HowWeWork";
+import HappyStart from "./components/Home/HappyStart";
 import Footer from "./components/general/Footer";
 import Coaches from "./components/Coaches";
 import HomeBody from "./components/Services/HomeBody";
