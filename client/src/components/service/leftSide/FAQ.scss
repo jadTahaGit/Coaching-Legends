@@ -12,4 +12,28 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  .faq-row-wrapper {
+    background: none;
+    .faq-title {
+      padding: 10px 0;
+      margin-bottom: 10px;
+      color: $gray__color;
+    }
+
+    .faq-body {
+      .faq-row {
+        padding: 10px 0;
+        .row-title {
+        }
+
+        .row-content {
+          .row-content-text {
+            color: $gray__color;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
 }
