@@ -1,37 +1,54 @@
 @import "../Globals.scss";
 
 .HeroSection {
-  padding: 0 80px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./../../assets/client/heroFoto.svg");
+  padding: 40px 240px 80px;
+  background: $primary__color;
   min-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: -1;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
 
-.hero__heading {
-  color: $white__color;
-  font-size: 42px;
-}
+  img {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    bottom: 160px;
+    right: 120px;
+  }
 
-.bold {
-  display: block;
-  font-weight: bold;
-}
+  .hero__heading {
+    color: $white__color;
+    font-size: 42px;
+  }
 
-.search__wrapper {
-}
-.search__btn {
-  padding: 20px 30px;
-  background-color: $primary__color;
-  border: none;
-  color: $white__color;
-}
+  .bold {
+    display: block;
+    font-weight: bold;
+  }
 
-.search__input {
-  padding: 20px 30px;
-  min-width: 25vw;
-  border: none;
+  .search__wrapper {
+    .search__btn {
+      padding: 20px 30px;
+      background: linear-gradient(90deg, #2263a5 0%, #83deff 100%);
+      border-radius: 0px 12px 12px 0px;
+      border: none;
+      color: $white__color;
+      font-size: 18px;
+    }
+
+    .search__input {
+      padding: 20px 30px;
+      min-width: 25vw;
+      border: none;
+    }
+  }
 }
