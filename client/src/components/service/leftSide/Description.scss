@@ -1,0 +1,17 @@
+@import "../../Globals.scss";
+
+.Description {
+  margin-top: 30px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray__Description_color;
+
+    em {
+      font-weight: 600;
+    }
+  }
+}

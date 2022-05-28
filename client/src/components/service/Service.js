@@ -10,6 +10,8 @@ import servicePic_03 from "./../../assets/service/servicePic_03.png";
 import servicePic_04 from "./../../assets/service/servicePic_04.png";
 import servicePic_05 from "./../../assets/service/servicePic_05.png";
 
+import Description from "./leftSide/Description";
+
 const Service = () => {
   return (
     <div className="Service">
@@ -63,7 +65,9 @@ const Service = () => {
             </div>
             <div className="Review_slider"></div>
           </div>
-          <div className="Description"></div>
+
+          <Description></Description>
+
           <div className="About_the_seller"></div>
           <div className="Compare_packages"></div>
           <div className="Recommendations"></div>
