@@ -1,10 +1,5 @@
 import "./Home.scss";
 
-import ideal from "../../assets/home/ideal.svg";
-import pay from "../../assets/home/pay.svg";
-import online from "../../assets/home/online.svg";
-import books from "../../assets/home/books.svg";
-import verified from "../../assets/home/verified.svg";
 import america from "../../assets/home/america.svg";
 import heart from "../../assets/home/heart.svg";
 import woman from "../../assets/home/woman.jpg";
@@ -13,38 +8,6 @@ import star from "../../assets/home/star.svg";
 const HomeBody = (opacity, setOpacity) => {
   return (
     <div className="HomeBody" style={{ opacity: opacity }}>
-      <div className="Ideas">
-        <div className="Idea">
-          <div className="image__wrapper">
-            <img src={ideal} alt="" />
-          </div>
-          <p>How to Choose an ideal coach</p>
-        </div>
-        <div className="Idea">
-          <div className="image__wrapper">
-            <img src={pay} alt="" />
-          </div>
-          <p>How you can pay for sessions</p>
-        </div>
-        <div className="Idea">
-          <div className="image__wrapper">
-            <img src={online} alt="" />
-          </div>
-          <p>Where lessons take place</p>
-        </div>
-        <div className="Idea">
-          <div className="image__wrapper">
-            <img src={books} alt="" />
-          </div>
-          <p>What is our methodology</p>
-        </div>
-        <div className="Idea">
-          <div className="image__wrapper">
-            <img src={verified} alt="" />
-          </div>
-          <p>How we verify our Coaches</p>
-        </div>
-      </div>
       <div className="">
         <div className="main">
           <p className="numberOf__results">
@@ -69,7 +32,9 @@ const HomeBody = (opacity, setOpacity) => {
                     <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">I will be you Life Coach</p>
+                <p className="catagory">
+                  Life Coauch to help you with you life´s problems
+                </p>
                 <div className="stars">
                   <img src={star} alt="" />
                   <p>4.1</p>
@@ -94,7 +59,9 @@ const HomeBody = (opacity, setOpacity) => {
                     <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">I will be you Life Coach</p>
+                <p className="catagory">
+                  Life Coauch to help you with you life´s problems
+                </p>
                 <div className="stars">
                   <img src={star} alt="" />
                   <p>4.1</p>
@@ -119,7 +86,9 @@ const HomeBody = (opacity, setOpacity) => {
                     <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">I will be you Life Coach</p>
+                <p className="catagory">
+                  Life Coauch to help you with you life´s problems
+                </p>
                 <div className="stars">
                   <img src={star} alt="" />
                   <p>4.1</p>
@@ -144,7 +113,9 @@ const HomeBody = (opacity, setOpacity) => {
                     <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">I will be you Life Coach</p>
+                <p className="catagory">
+                  Life Coauch to help you with you life´s problems
+                </p>
                 <div className="stars">
                   <img src={star} alt="" />
                   <p>4.1</p>
@@ -169,7 +140,9 @@ const HomeBody = (opacity, setOpacity) => {
                     <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">I will be you Life Coach</p>
+                <p className="catagory">
+                  Life Coauch to help you with you life´s problems
+                </p>
                 <div className="stars">
                   <img src={star} alt="" />
                   <p>4.1</p>
