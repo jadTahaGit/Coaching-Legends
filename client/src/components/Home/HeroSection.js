@@ -4,10 +4,11 @@ import woman from "./../../assets/home/woman_noBG.png";
 const HeroSection = () => {
   return (
     <div className="HeroSection">
-      <img src={woman} alt="" />
+      <img src={woman} alt="woman foto" className="heroImage" />
       <h1 className="hero__heading">
-        <strong className="bold">Find the perfect coach </strong>
-        for you
+        Find Your <span className="Cookie">Coach,</span>
+        <br />
+        Find your Match
       </h1>
       <div className="search__wrapper">
         <input
