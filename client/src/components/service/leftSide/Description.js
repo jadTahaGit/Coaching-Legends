@@ -57,13 +57,15 @@ const Description = () => {
         PS: Before you order, please read the rules pdf! (gig pictures)
       </p>
       <hr />
-      <div className="Coaching_catagory">
-        <p className="title">Coaching catagory</p>
-        <p className="value"> Personal growth</p>
-      </div>
-      <div className="Coach_gender">
-        <p className="title">Coach's gender</p>
-        <p className="value">Male</p>
+      <div className="footer_Of_Description">
+        <div className="coaching_Catagory">
+          <p className="title">Coaching catagory</p>
+          <p className="value"> Personal growth</p>
+        </div>
+        <div className="coach_Gender">
+          <p className="title">Coach's gender</p>
+          <p className="value">Male</p>
+        </div>
       </div>
     </div>
   );

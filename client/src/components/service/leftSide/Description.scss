@@ -1,6 +1,14 @@
 @import "../../Globals.scss";
 
 .Description {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
   margin-top: 30px;
   h2 {
     margin-bottom: 20px;
@@ -9,9 +17,28 @@
     font-size: 16px;
     line-height: 24px;
     color: $gray__Description_color;
+    margin-bottom: 10px;
 
     em {
       font-weight: 600;
+    }
+  }
+
+  hr {
+    margin-bottom: 10px;
+  }
+  .footer_Of_Description {
+    display: flex;
+    gap: 30px;
+
+    .coaching_Catagory,
+    .coach_Gender {
+      gap: 10px;
+      .value {
+        margin-top: -10px;
+        color: $black__color;
+        font-weight: 500;
+      }
     }
   }
 }
