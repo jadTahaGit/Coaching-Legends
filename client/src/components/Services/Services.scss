@@ -43,8 +43,8 @@
         background-image: url("../../assets/Services/woman.jpg");
         background-position: center;
         background-size: cover;
-        min-height: 150px;
-        min-width: 150px;
+        min-height: 190px;
+        min-width: 324px;
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -54,11 +54,12 @@
         }
       }
       .middle__box {
-        padding: 10px 20px 10px;
+        padding: 10px 12px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         border-top: 1px solid $light__gray__color;
+
         .userInfo {
           display: flex;
           gap: 10px;
@@ -79,6 +80,11 @@
             }
           }
         }
+
+        .catagory {
+          display: flex;
+          margin: 8px 0;
+        }
         .stars {
           display: flex;
           align-items: center;
@@ -98,9 +104,10 @@
           }
         }
       }
+
       .footer__box {
         border-top: 0.3px solid $light__gray__color;
-        padding: 10px 20px 0px;
+        padding: 10px 20px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -117,14 +124,15 @@
           display: flex;
           align-items: center;
           p {
-            color: $gray__secondary__color;
-            font-size: 8px;
+            color: $darker_gray__color;
+            font-size: 12px;
             text-transform: uppercase;
           }
           .price {
+            margin-left: 4px;
             color: $darker_gray__color;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 22px;
           }
         }
       }

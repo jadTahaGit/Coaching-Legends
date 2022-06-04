@@ -34,9 +34,9 @@ const HomeBody = (opacity, setOpacity) => {
                     <p className="rank">Rank 1</p>
                   </div>
                 </div>
-                <p className="catagory">
-                  Life Coauch to help you with you life´s problems
-                </p>
+                <div className="catagory">
+                  <p>Life Coauch to help you with you life´s problems</p>
+                </div>
                 <div className="stars">
                   <img src={star} alt="" />
                   <p>4.1</p>
