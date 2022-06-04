@@ -1,4 +1,4 @@
-import "./Home.scss";
+import "./Services.scss";
 
 import america from "../../assets/home/america.svg";
 import heart from "../../assets/home/heart.svg";

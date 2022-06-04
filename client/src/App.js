@@ -10,7 +10,7 @@ import "./App.scss";
 import Navbar from "./components/general/Navbar";
 import Footer from "./components/general/Footer";
 import Coaches from "./components/Coaches";
-import HomeBody from "./components/Services/HomeBody";
+import HomeBody from "./components/Services/Services";
 import CoachProfile from "./components/Profile/Profile";
 import Chat from "./components/chat/Chat";
 import SignIn from "./components/general/SignIn";
