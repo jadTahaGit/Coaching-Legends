@@ -1,8 +1,8 @@
 import "./Chat.scss";
 
-import woman from "../../assets/home/woman.jpg";
-import ideal from "../../assets/home/ideal.svg";
-import verified from "../../assets/home/verified.svg";
+import woman from "../../assets/Services/woman.jpg";
+import ideal from "../../assets/Home/ideal.svg";
+import verified from "../../assets/Home/verified.svg";
 
 const Chat = () => {
   return (
@@ -11,7 +11,11 @@ const Chat = () => {
         <div className="headOf__sidebar">
           <img src={woman} alt="" className="profile__photo" />
           <div className="right__options">
-            <input type="search" className="search__for__users" placeholder="Search..." />
+            <input
+              type="search"
+              className="search__for__users"
+              placeholder="Search..."
+            />
           </div>
         </div>
         <div className="mainOf__sidebar">
@@ -137,7 +141,9 @@ const Chat = () => {
               <img src={woman} alt="" className="profile__photo" />
             </div>
             <div className="message__box__content">
-              <div className="message__box sent">Hey Man how are you doing? </div>
+              <div className="message__box sent">
+                Hey Man how are you doing?{" "}
+              </div>
               <div className="message__box sent">I am Jad</div>
               <div className="message__box sent">.</div>
             </div>
@@ -148,7 +154,9 @@ const Chat = () => {
             </div>
             <div className="message__box__content">
               <div className="message__box received">Hey</div>
-              <div className="message__box received">Ready for today's session?.</div>
+              <div className="message__box received">
+                Ready for today's session?.
+              </div>
             </div>
           </div>
           <div className="message__box__container reverse">
@@ -173,8 +181,15 @@ const Chat = () => {
               <img src={woman} alt="" className="profile__photo" />
             </div>
             <div className="message__box__content">
-              <div className="message__box sent">Hey Man how are you doing? </div>
-              <div className="message__box sent">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
+              <div className="message__box sent">
+                Hey Man how are you doing?{" "}
+              </div>
+              <div className="message__box sent">
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum
+              </div>
               <div className="message__box sent">.</div>
             </div>
           </div>
@@ -184,7 +199,12 @@ const Chat = () => {
             </div>
             <div className="message__box__content">
               <div className="message__box received">Hey</div>
-              <div className="message__box received">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</div>
+              <div className="message__box received">
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum
+              </div>
             </div>
           </div>
           <div className="message__box__container reverse">

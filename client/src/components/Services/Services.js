@@ -1,11 +1,11 @@
 import "./Services.scss";
 
-import america from "../../assets/home/america.svg";
-import heart from "../../assets/home/heart.svg";
-import grayHeart from "../../assets/home/grayHeart.svg";
-import woman from "../../assets/home/woman.jpg";
-import star from "../../assets/home/star.svg";
-import hamburger from "../../assets/home/hamburger.svg";
+import america from "../../assets/Services/america.svg";
+import heart from "../../assets/Services/heart.svg";
+import grayHeart from "../../assets/Services/grayHeart.svg";
+import woman from "../../assets/Services/woman.jpg";
+import star from "../../assets/Services/star.svg";
+import hamburger from "../../assets/Services/hamburger.svg";
 
 const HomeBody = (opacity, setOpacity) => {
   return (
