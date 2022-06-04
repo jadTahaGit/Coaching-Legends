@@ -40,12 +40,14 @@
   }
 
   .search__wrapper {
+    display: flex;
+    align-items: center;
     .search__btn {
-      padding: 20px 30px;
-      background: linear-gradient(90deg, #2263a5 0%, #83deff 100%);
+      padding: 17px 30px;
+      background-color: $light__primary__color;
       border-radius: 0px 12px 12px 0px;
       border: none;
-      color: $white__color;
+      color: $primary__color;
       font-size: 18px;
     }
 
