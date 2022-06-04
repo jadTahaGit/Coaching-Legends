@@ -1,12 +1,6 @@
 @import "../Globals.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-$black__color: #333;
-$white__color: #ffffff;
-$primary__color: #9a92e6;
-$secondary__color: rgba(154, 146, 230, 0.3);
-$green__color: #7ce577;
-
 .HowWeWork {
   display: block;
   margin: 80px 0;
@@ -64,12 +58,12 @@ $green__color: #7ce577;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $secondary__color;
+  background-color: $primary__color;
   width: 64px;
   height: 64px;
   border-radius: 50%;
   font-size: 40px;
   font-family: Roboto;
   font-weight: 400;
-  color: $primary__color;
+  color: $white__color;
 }
