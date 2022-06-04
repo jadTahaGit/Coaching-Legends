@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Coaches.scss";
-import topLeftQuatation from "./../assets/coach/QuoteSection/topLeftQuatation.svg";
-import bottomRightQuatation from "./../assets/coach/QuoteSection/bottomRightQuatation.svg";
-import girl from "./../assets/coach/QuoteSection/girl.png";
 import validation from "./general/validation";
 
 const Coaches = () => {
@@ -132,19 +129,7 @@ const Coaches = () => {
 
         <button>Sign up to teach</button>
       </div>
-      <div className="QuoteSection">
-        <img src={girl} alt="" />
-        <div className="right">
-          <img src={topLeftQuatation} alt="" />
-          <h1>It allowed me to make a living without leaving home!</h1>
-          <img src={bottomRightQuatation} alt="" />
 
-          <p>
-            Jenna coaches with us so she can spend more time with her family
-          </p>
-          <button>Become A Coach</button>
-        </div>
-      </div>
       <div className="FAQ">
         <h1>Frequently asked questions</h1>
         <div className="questions">
