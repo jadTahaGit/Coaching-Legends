@@ -8,11 +8,6 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import Navbar from "./components/general/Navbar";
-import HeroSection from "./components/Home/HeroSection";
-import CoachingsOverview from "./components/Home/CoachingsOverview";
-import Benefits from "./components/Home/Benefits";
-import HowWeWork from "./components/Home/HowWeWork";
-import HappyStart from "./components/Home/HappyStart";
 import Footer from "./components/general/Footer";
 import Coaches from "./components/Coaches";
 import HomeBody from "./components/Services/HomeBody";
@@ -22,6 +17,7 @@ import SignIn from "./components/general/SignIn";
 import SignUpFrom from "./components/general/SignUpForm";
 import OutsideAlerter from "./components/general/OutsideAlerter";
 import Service from "./components/servicePage/Service";
+import Home from "./components/Home.js";
 
 function App() {
   const [signInFormPopUp, setSignInFormPopUp] = useState(false);
@@ -54,12 +50,7 @@ function App() {
             path="/"
             element={
               <>
-                <HeroSection />
-                <CoachingsOverview />
-                <Benefits />
-                <HowWeWork />
-                <HappyStart />
-                <Footer></Footer>
+                <Home></Home>
               </>
             }
           ></Route>
