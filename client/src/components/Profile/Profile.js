@@ -44,7 +44,7 @@ const coachProfile = () => {
               <a href="#">Resume</a>
             </li>
             <li>
-              <a href="#">Subjects</a>
+              <a href="#">Language</a>
             </li>
           </ul>
         </nav>
@@ -73,6 +73,18 @@ const coachProfile = () => {
           </div>
         </div>
 
+        <div className="Languages" id="Languages">
+          <h1>Languages</h1>
+          <div className="language">
+            <span className="languageName">English</span>
+            <span className="languageLevel"> Native/Bilingual</span>
+          </div>
+          <div className="language">
+            <span className="languageName">Arabic</span>
+            <span className="languageLevel"> Native/Bilingual</span>
+          </div>
+        </div>
+
         <div className="Resume" id="Resume">
           <h1>Resume</h1>
           <div className="Education">
@@ -89,36 +101,6 @@ const coachProfile = () => {
                 <p>International Open Academy</p>
                 <p>TESOL</p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="Subjects" id="Subjects">
-          <h1>Subjects</h1>
-          <div className="options">
-            <div className="option-1">
-              <h3>
-                Option <span>1</span>
-              </h3>
-              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
-            </div>
-            <div className="option-2">
-              <h3>
-                Option <span>2</span>
-              </h3>
-              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
-            </div>
-            <div className="option-3">
-              <h3>
-                Option <span>3</span>
-              </h3>
-              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
-            </div>
-            <div className="option-4">
-              <h3>
-                Option <span>4</span>
-              </h3>
-              <p>Mattis scelerisque morbi elementum non ipsum scelerisque.</p>
             </div>
           </div>
         </div>
