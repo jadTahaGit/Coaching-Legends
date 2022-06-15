@@ -14,7 +14,7 @@ import globalViolet from "../../assets/Home/benefits/global__violet.svg";
 const Benefits = () => {
   return (
     <div className="Benefits">
-      <img src={global} class="global__symbol" alt="" />
+      <img src={global} className="global__symbol" alt="" />
 
       <div className="start__changing">
         <h1 className="big_Title">Start Changing your life now.</h1>
@@ -47,7 +47,7 @@ const Benefits = () => {
       </div>
 
       <div className="focus__on__help">
-        <img class="searchIcon" src={search} alt="" />
+        <img className="searchIcon" src={search} alt="" />
         <h1>Focus on the help you need</h1>
         <p>Prepare to achieve your goals with us!</p>
         <div className="help__options__container">
