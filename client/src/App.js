@@ -18,6 +18,7 @@ import SignUpFrom from "./components/general/SignUpForm";
 import OutsideAlerter from "./components/general/OutsideAlerter";
 import Service from "./components/servicePage/Service";
 import Home from "./components/Home.js";
+import Blogs from "./components/blog/blogs";
 
 function App() {
   const [signInFormPopUp, setSignInFormPopUp] = useState(false);
@@ -95,6 +96,14 @@ function App() {
             element={
               <>
                 <Chat />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/blogs"
+            element={
+              <>
+                <Blogs />
               </>
             }
           ></Route>
