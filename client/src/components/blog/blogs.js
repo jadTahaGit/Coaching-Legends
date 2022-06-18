@@ -7,7 +7,7 @@ const Blogs = () => {
         <div className="Blogs">
             <div className="blogs__container">
                 <div className="blogs__row">
-                    <h1 className="page__title">Coachync Blog</h1>
+                    <h1 className="page__title">The Coachync Blog</h1>
                 </div>
                 <div className="blogs__row">
                     <BlogCard />
