@@ -8,8 +8,15 @@ import star from "../../assets/Services/star.svg";
 import hamburger from "../../assets/Services/hamburger.svg";
 
 const HomeBody = (opacity, setOpacity) => {
+  const goToProfileScreen = () => {
+    window.location.href = "/profile";
+  };
   return (
-    <div className="HomeBody" style={{ opacity: opacity }}>
+    <div
+      onClick={goToProfileScreen}
+      className="HomeBody"
+      style={{ opacity: opacity }}
+    >
       <div className="">
         <div className="main">
           <p className="numberOf__results">

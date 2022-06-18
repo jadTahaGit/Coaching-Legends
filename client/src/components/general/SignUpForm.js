@@ -3,12 +3,7 @@ import "./SignUpForm.scss";
 import axios from "axios";
 import validation from "./validation";
 
-const SignUpForm = ({
-  trigger,
-  setSignUpFormPopUp,
-  setOpacity,
-  setPosition,
-}) => {
+const SignUpForm = (props) => {
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -54,65 +49,95 @@ const SignUpForm = ({
     });
   };
 
-  return trigger ? (
-    <>
-      {setOpacity("20%")}
-      <div className="signUpForm">
-        <form onSubmit={(e) => submitHandler(e)} className="signUpForm">
-          <div className="closeBtn">
-            <button
-              onClick={() => {
-                setSignUpFormPopUp(false);
-                setOpacity("100%");
-                setPosition("");
-              }}
-            >
-              X
-            </button>
-          </div>
-          <div className="text-box">
-            <h1>Coach online</h1>
-            <p>Earn money on your schedule</p>
-          </div>
-          <div className="inputs">
-            <input
-              type="text"
-              placeholder="Email"
-              name="email"
-              value={values.email}
-              onChange={(e) => changeHandler(e)}
-            />
-            {errors.email && <p className="error">{errors.email}</p>}
-            <input
-              type="text"
-              placeholder="Password"
-              name="password"
-              value={values.password}
-              onChange={(e) => changeHandler(e)}
-            />
-            {errors.password && <p className="error">{errors.password}</p>}
-          </div>
-          <button type="submit" className="signUpBtn">
-            Sign up with email
-          </button>
+  return (
+    <div className="signUpForm">
+      <form onSubmit={submitHandler} className="signUpForm">
+        <div className="closeBtn">
+          <button onClick={props.onClose}>X</button>
+        </div>
+        <div className="text-box">
+          <h1>Coach online</h1>
+          <p>Earn money on your schedule</p>
+        </div>
+        <div className="inputs">
+          <input
+            type="text"
+            placeholder="Email"
+            name="email"
+            value={values.email}
+            onChange={(e) => changeHandler(e)}
+          />
+          {errors.email && <p className="error">{errors.email}</p>}
+          <input
+            type="text"
+            placeholder="Password"
+            name="password"
+            value={values.password}
+            onChange={(e) => changeHandler(e)}
+          />
+          {errors.password && <p className="error">{errors.password}</p>}
+        </div>
+        <button type="submit" className="signUpBtn">
+          Sign up with email
+        </button>
 
-          <p className="breakline">
-            <div></div>
-            <span>or continue with</span>
-            <div></div>
-          </p>
-          <div className="btns">
-            <button className="Facebook__btn">Facebook</button>
-            <button className="Google__btn">Google</button>
-          </div>
-          <p className="gray__text">
-            By signing up, you agree to Terms of Service and Privacy Policy
-          </p>
-        </form>
-      </div>
-    </>
-  ) : (
-    ""
+        <p className="breakline">
+          <span>or continue with</span>
+        </p>
+        <div className="btns">
+          <button className="Facebook__btn">Facebook</button>
+          <button className="Google__btn">Google</button>
+        </div>
+        <p className="gray__text">
+          By signing up, you agree to Terms of Service and Privacy Policy
+        </p>
+      </form>
+    </div>
+    // <div className="signUpForm">
+    //   <form onSubmit={(e) => submitHandler(e)} className="signUpForm">
+    //     <div className="closeBtn">
+    //       <button>X</button>
+    //     </div>
+    //     <div className="text-box">
+    //       <h1>Coach online</h1>
+    //       <p>Earn money on your schedule</p>
+    //     </div>
+    //     <div className="inputs">
+    //       <input
+    //         type="text"
+    //         placeholder="Email"
+    //         name="email"
+    //         value={values.email}
+    //         onChange={(e) => changeHandler(e)}
+    //       />
+    //       {errors.email && <p className="error">{errors.email}</p>}
+    //       <input
+    //         type="text"
+    //         placeholder="Password"
+    //         name="password"
+    //         value={values.password}
+    //         onChange={(e) => changeHandler(e)}
+    //       />
+    //       {errors.password && <p className="error">{errors.password}</p>}
+    //     </div>
+    //     <button type="submit" className="signUpBtn">
+    //       Sign up with email
+    //     </button>
+
+    //     <p className="breakline">
+    //       <div></div>
+    //       <span>or continue with</span>
+    //       <div></div>
+    //     </p>
+    //     <div className="btns">
+    //       <button className="Facebook__btn">Facebook</button>
+    //       <button className="Google__btn">Google</button>
+    //     </div>
+    //     <p className="gray__text">
+    //       By signing up, you agree to Terms of Service and Privacy Policy
+    //     </p>
+    //   </form>
+    // </div>
   );
 };
 

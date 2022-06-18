@@ -7,6 +7,10 @@ import circle from "../../assets/coachProfile/circle.svg";
 import star from "../../assets/coachProfile/star.svg";
 
 const coachProfile = () => {
+  const goToChatHandler = () => {
+    window.location.href = "/chat";
+  };
+
   return (
     <div className="CoachProfile">
       <div className="main">
@@ -119,7 +123,9 @@ const coachProfile = () => {
             </div>
           </div>
           <button className="trailSession">Book A Trail Session</button>
-          <button className="message">Send message</button>
+          <button onClick={goToChatHandler} className="message">
+            Send message
+          </button>
           <button className="saveToMyList">Save To My List</button>
 
           <div className="bookedLessons">

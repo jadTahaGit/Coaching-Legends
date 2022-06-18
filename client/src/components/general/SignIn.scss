@@ -1,23 +1,8 @@
 @import "../Globals.scss";
 
 .SignIn {
-  position: fixed;
-  top: 360px;
-  left: 720px;
-  z-index: 1;
-  //   margin: 0 720px;
-  padding: 25px 20px;
-  background-color: $white__color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  margin: 0 auto;
+  max-width: 25vw;
 
   .closeBtn {
     position: absolute;
@@ -31,24 +16,34 @@
     }
   }
 
-  h1 {
-    margin-bottom: 5px;
-  }
-
-  input {
-    width: 100%;
-    display: block;
-    background: #ffffff;
-    border: 1px solid #c4c4c4;
-    box-sizing: border-box;
-    height: 50px;
-    width: 100%;
-    padding: 5px 20px;
+  p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
+  }
+
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 46px;
+    margin: 15%;
+  }
+
+  input {
+    width: 90%;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    height: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 5% auto;
   }
 
   .submit {

@@ -1,10 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./SignIn.scss";
-import ReactDOM from "react-router-dom";
 import validation from "./validation";
 import axios from "axios";
 
-const SignIn = ({ trigger, setSignInFormPopUp, setOpacity, setPosition }) => {
+const SignIn = (props) => {
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -48,45 +47,33 @@ const SignIn = ({ trigger, setSignInFormPopUp, setOpacity, setPosition }) => {
     });
   };
 
-  if (trigger) {
-    return (
-      <div className="SignIn">
-        <div className="closeBtn">
-          <button
-            onClick={() => {
-              setSignInFormPopUp(false);
-              setOpacity("100%");
-              setPosition("");
-            }}
-          >
-            X
-          </button>
-        </div>
-        <h1>Sign In to Coachync</h1>
-        <input
-          type="text"
-          placeholder="Email"
-          name="email"
-          onChange={(e) => changeHandler(e)}
-        />
-        {errors.email && <p className="error">{errors.email}</p>}
-        <input
-          type="text"
-          placeholder="Password"
-          name="password"
-          onChange={(e) => changeHandler(e)}
-        />
-        {errors.password && <p className="error">{errors.password}</p>}
-        <input
-          type="submit"
-          className="submit"
-          onClick={(e) => submitHandler(e)}
-        />
+  return (
+    <div className="SignIn">
+      <div className="closeBtn">
+        <button onClick={props.onClose}>X</button>
       </div>
-    );
-  } else {
-    return "";
-  }
+      <h1>Sign In to Coachync</h1>
+      <input
+        type="text"
+        placeholder="Email"
+        name="email"
+        onChange={(e) => changeHandler(e)}
+      />
+      {errors.email && <p className="error">{errors.email}</p>}
+      <input
+        type="text"
+        placeholder="Password"
+        name="password"
+        onChange={(e) => changeHandler(e)}
+      />
+      {errors.password && <p className="error">{errors.password}</p>}
+      <input
+        type="submit"
+        className="submit"
+        onClick={(e) => submitHandler(e)}
+      />
+    </div>
+  );
 };
 
 export default SignIn;
