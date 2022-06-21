@@ -14,7 +14,8 @@ const coachProfile = () => {
   return (
     <div className="CoachProfile">
       <div className="main">
-        <div className="SummaryBox">
+        <div className="SummaryBox"> 
+        its sumamry
           <img src={woman1} alt="" />
           <div className="text-wrapper">
             <div className="title">
