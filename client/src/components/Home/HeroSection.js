@@ -1,5 +1,5 @@
 import "./HeroSection.scss";
-import woman from "./../../assets/Home/woman_noBG.png";
+import woman from "./../../assets/home/woman_noBG.png";
 
 const HeroSection = () => {
   return (

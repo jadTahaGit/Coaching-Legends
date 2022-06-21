@@ -1,6 +1,6 @@
-import topLeftQuatation from "./../../assets/Home/QuoteSection/topLeftQuatation.svg";
-import bottomRightQuatation from "./../../assets/Home/QuoteSection/bottomRightQuatation.svg";
-import girl from "./../../assets/Home/QuoteSection/woman.png";
+import topLeftQuatation from "./../../assets/home/QuoteSection/topLeftQuatation.svg";
+import bottomRightQuatation from "./../../assets/home/QuoteSection/bottomRightQuatation.svg";
+import girl from "./../../assets/home/QuoteSection/woman.png";
 import "./QuoteSection.scss";
 const QuoteSection = () => {
   return (
