@@ -1,0 +1,56 @@
+@import "../Globals.scss";
+
+.UpdateUserProfile {
+  margin: auto;
+
+  .closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: black;
+    font-weight: bold;
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  p {
+    text-align: center;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    // font-size: 18px;
+    line-height: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  input {
+    width: 80%;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    height: 50px;
+    padding: 0 0 0 1%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 2% auto;
+  }
+
+  .error {
+    color: red;
+  }
+  .submit {
+    background-color: $primary__color;
+    color: $white__color;
+  }
+}

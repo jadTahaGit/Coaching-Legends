@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SignIn.scss";
 import validation from "./validation";
 import axios from "axios";
@@ -19,6 +19,14 @@ const SignIn = (props) => {
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();

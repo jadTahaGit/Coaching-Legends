@@ -6,22 +6,55 @@ import arrow from "../../assets/coachProfile/arrow.svg";
 import circle from "../../assets/coachProfile/circle.svg";
 import star from "../../assets/coachProfile/star.svg";
 
-const coachProfile = () => {
+import EditIcon from "@mui/icons-material/Edit";
+import { useState } from "react";
+import UpdateUserInfoForm from "../form/UpdateUserInfoForm";
+
+const CoachProfile = () => {
+  const [values, setValues] = useState({
+    username: "Default",
+    coachType: "Gym Instructor",
+    profileImage: woman1,
+  });
+  const [isEditable, setIsEditable] = useState(false);
+
   const goToChatHandler = () => {
     window.location.href = "/chat";
+  };
+
+  const editProfileHandler = () => {
+    setIsEditable((prevState) => !prevState);
+  };
+
+  const handleChange = (values) => {
+    setValues(values);
   };
 
   return (
     <div className="CoachProfile">
       <div className="main">
         <div className="SummaryBox">
-          <img src={woman1} alt="" />
+          <EditIcon onClick={editProfileHandler} className="EditIcon" />
+          {isEditable ? (
+            <UpdateUserInfoForm
+              uname={values.username}
+              ctype={values.coachType}
+              pImage={values.profileImage}
+              onUpdate={handleChange}
+              onClose={editProfileHandler}
+            />
+          ) : (
+            ""
+          )}
+
+          <img src={values.profileImage} alt="" />
           <div className="text-wrapper">
             <div className="title">
-              <h2 className="Coach__Name">Kimberly C.</h2>
+              <h2 className="Coach__Name">{values.username}</h2>
               <img src={americaFlag} alt="" className="flag" />
             </div>
-            <p className="coach__type">Motivational Coach</p>
+            <p className="coach__type">{values.coachType}</p>
+
             <div className="unkown">
               <img src="" alt="" />
               <p className="unknown">unknown</p>
@@ -31,7 +64,7 @@ const coachProfile = () => {
               <p>
                 Speaks <span>English</span>
               </p>
-              <div className="native">Nativ</div>
+              <div className="native">Native</div>
             </div>
           </div>
         </div>
@@ -153,4 +186,4 @@ const coachProfile = () => {
   );
 };
 
-export default coachProfile;
+export default CoachProfile;

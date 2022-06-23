@@ -15,4 +15,21 @@ const validation = (values) => {
   return errors;
 };
 
+export const formUpdateValidation = (values) => {
+  let errors = {};
+
+  if (!values.username) {
+    errors.username = "Please enter a valid Username.";
+  } else if (values.username.length < 5) {
+    errors.username = "Username should be at least 5 characters long.";
+  }
+
+  if (!values.coachType) {
+    errors.coachType = "Please enter a valid Coach Type.";
+  } else if (values.coachType.length < 5) {
+    errors.coachType = "Coach Type must be at least 5 characters long.";
+  }
+  return errors;
+};
+
 export default validation;

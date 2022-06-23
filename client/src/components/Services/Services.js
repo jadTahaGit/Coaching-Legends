@@ -7,15 +7,14 @@ import woman from "../../assets/Services/woman.jpg";
 import star from "../../assets/Services/star.svg";
 import hamburger from "../../assets/Services/hamburger.svg";
 
-const HomeBody = (opacity, setOpacity) => {
+const HomeBody = () => {
   const goToProfileScreen = () => {
-    window.location.href = "/profile";
+    window.location.href = "/service";
   };
   return (
     <div
       onClick={goToProfileScreen}
       className="HomeBody"
-      style={{ opacity: opacity }}
     >
       <div className="">
         <div className="main">

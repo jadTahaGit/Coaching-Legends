@@ -32,8 +32,21 @@
 
     .SummaryBox {
       background-color: $white__color;
+      position: relative;
       display: flex;
       gap: 20px;
+
+      .EditIcon {
+        margin-left: 95%;
+        margin-top: 1%;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      .EditIcon:hover {
+        cursor: pointer;
+        background-color: #d3d3d3;
+      }
 
       .text-wrapper {
         padding: 10px;
