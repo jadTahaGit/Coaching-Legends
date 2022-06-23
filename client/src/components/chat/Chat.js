@@ -1,8 +1,8 @@
 import "./Chat.scss";
 
 import woman from "../../assets/Services/woman.jpg";
-import ideal from "../../assets/Home/ideal.svg";
-import verified from "../../assets/Home/verified.svg";
+import ideal from "../../assets/home/ideal.svg";
+import verified from "../../assets/home/verified.svg";
 
 const Chat = () => {
   return (
