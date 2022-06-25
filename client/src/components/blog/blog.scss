@@ -1,0 +1,254 @@
+@import "../Globals.scss";
+
+.Blog {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+    .blog__container {
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .blog__row {
+            display: flex;
+            flex-direction: row;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            gap: 30px;
+            height: 100%;
+
+            .page__title {
+                color: $primary__color;
+                font-size: 40px;
+                font-weight: 500;
+            }
+
+            .left__side {
+                width: 70%;
+                height: 100%;
+
+                .blog__image {
+                    width: 100%;
+                    height: 350px;
+                    border-radius: $border__radius;
+                }
+
+                p {
+                    margin-top: 20px;
+                    font-size: 17px;
+                    line-height: 1.5;
+
+                    .blog__list {
+                        margin-left: 50px;
+                        li::marker {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .block__quote {
+                    font-style: italic;
+                    font-weight: lighter;
+                    letter-spacing: -0.003em;
+                    line-height: 20px;
+                    border-left: 2px solid #111;
+                    padding-left: 10px;
+                }
+
+                .devider {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+
+                    hr {
+                        display: block;
+                        box-sizing: border-box;
+                        border: 2px dashed $primary__color;
+                        box-shadow: 0 0 10px 0 $light__primary__color;
+                        width: 10%;
+                        text-align: center;
+                    }
+                }
+
+                .write__comment {
+                    margin-top: 20px;
+
+                    .write__comment__control {
+                        display: block;
+                        width: 100%;
+                        padding: 1rem 0.75rem;
+                        margin-bottom: 10px;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        resize: vertical;
+                        outline: none;
+                        color: #212529;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border-radius: $border__radius;
+                        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    }
+    
+                    .write__comment__control:focus {
+                        color: #212529;
+                        background-color: #fff;
+                        border-color: $light__primary__color;
+                        outline: 0;
+                        box-shadow: 0 0 0 0.25rem $light__primary__color;
+                    }
+
+                    .btn__primary {
+                        margin-inline-start: 2px;
+                        margin-inline-end: 2px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        width: 10%;
+                        text-align: center;
+                        background-color: $primary__color;
+                        color: $white__color;
+                        border: 1px solid $primary__color;
+                        border-radius: 4px;
+                        transition: 0.4s;
+                        font-size: 16px;
+                    }
+
+                    .btn__primary:hover {
+                      cursor: pointer;
+                      box-shadow: $secondary__color 0px 2px 8px;
+                      background-color: $secondary__color;
+                      color: $black__color;
+                      border: 1px solid $secondary__color;
+                    }
+
+                    .comments__block {
+                        margin-top: 10px;
+                        height: 200px;
+                        overflow-y: auto;
+                        background-color: #fefefe;
+                        border-radius: $border__radius;
+                        padding-left: 10px;
+                        padding-right: 10px;
+
+                        .comment__element {
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid $light__gray__color;
+
+                            .comment__header {
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                display: flex;
+                                flex-direction: row;
+
+                                .comment__avatar {
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 50%;
+                                }
+
+                                .comment__coach__info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding-left: 10px;
+                                    justify-content: center;
+
+                                    .coach__name {
+                                        color: $primary__color;
+                                        font-weight: bold;
+                                    }
+
+                                    .comment__time {
+                                        color: $gray__color;
+                                        font-style: italic;
+                                        font-weight: lighter;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            .comment__body {
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right__side {
+                width: 30%;
+                position: relative;
+
+                .coach__info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 100px;
+
+                    .coach__avatar {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                    }
+    
+                    .coach__name {
+                        color: $primary__color;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+    
+                    .coach__followers {
+                        margin-top: 5px;
+                        color: $gray__secondary__color;
+                    }
+    
+                    .coach__description {
+                        margin-top: 10px;
+                        color: $gray__secondary__color;
+                        font-weight: lighter;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

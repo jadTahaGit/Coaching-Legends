@@ -10,6 +10,7 @@ import Chat from "./components/chat/Chat";
 import Service from "./components/servicePage/Service";
 import Home from "./components/Home.js";
 import Blogs from "./components/blog/blogs";
+import Blog from "./components/blog/Blog";
 
 function App() {
   return (
@@ -71,6 +72,14 @@ function App() {
             element={
               <Fragment>
                 <Blogs />
+              </Fragment>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <Fragment>
+                <Blog />
               </Fragment>
             }
           />
