@@ -9,11 +9,11 @@ const Blog = () => {
         <div className="Blog">
             <div className="blog__container">
                 <div className="blog__row">
-                    <h1 className="page__title">Why Cycling Improves My Thinking</h1>
-                </div>
-                <div className="blog__row">
                     <div className="left__side">
-                        <img src={bike} alt="Blog" className="blog__image" />
+                        <div className="blog__header">
+                            <h1 className="page__title">Why Cycling Improves My Thinking</h1>
+                            <img src={bike} alt="Blog" className="blog__image" />
+                        </div>
                         <p>
                             If I were worried? A brisk ride would part the clouds. If I felt pissy, it’d expel the yellow bile. If I were blocked or stuck on a piece of work — or uncertain about a decision? A ride brought blessed clarity. I’d return home knowing exactly what to do.
                         </p>
