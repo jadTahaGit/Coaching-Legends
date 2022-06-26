@@ -1,6 +1,6 @@
 import "./Chat.scss";
 
-import woman from "../../assets/Services/woman.jpg";
+import woman from "../../assets/services/woman.jpg";
 import ideal from "../../assets/home/ideal.svg";
 import verified from "../../assets/home/verified.svg";
 

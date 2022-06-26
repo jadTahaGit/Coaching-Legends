@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SignIn.scss";
-import validation from "./validation";
+import validation from "../general/validation";
 import axios from "axios";
 
 const SignIn = (props) => {

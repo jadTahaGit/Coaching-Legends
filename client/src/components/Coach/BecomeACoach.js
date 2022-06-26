@@ -1,5 +1,5 @@
 import "./BecomeACoach.scss";
-import girlCoach from "./../../assets/client/BecomeACoach/girlCoach.png";
+import girlCoach from "./../../assets/home/becomeACoach/girlCoach.png";
 
 const BecomeACoach = () => {
   return (

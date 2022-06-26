@@ -1,10 +1,10 @@
 import "./Home.scss";
-import HeroSection from "./Home/HeroSection";
-import CoachingsOverview from "./Home/CoachingsOverview";
-import Benefits from "./Home/Benefits";
-import HowWeWork from "./Home/HowWeWork";
-import HappyStart from "./Home/HappyStart";
-import QuoteSection from "./Home/QuoteSection";
+import HeroSection from "./home/HeroSection";
+import CoachingsOverview from "./home/CoachingsOverview";
+import Benefits from "./home/Benefits";
+import HowWeWork from "./home/HowWeWork";
+import HappyStart from "./home/HappyStart";
+import QuoteSection from "./home/QuoteSection";
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./SignUpForm.scss";
 import axios from "axios";
-import validation from "./validation";
+import validation from "./../general/validation";
 
 const SignUpForm = (props) => {
   const [values, setValues] = useState({

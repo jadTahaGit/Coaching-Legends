@@ -4,8 +4,8 @@ import Light_Logo from "./../../assets/logo-light.svg";
 import searchIcon from "./../../assets/general/search.svg";
 import { Fragment, useState } from "react";
 import Modal from "../UI/Modal";
-import SignUpForm from "./SignUpForm";
-import SignIn from "./SignIn";
+import SignUpForm from "./../form/SignUpForm";
+import SignIn from "./../form/SignIn";
 
 const Navbar = () => {
   const [signUpFormPopUp, setSignUpFormPopUp] = useState(false);
@@ -46,22 +46,22 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="nav__list">
-            <Link to="/search">About US</Link>
+            <Link to="/search">About Us</Link>
           </li>
           <li className="nav__list">
-            <Link to="/blogs">BLOG</Link>
+            <Link to="/blogs">Blog</Link>
           </li>
           <li className="nav__list">
-            <Link to="/search">CONTACT</Link>
+            <Link to="/search">Contact</Link>
           </li>
           <li className="nav__list">
             <button className="loginBtn" onClick={loginButtonHandler}>
-              LOGIN
+              Login
             </button>
           </li>
           <li className="nav__list">
             <button className="registerBtn" onClick={registerButtonHandler}>
-              REGISTER
+              Register
             </button>
           </li>
         </ul>
