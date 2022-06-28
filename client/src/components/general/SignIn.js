@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./SignIn.scss";
 import validation from "./validation";
@@ -52,9 +53,10 @@ const SignIn = (props) => {
       <div className="closeBtn">
         <button onClick={props.onClose}>X</button>
       </div>
-      <h1>Sign In to Coachync</h1>
+      <h1> Sign In to Coachync 
+      </h1>
       <input
-        type="text"
+        type="email"
         placeholder="Email"
         name="email"
         onChange={(e) => changeHandler(e)}
