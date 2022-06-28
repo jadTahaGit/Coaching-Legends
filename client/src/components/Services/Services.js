@@ -1,21 +1,20 @@
 import "./Services.scss";
 
-import america from "../../assets/Services/america.svg";
-import heart from "../../assets/Services/heart.svg";
-import grayHeart from "../../assets/Services/grayHeart.svg";
-import woman from "../../assets/Services/woman.jpg";
-import star from "../../assets/Services/star.svg";
-import hamburger from "../../assets/Services/hamburger.svg";
+import america from "../../assets/services/america.svg";
+import heart from "../../assets/services/heart.svg";
+import grayHeart from "../../assets/services/grayHeart.svg";
+import woman from "../../assets/services/woman.jpg";
+import star from "../../assets/services/star.svg";
+import hamburger from "../../assets/services/hamburger.svg";
 
-const HomeBody = (opacity, setOpacity) => {
+const HomeBody = () => {
   const goToProfileScreen = () => {
-    window.location.href = "/profile";
+    window.location.href = "/service";
   };
   return (
     <div
       onClick={goToProfileScreen}
       className="HomeBody"
-      style={{ opacity: opacity }}
     >
       <div className="">
         <div className="main">

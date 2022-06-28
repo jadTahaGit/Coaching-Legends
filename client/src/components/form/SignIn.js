@@ -1,7 +1,11 @@
+<<<<<<< HEAD:client/src/components/general/SignIn.js
 
 import React, { useState } from "react";
+=======
+import React, { useEffect, useState } from "react";
+>>>>>>> 8054022d04e88b9699dbed518bbaa76f3c718d35:client/src/components/form/SignIn.js
 import "./SignIn.scss";
-import validation from "./validation";
+import validation from "../general/validation";
 import axios from "axios";
 
 const SignIn = (props) => {
@@ -20,6 +24,14 @@ const SignIn = (props) => {
       [e.target.name]: e.target.value,
     });
   };
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();
