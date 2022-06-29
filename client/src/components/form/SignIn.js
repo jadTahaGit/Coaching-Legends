@@ -1,9 +1,8 @@
-<<<<<<< HEAD:client/src/components/general/SignIn.js
+// HEAD:client/src/components/general/SignIn.js
 
-import React, { useState } from "react";
-=======
 import React, { useEffect, useState } from "react";
->>>>>>> 8054022d04e88b9699dbed518bbaa76f3c718d35:client/src/components/form/SignIn.js
+
+// 8054022d04e88b9699dbed518bbaa76f3c718d35:client/src/components/form/SignIn.js
 import "./SignIn.scss";
 import validation from "../general/validation";
 import axios from "axios";
@@ -75,7 +74,7 @@ const SignIn = (props) => {
       />
       {errors.email && <p className="error">{errors.email}</p>}
       <input
-        type="text"
+        type="password"
         placeholder="Password"
         name="password"
         onChange={(e) => changeHandler(e)}
