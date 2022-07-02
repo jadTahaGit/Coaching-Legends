@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.311c662d.css",
-    "main.js": "/static/js/main.97704f4f.js",
+    "main.css": "/static/css/main.6f247ecb.css",
+    "main.js": "/static/js/main.feb8e4c9.js",
     "static/media/boyStudent.png": "/static/media/boyStudent.d1260743437408473a27.png",
     "static/media/happyClients.png": "/static/media/happyClients.619dd9546c066fc162d6.png",
     "static/media/woman.jpg": "/static/media/woman.5d854577da6f45956b39.jpg",
@@ -14,6 +14,7 @@
     "static/media/servicePic_01.png": "/static/media/servicePic_01.1c2c8ff1683095e9640a.png",
     "static/media/calender.png": "/static/media/calender.5012e5856fb45be710a5.png",
     "static/media/bike.jpeg": "/static/media/bike.6f62e7bf5cdba467320d.jpeg",
+    "static/media/jad.jpeg": "/static/media/jad.10096e1096afbb8f7b2b.jpeg",
     "static/media/woman1.png": "/static/media/woman1.aad5dd57baa226afac00.png",
     "static/media/ideal.svg": "/static/media/ideal.3185ec78583b7865fe715646910dfb5e.svg",
     "static/media/verified.svg": "/static/media/verified.03bd461a216ecd1569a2e043e3ea5d20.svg",
@@ -49,11 +50,11 @@
     "static/media/circle.svg": "/static/media/circle.34b40cd40dc99b3997a5395f6c80c691.svg",
     "static/media/plus.svg": "/static/media/plus.a9afe3b0b3c0a2daffb506752645f456.svg",
     "static/media/blueTick.svg": "/static/media/blueTick.6e43e855165f25b23699c8822c64e59a.svg",
-    "main.311c662d.css.map": "/static/css/main.311c662d.css.map",
-    "main.97704f4f.js.map": "/static/js/main.97704f4f.js.map"
+    "main.6f247ecb.css.map": "/static/css/main.6f247ecb.css.map",
+    "main.feb8e4c9.js.map": "/static/js/main.feb8e4c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.311c662d.css",
-    "static/js/main.97704f4f.js"
+    "static/css/main.6f247ecb.css",
+    "static/js/main.feb8e4c9.js"
   ]
 }
