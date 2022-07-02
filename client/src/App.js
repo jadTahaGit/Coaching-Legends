@@ -1,16 +1,17 @@
-import React, { Fragment } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.scss";
-import Navbar from "./components/general/Navbar";
-import Footer from "./components/general/Footer";
-import Coaches from "./components/Coaches";
-import HomeBody from "./components/services/Services";
-import CoachProfile from "./components/profile/Profile";
-import Chat from "./components/chat/Chat";
-import Service from "./components/servicePage/Service";
-import Home from "./components/Home.js";
-import Blogs from "./components/blog/blogs";
-import Blog from "./components/blog/Blog";
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Navbar from './components/general/Navbar';
+import Footer from './components/general/Footer';
+import Coaches from './components/Coaches';
+import HomeBody from './components/services/Services';
+import CoachProfile from './components/profile/Profile';
+import newCoachProfile from './components/profile/newProfile';
+import Chat from './components/chat/Chat';
+import Service from './components/servicePage/Service';
+import Home from './components/Home.js';
+import Blogs from './components/blog/blogs';
+import Blog from './components/blog/Blog';
 
 function App() {
   return (
@@ -45,6 +46,14 @@ function App() {
           />
           <Route
             path="/profile"
+            element={
+              <Fragment>
+                <CoachProfile />
+              </Fragment>
+            }
+          />{' '}
+          <Route
+            path="/newprofile"
             element={
               <Fragment>
                 <CoachProfile />
