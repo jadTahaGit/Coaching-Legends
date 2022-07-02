@@ -6,7 +6,7 @@ import Footer from './components/general/Footer';
 import Coaches from './components/Coaches';
 import HomeBody from './components/services/Services';
 import CoachProfile from './components/profile/Profile';
-import newCoachProfile from './components/profile/newProfile';
+import NewProfile from './components/profile/NewProfile';
 import Chat from './components/chat/Chat';
 import Service from './components/servicePage/Service';
 import Home from './components/Home.js';
@@ -56,7 +56,7 @@ function App() {
             path="/newprofile"
             element={
               <Fragment>
-                <CoachProfile />
+                <NewProfile />
               </Fragment>
             }
           />

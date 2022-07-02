@@ -1,4 +1,120 @@
 @import '../Globals.scss';
 
-.CoachProfile {
+.newCoachProfile {
+  padding: 80px 300px;
+  background-color: $very__light__blue;
+  display: flex;
+  gap: 80px;
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .leftSidebar {
+    display: flex;
+    flex-direction: column;
+    .userInfoBox {
+      padding: 20px;
+      background-color: $white__color;
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .imgWrapper {
+          background-color: $primary__color;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+
+          img {
+            width: 100px;
+            height: auto;
+            background-color: aquamarine;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0px;
+          * {
+            margin-bottom: -10px;
+          }
+          .rating {
+            margin-right: 4px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            margin-left: 10px; // remove margin left from star 1
+            .stars {
+              img {
+                margin-left: -10px;
+                width: 20px;
+                height: auto;
+              }
+            }
+            .avg_rating {
+              margin-right: 4px;
+              color: $star__color;
+              margin-left: -6px;
+            }
+            .num_of_orders {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 15px;
+              /* identical to box height */
+              letter-spacing: 0.01em;
+
+              color: #57595f;
+              margin-right: 4px;
+            }
+          }
+        }
+
+        .hrGray {
+          background-color: $light__gray__color;
+        }
+
+        .btnWrapper {
+          padding: 10px;
+
+          .btn {
+            padding: 10px;
+            border: none;
+            background-color: $primary__color;
+            color: $white__color;
+          }
+        }
+      }
+      .middleSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .country {
+        }
+        .memberSince {
+        }
+      }
+    }
+  }
+
+  .main {
+  }
 }
