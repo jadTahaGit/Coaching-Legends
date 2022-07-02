@@ -1,25 +1,25 @@
-import "./Profile.scss";
-import woman1 from "../../assets/coachProfile/woman1.png";
-import americaFlag from "../../assets/coachProfile/america.svg";
-import speaks from "../../assets/coachProfile/speaks.svg";
-import arrow from "../../assets/coachProfile/arrow.svg";
-import circle from "../../assets/coachProfile/circle.svg";
-import star from "../../assets/coachProfile/star.svg";
+import './Profile.scss';
+import woman1 from '../../assets/coachProfile/woman1.png';
+import americaFlag from '../../assets/coachProfile/america.svg';
+import speaks from '../../assets/coachProfile/speaks.svg';
+import arrow from '../../assets/coachProfile/arrow.svg';
+import circle from '../../assets/coachProfile/circle.svg';
+import star from '../../assets/coachProfile/star.svg';
 
-import EditIcon from "@mui/icons-material/Edit";
-import { useState } from "react";
-import UpdateUserInfoForm from "../form/UpdateUserInfoForm";
+import EditIcon from '@mui/icons-material/Edit';
+import { useState } from 'react';
+import UpdateUserInfoForm from '../form/UpdateUserInfoForm';
 
 const CoachProfile = () => {
   const [values, setValues] = useState({
-    username: "Default",
-    coachType: "Gym Instructor",
+    username: 'Default',
+    coachType: 'Gym Instructor',
     profileImage: woman1,
   });
   const [isEditable, setIsEditable] = useState(false);
 
   const goToChatHandler = () => {
-    window.location.href = "/chat";
+    window.location.href = '/chat';
   };
 
   const editProfileHandler = () => {
@@ -44,7 +44,7 @@ const CoachProfile = () => {
               onClose={editProfileHandler}
             />
           ) : (
-            ""
+            ''
           )}
 
           <img src={values.profileImage} alt="" />

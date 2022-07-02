@@ -1,8 +1,8 @@
-import "./Chat.scss";
+import './Chat.scss';
 
-import woman from "../../assets/services/woman.jpg";
-import ideal from "../../assets/home/ideal.svg";
-import verified from "../../assets/home/verified.svg";
+import woman from '../../assets/services/woman.jpg';
+import ideal from '../../assets/home/ideal.svg';
+import verified from '../../assets/home/verified.svg';
 
 const Chat = () => {
   return (
@@ -142,7 +142,7 @@ const Chat = () => {
             </div>
             <div className="message__box__content">
               <div className="message__box sent">
-                Hey Man how are you doing?{" "}
+                Hey Man how are you doing?{' '}
               </div>
               <div className="message__box sent">I am Jad</div>
               <div className="message__box sent">.</div>
@@ -182,7 +182,7 @@ const Chat = () => {
             </div>
             <div className="message__box__content">
               <div className="message__box sent">
-                Hey Man how are you doing?{" "}
+                Hey Man how are you doing?{' '}
               </div>
               <div className="message__box sent">
                 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
