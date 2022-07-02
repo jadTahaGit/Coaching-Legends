@@ -113,6 +113,74 @@
         }
       }
     }
+
+    .user2ndInfoBox {
+      background-color: $white__color;
+      padding: 40px;
+      .Description {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $gray__color;
+
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+      .languages {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $gray__color;
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+      .skillTests {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $gray__color;
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+      .linkedAccounts {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $gray__color;
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+      .skills {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $gray__color;
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+      .education {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $gray__color;
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+      .certification {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        .title {
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 
   .main {

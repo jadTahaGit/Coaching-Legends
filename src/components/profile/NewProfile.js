@@ -63,6 +63,8 @@ const CoachProfile = () => {
             </p>
           </div>
           <div className="languages">
+            <h3 className="title">Languages</h3>
+
             <div className="language">
               English - <span className="langLevel">Fluent</span>
             </div>
@@ -74,11 +76,14 @@ const CoachProfile = () => {
             </div>
           </div>
           <div className="skillTests">
+            <h3 className="title">Skills</h3>
+
             <div className="test">
               English Language <span className="testGrade"></span>/10
             </div>
           </div>
           <div className="linkedAccounts">
+            <h3 className="title">Linked Accounts</h3>
             <div className="account">
               <GoogleIcon></GoogleIcon>
               <span>Google</span>
@@ -89,10 +94,34 @@ const CoachProfile = () => {
             </div>
           </div>
           <div className="skills">
+            <h3 className="title">Skills</h3>
             <div className="skill"> Goal setting</div>
             <div className="skill"> Psychological counseling</div>
             <div className="skill">Mindset coaching</div>
             <div className="skill">Mental health</div>
+          </div>
+          <div className="education">
+            <h3 className="title">Education</h3>
+            <div className="infoBox">
+              <p className="infoTitle">B.Sc. - Psychology</p>
+              <p className="info">
+                Faculty of philosophy, University of Nis, Serbia, Graduated 2017
+              </p>
+            </div>{' '}
+            <div className="infoBox">
+              <p className="infoTitle">B.Sc. - Psychology</p>
+              <p className="info">
+                Faculty of philosophy, University of Nis, Serbia, Graduated 2017
+              </p>
+            </div>
+          </div>
+
+          <div className="certification">
+            <h3 className="title">Certifications</h3>
+            <div className="infoBox">
+              <div className="title">TEFL Certificate</div>
+              <div className="info">theteflcertificate.com 2022</div>
+            </div>
           </div>
         </div>
       </div>
