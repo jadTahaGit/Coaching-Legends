@@ -1,6 +1,6 @@
 import React from "react";
 import "./blog.scss";
-import BlogCard from "../UI/BlogCard";
+import BlogCard from "../ui/BlogCard";
 import woman1 from "../../assets/coachProfile/woman1.png";
 import bike from "../../assets/blog/bike.jpeg";
 

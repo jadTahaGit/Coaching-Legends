@@ -1,6 +1,6 @@
 import React from "react";
 import "./blogs.scss";
-import BlogCard from "../UI/BlogCard";
+import BlogCard from "../ui/BlogCard";
 import bike from "../../assets/blog/bike.jpeg";
 
 const Blogs = () => {

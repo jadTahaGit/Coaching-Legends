@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Light_Logo from "./../../assets/logo-light.svg";
 import searchIcon from "./../../assets/general/search.svg";
 import { Fragment, useState } from "react";
-import Modal from "../UI/Modal";
+import Modal from "../ui/Modal";
 import SignUpForm from "./../form/SignUpForm";
 import SignIn from "./../form/SignIn";
 

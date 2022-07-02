@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { formUpdateValidation } from "../general/validation";
-import Modal from "../UI/Modal";
+import Modal from "../ui/Modal";
 import "./UpdateUserInfoForm.scss";
 
 const UpdateUserInfoForm = (props) => {
