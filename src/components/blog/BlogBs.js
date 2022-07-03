@@ -147,7 +147,7 @@ const BlogBs = () => {
                     <h2 className="page__title">Other Blogs From This Coach</h2>
                 </div>
                 <div className="row">
-                    <div className="col-12 col-md-6 col-lg-4 pe-2">
+                    <div className="col-12 col-md-6 col-lg-4 pe-2 mb-2 mb-lg-0">
                         <BlogCardBs
                             title={"Why Cycling Improves My Thinking"}
                             description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
@@ -156,7 +156,7 @@ const BlogBs = () => {
                             image={bike}
                         />
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 px-2">
+                    <div className="col-12 col-md-6 col-lg-4 px-2 mb-2 mb-lg-0">
                         <BlogCardBs
                             title={"Why Cycling Improves My Thinking"}
                             description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
@@ -165,7 +165,7 @@ const BlogBs = () => {
                             image={bike}
                         />
                     </div>
-                    <div className="col-12 col-md-6 col-lg-4 ps-2">
+                    <div className="col-12 col-md-6 col-lg-4 ps-2 mb-2 mb-lg-0">
                         <BlogCardBs
                             title={"Why Cycling Improves My Thinking"}
                             description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
