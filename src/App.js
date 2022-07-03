@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/general/Navbar';
 import Footer from './components/general/Footer';
 import Coaches from './components/Coaches';
@@ -11,8 +12,8 @@ import Chat from './components/chat/Chat';
 import Service from './components/servicePage/Service';
 import Home from './components/Home.js';
 import Blogs from './components/blog/Blogs';
+import BlogsBs from './components/blog/BlogsBs';
 import Blog from './components/blog/Blog';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -82,6 +83,14 @@ function App() {
             element={
               <Fragment>
                 <Blogs />
+              </Fragment>
+            }
+          />
+          <Route
+            path="/blogsbs"
+            element={
+              <Fragment>
+                <BlogsBs />
               </Fragment>
             }
           />
