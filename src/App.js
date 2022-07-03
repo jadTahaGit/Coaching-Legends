@@ -14,6 +14,7 @@ import Home from './components/Home.js';
 import Blogs from './components/blog/Blogs';
 import BlogsBs from './components/blog/BlogsBs';
 import Blog from './components/blog/Blog';
+import BlogBs from './components/blog/BlogBs';
 
 function App() {
   return (
@@ -99,6 +100,14 @@ function App() {
             element={
               <Fragment>
                 <Blog />
+              </Fragment>
+            }
+          />
+          <Route
+            path="/blogbs"
+            element={
+              <Fragment>
+                <BlogBs />
               </Fragment>
             }
           />
