@@ -4,6 +4,7 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/general/Navbar';
 import Footer from './components/general/Footer';
+import FooterBs from './components/general/FooterBs';
 import Coaches from './components/Coaches';
 import HomeBody from './components/services/Services';
 import CoachProfile from './components/profile/Profile';
@@ -114,6 +115,9 @@ function App() {
         </Routes>
       </div>
       <Footer />
+
+      {/* responsive footer */}
+      {/* <FooterBs /> */}
     </Router>
   );
 }

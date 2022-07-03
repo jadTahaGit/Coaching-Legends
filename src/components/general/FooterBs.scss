@@ -1,0 +1,19 @@
+@import "../Globals.scss";
+
+.Footer {
+    .footer__link {
+        text-decoration: none;
+    }
+
+    .footer__top {
+        .footer__link {
+            color: $light__primary__color;
+        }
+    }
+
+    .footer__bottom {
+        .footer__link {
+            color: $primary__color;
+        }
+    }
+}
