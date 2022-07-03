@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/general/Navbar';
+import NavbarBs from './components/general/NavbarBs';
 import Footer from './components/general/Footer';
 import FooterBs from './components/general/FooterBs';
 import Coaches from './components/Coaches';
@@ -21,7 +22,8 @@ function App() {
   return (
     <Router>
       <div className="App" id="App">
-        <Navbar />
+        {/* <Navbar /> */}
+        <NavbarBs />
         <Routes>
           <Route
             path="/loggedin"
@@ -114,10 +116,10 @@ function App() {
           />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
 
       {/* responsive footer */}
-      {/* <FooterBs /> */}
+      <FooterBs />
     </Router>
   );
 }
