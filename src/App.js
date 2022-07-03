@@ -10,8 +10,9 @@ import NewProfile from './components/profile/NewProfile';
 import Chat from './components/chat/Chat';
 import Service from './components/servicePage/Service';
 import Home from './components/Home.js';
-import Blogs from './components/blog/blogs';
+import Blogs from './components/blog/Blogs';
 import Blog from './components/blog/Blog';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

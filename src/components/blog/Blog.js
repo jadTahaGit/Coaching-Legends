@@ -1,5 +1,5 @@
 import React from "react";
-import "./blog.scss";
+import "./Blog.scss";
 import BlogCard from "../ui/BlogCard";
 import woman1 from "../../assets/coachProfile/woman1.png";
 import bike from "../../assets/blog/bike.jpeg";
