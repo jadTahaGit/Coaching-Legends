@@ -143,8 +143,8 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-                <div className="blog__row">
-                    <h1 className="page__title">Other Blogs From This Coach</h1>
+                <div className="blog__row other__blogs">
+                    <h2 className="page__title">Other Blogs From This Coach</h2>
                 </div>
                 <div className="blog__row">
                     <BlogCard
