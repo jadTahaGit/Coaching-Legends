@@ -184,5 +184,15 @@
   }
 
   .main {
+    .cards_wrapper {
+      
+      display: grid;
+      grid-template-columns: 350px 350px ;
+      gap: 20px;
+    }
+    .title  {
+      font-size: larger;
+      font-weight: bolder;
+    }
   }
 }
