@@ -1,6 +1,6 @@
 @import '../Globals.scss';
 
-.navWrapper {
+.navIconWrapper {
   display: none;
   background-color: $white__color;
   border-radius: 50%;
@@ -39,6 +39,15 @@
     font-style: normal;
     font-weight: normal;
     color: $white__color;
+  }
+
+  .closeIcon {
+    display: none;
+    background-color: $white__color;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    z-index: 999;
   }
 
   .logo__wrapper {
@@ -180,7 +189,7 @@
 }
 
 @media (max-width: 900px) {
-  .navWrapper {
+  .navIconWrapper {
     display: flex;
 
     .navIcon {
@@ -190,5 +199,8 @@
 
   .Navbar {
     display: none;
+    .closeIcon {
+      display: block;
+    }
   }
 }

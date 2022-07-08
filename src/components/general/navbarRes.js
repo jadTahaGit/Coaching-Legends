@@ -1,20 +1,20 @@
-const navIconEL = document.querySelector('.navWrapper');
-const closeIconEl = document.querySelector('.closeIcon');
-const navbar = document.querySelector('.Navbar');
-console.log(navbar);
-// const portfolioSectionEl = document.querySelector('body');
-
-const openNavbar = () => {
-  console.log('Hey');
-  navbar.style.display = 'flex';
-  navIconEL.style.display = 'none';
-  closeIconEl.style.display = 'block';
+export const openNavbar = (nav, navList, navIcon, closeBtn) => {
+  nav.style.display = 'flex';
+  nav.style.flexDirection = 'column';
+  navList.style.display = 'flex';
+  navList.style.flexDirection = 'column';
+  navList.style.gap = '1rem';
+  navIcon.style.display = 'none';
+  closeBtn.style.display = 'block';
   //   portfolioSectionEl.style.marginTop = '32rem';
 };
 
-const closeNavbar = () => {
-  navbar.style.display = 'none';
-  closeIconEl.style.display = 'none';
-  navIconEL.style.display = 'block';
+export const closeNavbar = (nav, navList, navIcon, closeBtn) => {
+  navList.style.flexDirection = 'row';
+  navList.style.display = 'flex';
+  nav.style.flexDirection = 'row';
+  nav.style.display = 'none';
+  closeBtn.style.display = 'none';
+  navIcon.style.display = 'block';
   //   portfolioSectionEl.style.marginTop = '0';
 };
