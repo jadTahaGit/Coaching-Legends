@@ -1,5 +1,5 @@
-import "./HappyStart.scss";
-import happyClients from "./../../assets/home/happyStart/happyClients.png";
+import './HappyStart.scss';
+import happyClients from './../../assets/home/happyStart/happyClients.png';
 
 const HappyStart = () => {
   return (

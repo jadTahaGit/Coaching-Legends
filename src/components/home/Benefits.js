@@ -1,15 +1,15 @@
-import React from "react";
-import "./Benefits.scss";
-import global from "../../assets/home/benefits/global.svg";
-import expert from "../../assets/home/benefits/expert.svg";
-import verified from "../../assets/home/benefits/verified.svg";
-import clock from "../../assets/home/benefits/clock.svg";
-import dollar from "../../assets/home/benefits/dollar.svg";
-import search from "../../assets/home/benefits/search.svg";
-import calender from "../../assets/home/benefits/calender.svg";
-import thunder from "../../assets/home/benefits/thunder.svg";
-import confidence from "../../assets/home/benefits/confidence.svg";
-import globalViolet from "../../assets/home/benefits/global__violet.svg";
+import React from 'react';
+import './Benefits.scss';
+import global from '../../assets/home/benefits/global.svg';
+import expert from '../../assets/home/benefits/expert.svg';
+import verified from '../../assets/home/benefits/verified.svg';
+import clock from '../../assets/home/benefits/clock.svg';
+import dollar from '../../assets/home/benefits/dollar.svg';
+import search from '../../assets/home/benefits/search.svg';
+import calender from '../../assets/home/benefits/calender.svg';
+import thunder from '../../assets/home/benefits/thunder.svg';
+import confidence from '../../assets/home/benefits/confidence.svg';
+import globalViolet from '../../assets/home/benefits/global__violet.svg';
 
 const Benefits = () => {
   return (
@@ -83,7 +83,7 @@ const Benefits = () => {
         <img src={globalViolet} alt="global icon" />
         <h1>Request a private coach</h1>
         <p>Post your requirements and let tutors find you</p>
-        <button>Post a Request</button>
+        <button class="blueBtn">Post a Request</button>
       </div>
     </div>
   );
