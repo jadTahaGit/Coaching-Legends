@@ -1,11 +1,11 @@
-@import "../Globals.scss";
+@import '../Globals.scss';
 
 .Navbar {
   display: flex;
-  gap: 180px;
+  gap: 18rem;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 180px;
+  padding: 1rem 18rem;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -21,16 +21,20 @@
     color: $white__color;
   }
 
+  .logo__wrapper {
+    margin-left: -0.2rem;
+  }
+
   .Searchbar {
     flex: 1;
     display: flex;
-    gap: 5px;
+    gap: 0.5rem;
     align-items: center;
-    border: 1px  solid $light__primary__color;
-    border-radius: 20px;
+    border: 0.1rem solid $light__primary__color;
+    border-radius: 2rem;
     overflow: hidden;
-    padding: 0 0 0 10px;
-    
+    padding: 0 0 0 1rem;
+
     .iconWrapper {
       img {
         color: $white__color;
@@ -41,8 +45,7 @@
       flex: 1;
       background: none;
       border: none;
-      padding: 10px;
-      
+      padding: 1rem;
     }
     input:focus {
       color: $white__color;
@@ -66,7 +69,7 @@
     }
 
     button {
-      padding: 10px 15px;
+      padding: 1rem 1.5rem;
       border: none;
       background-color: $white__color;
       color: $primary__color;
@@ -76,8 +79,8 @@
   .nav__lists {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 16px;
+    gap: 1.5rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
 
     li {
@@ -90,34 +93,52 @@
       }
 
       a:hover:before {
-        content: "";
+        content: '';
         position: absolute;
-        bottom: -7px;
+        bottom: -0.7rem;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 0.2rem;
         background-color: $white__color;
       }
 
       .loginBtn,
       .registerBtn {
-        padding: 10px 15px;
+        padding: 1rem 1.5rem;
         font-weight: 500;
       }
 
       .loginBtn {
-        margin-left: 5px;
+        margin-left: 0.5rem;
         background: none;
-        border: 1px solid $white__color;
-        border-radius: 20px;
+        border: 0.1rem solid $white__color;
+        border-radius: 2rem;
         color: $white__color;
       }
       .registerBtn {
         background-color: $white__color;
         border: none;
-        border-radius: 20px;
+        border-radius: 2rem;
         color: $primary__color;
       }
     }
+  }
+}
+
+@media (max-width: 1800px) {
+  .Navbar {
+    gap: 12rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .Navbar {
+    gap: 8rem;
+    padding: 1rem 8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Navbar {
   }
 }
