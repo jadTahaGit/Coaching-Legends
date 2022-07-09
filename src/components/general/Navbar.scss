@@ -90,6 +90,7 @@
         text-decoration: none;
         font-weight: 500;
         position: relative;
+        color: $white__color;
       }
 
       a:hover:before {
@@ -140,5 +141,20 @@
 
 @media (max-width: 1200px) {
   .Navbar {
+    gap: 2rem;
+    padding: 1rem 2rem;
+
+    .logo__wrapper {
+      margin-right: -1.6rem;
+    }
+
+    .nav__lists {
+      gap: 0.2rem;
+      font-size: 1.6rem;
+
+      li {
+        margin-left: 0.4rem;
+      }
+    }
   }
 }

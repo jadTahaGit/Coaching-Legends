@@ -3,6 +3,7 @@
 .CoachingsOverview {
   background-color: $light__primary__color;
   position: relative;
+  overflow: hidden;
 
   * {
     margin: 0;
