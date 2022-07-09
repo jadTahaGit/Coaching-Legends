@@ -22,11 +22,15 @@ $border__radius: 4px;
 $transition: 0.4s;
 
 //  ============================
-// Wesbite Font Family
+// Wesbite Font
 //  ============================
 
+html {
+  font-size: 62.5%;
+}
+
 * {
-  font-family: fell, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-family: 'Roboto', fell, Georgia, Cambria, 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: normal;
 }

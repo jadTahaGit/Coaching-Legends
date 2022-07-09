@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@600&display=swap');
 
 .HeroSection {
-  padding: 40px 240px 80px;
+  padding: 4rem 24rem 8rem;
   background: $primary__color;
-  min-height: 800px;
+  min-height: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,27 +17,26 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
   }
 
   img {
-    width: 650px;
+    width: 65rem;
     height: auto;
     position: absolute;
-    bottom: 240px;
-    right: 120px;
+    bottom: 24rem;
+    right: 12rem;
   }
 
   .hero__heading {
     color: $white__color;
-    font-size: 40px;
+    font-size: 4rem;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    line-height: 47px;
+    margin-bottom: 1rem;
+    line-height: 4.7rem;
 
     .Cookie {
       font-family: 'Cookie', cursive;
-      font-size: 60px;
+      font-size: 6rem;
     }
   }
 
@@ -45,24 +44,24 @@
     display: flex;
     align-items: center;
     .search__btn {
-      padding: 14px 30px;
+      padding: 1.4rem 3rem;
       font-family: 'Montserrat';
       font-weight: 600;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
       background-color: $light__primary__color;
       background: radial-gradient(
         circle at center,
         $light__primary__color 0%,
         $secondary__color 100%
       );
-      border-radius: 0px 12px 12px 0px;
+      border-radius: rem 1.2rem 1.2rem rem;
       border: none;
       color: $white__color;
     }
 
     .search__input {
-      padding: 20px 30px;
+      padding: 2rem 3rem;
       min-width: 25vw;
       border: none;
     }
