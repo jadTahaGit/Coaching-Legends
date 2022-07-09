@@ -52,7 +52,9 @@ https://squoosh.app/
 
 ## -- 04 Responive
 
+$hugeScreen: 1800px;
 $desktop: 1500px;
 $laptop: 1200px;
-$tablet: 1200px;
-$phone: 460px;
+$tablet: 900px;
+$phoneRotated: 460px;
+$phone: 230px;
