@@ -54,7 +54,7 @@
           align-items: center;
           justify-content: center;
           background-color: $primary__color;
-          width: 6.4rem;
+          min-width: 6.4rem;
           height: 6.4rem;
           border-radius: 50%;
           font-size: 4rem;
@@ -64,5 +64,10 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1800px) {
+  .HowWeWork {
   }
 }

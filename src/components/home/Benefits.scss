@@ -64,6 +64,7 @@
           margin-bottom: 0.8rem;
         }
         h2 {
+          text-align: center;
           margin-bottom: 0.8rem;
         }
 
@@ -142,5 +143,11 @@
       padding: 2rem 2rem;
       color: $white__color;
     }
+  }
+}
+
+@media (max-width: 1800px) {
+  .Benefits {
+    padding: 2rem 14rem 8rem;
   }
 }
