@@ -1,6 +1,6 @@
-@import "../Globals.scss";
-@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@600&display=swap");
+@import '../Globals.scss';
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@600&display=swap');
 
 .HeroSection {
   padding: 40px 240px 80px;
@@ -17,14 +17,15 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+    font-size: 18px;
   }
 
   img {
-    width: 500px;
+    width: 650px;
     height: auto;
     position: absolute;
-    bottom: 140px;
-    right: 100px;
+    bottom: 240px;
+    right: 120px;
   }
 
   .hero__heading {
@@ -35,7 +36,7 @@
     line-height: 47px;
 
     .Cookie {
-      font-family: "Cookie", cursive;
+      font-family: 'Cookie', cursive;
       font-size: 60px;
     }
   }
@@ -45,7 +46,7 @@
     align-items: center;
     .search__btn {
       padding: 14px 30px;
-      font-family: "Montserrat";
+      font-family: 'Montserrat';
       font-weight: 600;
       font-size: 18px;
       line-height: 28px;
@@ -67,3 +68,7 @@
     }
   }
 }
+
+// .HeroSection{
+
+// }

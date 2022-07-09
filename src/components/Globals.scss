@@ -19,39 +19,26 @@ $star__color: #ffaa46;
 $green__secondary__color: #eef7e9;
 $green__darker__color: #50bf16;
 $border__radius: 4px;
-$transition: .4s;
-
-//  ============================
-// Global Variables End
-// =============================
-
+$transition: 0.4s;
 
 //  ============================
 // Wesbite Font Family
 //  ============================
 
 * {
-    font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: normal;
+  font-family: fell, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 //  ============================
-// Wesbite Font Family End
-//  ============================
-
-//  ============================
-// Gloabal Classes 
+// Gloabal Classes
 //  ============================
 
 .text-primary {
-    color: $primary__color !important;
+  color: $primary__color !important;
 }
 
 .bg-primary {
-    background-color: $primary__color !important;
+  background-color: $primary__color !important;
 }
-
-//  ============================
-// Gloabal Classes End
-//  ============================

@@ -4,9 +4,7 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import Navbar from './components/general/Navbar';
-import NavbarBs from './components/general/NavbarBs';
 import Footer from './components/general/Footer';
-import FooterBs from './components/general/FooterBs';
 import Coaches from './components/Coaches';
 import HomeBody from './components/services/Services';
 import CoachProfile from './components/profile/Profile';
@@ -23,8 +21,8 @@ function App() {
   return (
     <Router>
       <div className="App" id="App">
-        {/* <Navbar /> */}
-        <NavbarBs />
+        <Navbar />
+
         <Routes>
           <Route
             path="/loggedin"
@@ -117,10 +115,7 @@ function App() {
           />
         </Routes>
       </div>
-      {/* <Footer /> */}
-
-      {/* responsive footer */}
-      <FooterBs />
+      <Footer />
     </Router>
   );
 }
