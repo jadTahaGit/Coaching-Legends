@@ -1,26 +1,26 @@
-import "./NewProfile.scss";
-import profilePhoto from "../../assets/coachProfile/jad.jpeg";
-import Star from "../../assets/service/star.svg";
-import EditIcon from "@mui/icons-material/Edit";
-import { useState } from "react";
-import UpdateUserInfoForm from "../form/UpdateUserInfoForm";
+import './NewProfile.scss';
+import profilePhoto from '../../assets/coachProfile/jad.jpeg';
+import Star from '../../assets/service/star.svg';
+import EditIcon from '@mui/icons-material/Edit';
+import { useState } from 'react';
+import UpdateUserInfoForm from '../form/UpdateUserInfoForm';
 
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PersonIcon from "@mui/icons-material/Person";
-import GoogleIcon from "@mui/icons-material/Google";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PersonIcon from '@mui/icons-material/Person';
+import GoogleIcon from '@mui/icons-material/Google';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
-import america from "../../assets/services/america.svg";
-import heart from "../../assets/services/heart.svg";
-import grayHeart from "../../assets/services/grayHeart.svg";
-import woman from "../../assets/services/woman.jpg";
-import star from "../../assets/services/star.svg";
-import hamburger from "../../assets/services/hamburger.svg";
-import HomeBody from "./Services_cards";
+import america from '../../assets/services/america.svg';
+import heart from '../../assets/services/heart.svg';
+import grayHeart from '../../assets/services/grayHeart.svg';
+import woman from '../../assets/services/woman.jpg';
+import star from '../../assets/services/star.svg';
+import hamburger from '../../assets/services/hamburger.svg';
+import HomeBody from './Services_cards';
 
 const CoachProfile = () => {
   const goToProfileScreen = () => {
-    window.location.href = "/service";
+    window.location.href = '/service';
   };
   return (
     <div className="newCoachProfile">
@@ -42,7 +42,7 @@ const CoachProfile = () => {
                   <img src={Star} alt="star" />
                 </div>
                 <span className="avg_rating">5</span>
-                <span className="num_of_orders">({"104"})</span>
+                <span className="num_of_orders">({'104'})</span>
               </div>
             </div>
             <hr className="hrGray" />
@@ -53,10 +53,10 @@ const CoachProfile = () => {
           <div className="middleSection">
             <div className="flex country">
               <LocationOnIcon /> Germany
-            </div>{" "}
+            </div>{' '}
             <div className="flex memberSince">
               <PersonIcon /> Feb 2022
-            </div>{" "}
+            </div>{' '}
           </div>
         </div>
         <div className="user2ndInfoBox">
@@ -70,7 +70,7 @@ const CoachProfile = () => {
               sit amet consectetur adipisicing elit. Necessitatibus quisquam
               inventore tempora! Amet eius quasi perferendis fugiat eligendi
               velit ea maxime pariatur iusto. Illum quasi maiores architecto sit
-              laboriosam sunt.{" "}
+              laboriosam sunt.{' '}
             </p>
           </div>
           <div className="languages">
@@ -98,7 +98,7 @@ const CoachProfile = () => {
             <div className="account">
               <GoogleIcon></GoogleIcon>
               <span>Google</span>
-            </div>{" "}
+            </div>{' '}
             <div className="account">
               <FacebookIcon></FacebookIcon>
               <span>Facebook</span>
@@ -118,7 +118,7 @@ const CoachProfile = () => {
               <p className="info">
                 Faculty of philosophy, University of Nis, Serbia, Graduated 2017
               </p>
-            </div>{" "}
+            </div>{' '}
             <div className="infoBox">
               <p className="infoTitle">B.Sc. - Psychology</p>
               <p className="info">
@@ -138,13 +138,16 @@ const CoachProfile = () => {
       </div>
       <div className="main">
         <div>
-        <p className="title"><strong>pedro10's Gigs</strong></p>
-         <div className = "cards_wrapper"> <HomeBody />
+          <p className="title">
+            <strong>pedro10's Gigs</strong>
+          </p>
+          <div className="cards_wrapper">
+            {' '}
+            <HomeBody />
+            {/* <HomeBody />
           <HomeBody />
-          <HomeBody />
-          <HomeBody />
-         </div>
-          
+          <HomeBody /> */}
+          </div>
         </div>
 
         {/* <div
