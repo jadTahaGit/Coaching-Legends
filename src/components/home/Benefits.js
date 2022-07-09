@@ -83,7 +83,7 @@ const Benefits = () => {
         <img src={globalViolet} alt="global icon" />
         <h1>Request a private coach</h1>
         <p>Post your requirements and let tutors find you</p>
-        <button class="blueBtn">Post a Request</button>
+        <button className="blueBtn">Post a Request</button>
       </div>
     </div>
   );

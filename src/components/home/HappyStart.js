@@ -10,7 +10,7 @@ const HappyStart = () => {
         and achieve their learning goals. With our expert tutors, your goals are
         closer than ever!
       </p>
-      <button class="blueBtn">Start Now</button>
+      <button className="blueBtn">Start Now</button>
     </div>
   );
 };

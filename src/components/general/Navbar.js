@@ -1,11 +1,13 @@
-import "./Navbar.scss";
-import { Link } from "react-router-dom";
-import Light_Logo from "./../../assets/logo-light.svg";
-import searchIcon from "./../../assets/general/search.svg";
-import { Fragment, useState } from "react";
-import Modal from "../ui/Modal";
-import SignUpForm from "./../form/SignUpForm";
-import SignIn from "./../form/SignIn";
+import './Navbar.scss';
+import { Link } from 'react-router-dom';
+import Light_Logo from './../../assets/logo-light.svg';
+import searchIcon from './../../assets/general/search.svg';
+import { Fragment, useState } from 'react';
+import Modal from '../ui/Modal';
+import SignUpForm from './../form/SignUpForm';
+import SignIn from './../form/SignIn';
+import MenuIcon from '@mui/icons-material/Menu';
+import { openNavbar, closeNavbar } from './navbarRes.js';
 
 const Navbar = () => {
   const [signUpFormPopUp, setSignUpFormPopUp] = useState(false);
@@ -29,6 +31,9 @@ const Navbar = () => {
 
   return (
     <Fragment>
+      <div className="navWrapper" onClick={openNavbar}>
+        <MenuIcon className="navIcon" name="reorder-three"></MenuIcon>
+      </div>
       <nav className="Navbar">
         <Link to="/" className="logo__wrapper">
           <img src={Light_Logo} alt="" />

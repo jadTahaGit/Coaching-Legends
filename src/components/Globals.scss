@@ -68,6 +68,10 @@ html {
 // Gloabal Classes
 //  ============================
 
+.hidden {
+  display: none;
+}
+
 .text-primary {
   color: $primary__color !important;
 }
