@@ -51,3 +51,15 @@
     }
   }
 }
+
+@media (max-width: 1800px) {
+  // nothing changed
+}
+
+@media (max-width: 1500px) {
+  .CoachingsOverview {
+    .CO__container {
+      padding: 4rem 8rem 8rem;
+    }
+  }
+}
