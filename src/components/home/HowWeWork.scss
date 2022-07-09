@@ -33,10 +33,14 @@
     .step {
       display: flex;
       justify-content: space-between;
+      gap: 1rem;
 
       img {
         width: 68.4rem;
         height: 31rem;
+        object-fit: contain;
+        border-radius: $border__radius;
+        margin-left: 1rem;
       }
 
       .left {
@@ -69,5 +73,28 @@
 
 @media (max-width: 1800px) {
   .HowWeWork {
+    .steps {
+      .step {
+        img {
+          width: 48.4rem;
+          height: 31rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .HowWeWork {
+    padding: 6rem 8rem 8rem;
+
+    .steps {
+      .step {
+        img {
+          width: 48.4rem;
+          height: 31rem;
+        }
+      }
+    }
   }
 }
