@@ -75,3 +75,46 @@
     }
   }
 }
+
+@media (max-width: 1800px) {
+  .QuoteSection {
+    padding: 4rem 18rem 0rem;
+    > img {
+      width: 62rem;
+    }
+
+    // .right {
+    //   img:nth-child(3) {
+    //     margin-top: -6rem;
+    //     margin-right: 4rem;
+    //     margin-bottom: 3.2rem;
+    //     align-self: flex-end;
+    //   }
+    // }
+  }
+}
+
+@media (max-width: 1500px) {
+  .QuoteSection {
+    padding: 4rem 8rem 8rem;
+    > img {
+      width: 44rem;
+    }
+    .right {
+      h1 {
+        font-size: 3.4rem;
+        line-height: 4.4rem;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      button {
+        margin-top: -1rem;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
