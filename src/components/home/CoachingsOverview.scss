@@ -1,24 +1,53 @@
-@import "../Globals.scss";
+@import '../Globals.scss';
 
 .CoachingsOverview {
   background-color: $light__primary__color;
   position: relative;
-}
 
-.CO__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: $white__color;
-  gap: 30px;
-  padding: 20px 60px;
-  z-index: 1;
-  margin-top: -200px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+  }
 
-.catagory {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 20px;
+  .CO__container {
+    padding: 2rem 24rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $white__color;
+    gap: 3rem;
+    column-gap: 20rem;
+    padding: 4rem 16rem;
+    z-index: 1;
+    margin-top: -20rem;
+
+    .catagory {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 2rem;
+
+      .catagory__icon__wrapper {
+        img {
+          width: 4rem;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
+      .catagory__Text__box {
+        .catagory__title {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+        .catagory__numOfCoaches {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }

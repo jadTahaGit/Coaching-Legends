@@ -15,11 +15,24 @@ Bold: 700
 
 ## --- 02 COLORS
 
-- Primary: #333
-- Tints: #555
-- Shades:
-- Accents:
-- Greys:
+$black__color: #333;
+$black**secondary**color: #32393f;
+$white__color: #ffffff;
+$darker_gray**color: rgb(85, 85, 85);
+$gray**color: rgba(0, 0, 0, 0.5);
+$gray__secondary__color: #6f757b;
+$gray**Description_color: #62646a;
+$light**gray**color: #b5b6ba;
+$primary**color: #2163a5;
+$light__primary__color: #b1d8ff;
+$very**light**blue: #eef5fc;
+$secondary__color: #84dfff;
+$green**color: #7ce577;
+$star**color: #ffaa46;
+$green__secondary__color: #eef7e9;
+$green**darker**color: #50bf16;
+$border__radius: 4px;
+$transition: 0.4s;
 
 --- 05 Shadows
 
