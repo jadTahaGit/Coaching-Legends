@@ -22,12 +22,26 @@ $border__radius: 4px;
 $transition: 0.4s;
 
 //  ============================
+// Standard Styles & Nutralisation
+//  ============================
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+//  ============================
 // Wesbite Font
 //  ============================
 
 html {
   font-size: 62.5%;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
