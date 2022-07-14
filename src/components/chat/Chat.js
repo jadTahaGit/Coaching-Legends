@@ -1,10 +1,42 @@
-import './Chat.scss';
-
-import woman from '../../assets/services/woman.jpg';
-import ideal from '../../assets/home/ideal.svg';
-import verified from '../../assets/home/verified.svg';
+import "./Chat.scss";
+import io from "socket.io-client";
+import woman from "../../assets/services/woman.jpg";
+import ideal from "../../assets/home/ideal.svg";
+import verified from "../../assets/home/verified.svg";
+import { useEffect, useState } from "react";
+import { USER_CONNECTED, LOGOUT } from "./Events";
 
 const Chat = () => {
+  const [socket, setSocket] = useState("");
+  const [user, setUser] = useState({
+    username: "",
+  });
+
+  const initSocket = () => {
+    const socket = io("http://localhost:3001");
+    setSocket(socket);
+    socket.on("connect", (message) => {
+      console.log("Connected");
+
+      socket.emit(USER_CONNECTED, user.username, setUser);
+    });
+
+    console.log(user);
+  };
+
+  useEffect(() => {
+    initSocket();
+
+    // return () => {
+    //   socket.emit(LOGOUT);
+    // };
+  }, []);
+
+  const emitUserConnected = (user) => {
+    socket.emit(USER_CONNECTED, user);
+    setUser(user);
+  };
+
   return (
     <div className="Chat">
       <div className="left__sidebar">
@@ -124,7 +156,7 @@ const Chat = () => {
         <div className="headOf__mainChat">
           <img src={verified} alt="" className="profile__photo" />
           <div className="textbox">
-            <div className="contactName">Pedro</div>
+            <div className="contactName">{user.username}</div>
             <div className="contact__name__info">
               <div className="lastSeen">
                 <span>Last seen: 17:42</span>
@@ -142,7 +174,7 @@ const Chat = () => {
             </div>
             <div className="message__box__content">
               <div className="message__box sent">
-                Hey Man how are you doing?{' '}
+                Hey Man how are you doing?{" "}
               </div>
               <div className="message__box sent">I am Jad</div>
               <div className="message__box sent">.</div>
@@ -182,7 +214,7 @@ const Chat = () => {
             </div>
             <div className="message__box__content">
               <div className="message__box sent">
-                Hey Man how are you doing?{' '}
+                Hey Man how are you doing?{" "}
               </div>
               <div className="message__box sent">
                 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
