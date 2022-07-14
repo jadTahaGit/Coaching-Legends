@@ -19,7 +19,7 @@ const HomeBody = () => {
       <div className="">
         <div className="main">
           <p className="numberOf__results">
-            <span>13,150</span> English teachers available
+            {/* <span>13,150</span> English teachers available */}
           </p>
 
           <div className="gig__collection">
@@ -37,27 +37,28 @@ const HomeBody = () => {
                   <img src={woman} alt="" />
                   <div className="textBox">
                     <p className="fullName">Pedro Fed</p>
-                    <p className="rank">Rank 1</p>
+                    <p className="rank">Level 2 Seller</p>
                   </div>
                 </div>
                 <div className="catagory">
-                  <p>Life Coauch to help you with you life´s problems</p>
+                  <p>I'll be your life and accountibility coach.</p>
                 </div>
                 <div className="stars">
                   <img src={star} alt="" />
-                  <p>4.1</p>
-                  <p className="gray">(106)</p>
+                  <p>5.0</p>
+                  <p className="gray">(137)</p>
                 </div>
               </div>
               <div className="footer__box">
                 <div className="images_wrapper">
-                  <img src={hamburger} alt="hamburger Icon" />
+                  {/* <img src={hamburger} alt="hamburger Icon" /> */}
                   <img src={grayHeart} alt="heart Icon" />
                 </div>
                 <div className="textBox">
                   <p>Starting at </p>
+                  
                   <p className="price">
-                    US$<span>160</span>{" "}
+                   $<span>1,254</span>{" "}
                   </p>
                 </div>
               </div>
