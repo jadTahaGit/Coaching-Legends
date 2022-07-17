@@ -1,5 +1,6 @@
 import "./Service.scss";
 import blueTick from "./../../assets/service/blueTick.svg";
+import { Link } from "react-router-dom";
 
 import Overview from "./leftSide/Overview";
 import Description from "./leftSide/Description";
@@ -52,7 +53,11 @@ const Service = () => {
             </div>
           </div>
           <div className="Contact_seller_btn">
-            <button>Contact Seller</button>
+            <button>
+              <Link to={`/chat`} state={{ seller: "Pedro" }}>
+                Contact Seller
+              </Link>
+            </button>
           </div>
         </div>
       </div>
