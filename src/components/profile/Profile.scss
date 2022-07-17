@@ -1,9 +1,10 @@
 @import '../Globals.scss';
 
 .CoachProfile {
-  padding: 80px 300px;
+  padding: 3rem 6rem;
   background-color: $very__light__blue;
   display: flex;
+  flex-direction: row;
   gap: 40px;
 
   * {
@@ -19,6 +20,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    position: relative;
+    width: 70%;
 
     h1 {
       font-size: 19px;
@@ -48,6 +51,21 @@
         background-color: #d3d3d3;
       }
 
+      .rating {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: flex-end;
+        margin-bottom: 10px;
+      }
+
+      .languageContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+      }
+
       .text-wrapper {
         padding: 10px;
         .title {
@@ -63,16 +81,14 @@
           font-size: 16px;
           line-height: 23px;
           color: $light__gray__color;
+          margin-bottom: 10px;
         }
 
-        .language {
-          margin-top: 10px;
-          display: flex;
-          gap: 10px;
-        }
         .native {
           background-color: $green__secondary__color;
           color: $green__darker__color;
+          padding: 5px;
+          // padding-right: 5px;
         }
       }
     }
@@ -80,6 +96,10 @@
     .mini-navbar {
       background-color: $white__color;
       padding: 10px 20px;
+      border-radius: $border__radius;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 9rem;
 
       ul {
         list-style: none;
@@ -88,9 +108,15 @@
 
         a {
           text-decoration: none;
-          font-size: 13px;
+          font-size: 14px;
           line-height: 20px;
           color: $black__color;
+          font-weight: bold;
+          transition: all .4s;
+        }
+
+        a:hover {
+          color: $primary__color;
         }
       }
     }
@@ -98,6 +124,45 @@
     .About {
       background-color: $white__color;
       padding: 20px 40px;
+      border-radius: $border__radius;
+      scroll-margin-top: 14rem;
+
+      h1 {
+        font-weight: bold;
+      }
+
+      .education {
+        .educationInfo {
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .educationOrganisation {
+          font-size: 12px;
+          font-weight: lighter;
+        }
+      }
+
+      .linkedAccounts {
+        .linkedAccount {
+          font-size: 14px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+
+      .language {
+
+        .languageName {
+          font-size: 14px;
+        }
+
+        .languageLevel {
+          font-size: 14px;
+        }
+      }
     }
 
     .Schedule {
@@ -114,10 +179,17 @@
       background-color: $white__color;
       padding: 20px 40px;
     }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
   }
 
   .right__sidebar {
     max-height: fit-content;
+    width: 30%;
 
     .image__wrapper {
       width: 100%;
@@ -126,6 +198,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50%;
+      margin-bottom: 1rem;
     }
 
     .quickBox {
@@ -210,6 +283,40 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .CoachProfile {
+    flex-direction: column;
+
+    .main {
+      width: 100%;
+    }
+
+    .right__sidebar {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .CoachProfile {
+    .main {
+      .mini-navbar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .CoachProfile {
+    .main {
+      .SummaryBox {
+        flex-direction: column;
       }
     }
   }

@@ -5,6 +5,9 @@ import speaks from '../../assets/coachProfile/speaks.svg';
 import arrow from '../../assets/coachProfile/arrow.svg';
 import circle from '../../assets/coachProfile/circle.svg';
 import star from '../../assets/coachProfile/star.svg';
+import GoogleIcon from '@mui/icons-material/Google';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import Star from '../../assets/service/star.svg';
 
 import EditIcon from '@mui/icons-material/Edit';
 import { useState } from 'react';
@@ -54,12 +57,19 @@ const CoachProfile = () => {
               <img src={americaFlag} alt="" className="flag" />
             </div>
             <p className="coach__type">{values.coachType}</p>
-
-            <div className="unkown">
-              <img src="" alt="" />
-              <p className="unknown">unknown</p>
-            </div>
-            <div className="language">
+            
+            <div className="rating">
+                <div className="stars">
+                  <img src={Star} alt="star" />
+                  <img src={Star} alt="star" />
+                  <img src={Star} alt="star" />
+                  <img src={Star} alt="star" />
+                  <img src={Star} alt="star" />
+                </div>
+                <span className="avg_rating">5</span>
+                <span className="num_of_orders">({'104'})</span>
+              </div>
+            <div className="languageContainer">
               <img src={speaks} alt="" />
               <p>
                 Speaks <span>English</span>
@@ -72,45 +82,41 @@ const CoachProfile = () => {
         <nav className="mini-navbar">
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#description">Description</a>
             </li>
             <li>
-              <a href="#">Schedule</a>
+              <a href="#languages">Languages</a>
             </li>
             <li>
-              <a href="#">Resume</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Language</a>
+              <a href="#education">Education</a>
+            </li>
+            <li>
+              <a href="#certifications">Certifications</a>
+            </li>
+            <li>
+              <a href="#linkedAccounts">Linked Accounts</a>
             </li>
           </ul>
         </nav>
 
-        <div className="About" id="About">
-          <h1>About the tutor</h1>
+        <div className="About" id="description">
+          <h1>Description</h1>
           <p>
-            Ultrices vel nulla odio pellentesque id placerat. Turpis nunc id
-            quis aliquam commodo et, lectus id. Aenean diam porta sed quisque.
-            Habitasse mi quis lobortis semper. Eleifend dolor duis nunc, nisi
-            eget amet bibendum neque. Integer cras pretium nunc, sed rutrum.
-            Arcu, aenean diam ac eu. Feugiat viverra diam praesent senectus
-            malesuada. Sagittis, lectus ac sed integer phasellus. Faucibus
-            tortor pulvinar eu nulla elit tristique metus, feugiat.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            sunt error, placeat culpa cupiditate adipisci blanditiis, sit
+            aspernatur inventore voluptas nulla dolor! Repudiandae, incidunt.
+            Ad nisi dolorem perferendis alias dignissimos. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Necessitatibus quisquam
+            inventore tempora! Amet eius quasi perferendis fugiat eligendi
+            velit ea maxime pariatur iusto. Illum quasi maiores architecto sit
+            laboriosam sunt.
           </p>
-          <a href="#">Show more</a>
         </div>
 
-        <div className="Schedule" id="Schedule">
-          <h1>Schedule</h1>
-          <h3>I have taught both in one on one and group settings.</h3>
-          <div className="info__timezone">
-            <img src="" alt="" />
-            Choose the time for your first lesson. The timings are displayed in
-            your local timezone.
-          </div>
-        </div>
-
-        <div className="Languages" id="Languages">
+        <div className="About" id="languages">
           <h1>Languages</h1>
           <div className="language">
             <span className="languageName">English</span>
@@ -122,39 +128,45 @@ const CoachProfile = () => {
           </div>
         </div>
 
-        <div className="Resume" id="Resume">
-          <h1>Resume</h1>
-          <div className="Education">
-            <div className="edu-1">
-              <div className="time__intervel">2019-2022</div>
-              <div className="text-wrapper">
-                <p>International Open Academy</p>
-                <p>TESOL</p>
-              </div>
-            </div>
-            <div className="edu-2">
-              <div className="time__intervel">2019-2022</div>
-              <div className="text-wrapper">
-                <p>International Open Academy</p>
-                <p>TESOL</p>
-              </div>
-            </div>
+        <div className="About" id="skills">
+          <h1>Skills</h1>
+          <div className='skills'>
+            <span>Goal setting</span>
+            <span>Psychological</span>
+            <span>Counseling</span>
+            <span>Mindset Coaching</span>
+            <span>Mental Health</span>
           </div>
         </div>
+
+        <div className="About" id="education">
+          <h1>Education</h1>
+          <div className='education'>
+            <div className='educationInfo'>B.Sc. - Psychology</div>
+            <div className='educationOrganisation'>Faculty of philosophy, University of Nis, Serbia, Graduated 2017</div>
+          </div>
+        </div>
+
+        <div className="About" id="certifications">
+          <h1>Certifications</h1>
+          <div className='education'>
+            <div className='educationInfo'>TEFL Certificate</div>
+            <div className='educationOrganisation'>theteflcertificate.com</div>
+          </div>
+        </div>
+
+        <div className="About" id="linkedAccounts">
+          <h1>Linked Accounts</h1>
+          <div className='linkedAccounts'>
+            <div className='linkedAccount'><GoogleIcon /> Google</div>
+            <div className='linkedAccount'><FacebookIcon /> Facebook</div>
+          </div>
+        </div>
+        
       </div>
       <div className="right__sidebar">
         <div className="image__wrapper"></div>
         <div className="quickBox">
-          <div className="info">
-            <div className="smallInfo">
-              <p>Newly</p>
-              <p>Joined</p>
-            </div>
-            <div className="wage">
-              <p>$13 </p>
-              <p>per hour</p>
-            </div>
-          </div>
           <button className="trailSession">Book A Trail Session</button>
           <button onClick={goToChatHandler} className="message">
             Send message
