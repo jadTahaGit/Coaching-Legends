@@ -3,25 +3,26 @@ import io from "socket.io-client";
 import woman from "../../assets/services/woman.jpg";
 import ideal from "../../assets/home/ideal.svg";
 import verified from "../../assets/home/verified.svg";
+import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { USER_CONNECTED, LOGOUT } from "./Events";
 
 const Chat = () => {
-  const [socket, setSocket] = useState("");
-  const [user, setUser] = useState({
-    username: "",
+  const location = useLocation();
+  const { seller } = location.state;
+
+  const [socketInfo, setSocketInfo] = useState({
+    id: "",
+    socketId: null,
+    username: "Ali",
   });
 
   const initSocket = () => {
     const socket = io("http://localhost:3001");
-    setSocket(socket);
     socket.on("connect", (message) => {
       console.log("Connected");
-
-      socket.emit(USER_CONNECTED, user.username, setUser);
     });
-
-    console.log(user);
+    socket.emit(USER_CONNECTED, socketInfo.username, setInfoFromSocket);
   };
 
   useEffect(() => {
@@ -32,9 +33,9 @@ const Chat = () => {
     // };
   }, []);
 
-  const emitUserConnected = (user) => {
-    socket.emit(USER_CONNECTED, user);
-    setUser(user);
+  const setInfoFromSocket = (info) => {
+    console.log(info.id + " " + info.username + " " + info.socketId);
+    setSocketInfo(info);
   };
 
   return (
@@ -156,7 +157,7 @@ const Chat = () => {
         <div className="headOf__mainChat">
           <img src={verified} alt="" className="profile__photo" />
           <div className="textbox">
-            <div className="contactName">{user.username}</div>
+            <div className="contactName">{seller}</div>
             <div className="contact__name__info">
               <div className="lastSeen">
                 <span>Last seen: 17:42</span>

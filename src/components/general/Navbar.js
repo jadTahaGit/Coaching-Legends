@@ -1,15 +1,15 @@
-import './Navbar.scss';
-import { Link } from 'react-router-dom';
-import Light_Logo from './../../assets/logo-light.svg';
-import searchIcon from './../../assets/general/search.svg';
-import { Fragment, useState } from 'react';
-import Modal from '../ui/Modal';
-import SignUpForm from './../form/SignUpForm';
-import SignIn from './../form/SignIn';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { openNavbar, closeNavbar } from './navbarRes.js';
-import { useRef, useEffect } from 'react';
+import "./Navbar.scss";
+import { Link } from "react-router-dom";
+import Light_Logo from "./../../assets/logo-light.svg";
+import searchIcon from "./../../assets/general/search.svg";
+import { Fragment, useState } from "react";
+import Modal from "../ui/Modal";
+import SignUpForm from "./../form/SignUpForm";
+import SignIn from "./../form/SignIn";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { openNavbar, closeNavbar } from "./navbarRes.js";
+import { useRef, useEffect } from "react";
 
 const Navbar = () => {
   const [signUpFormPopUp, setSignUpFormPopUp] = useState(false);
