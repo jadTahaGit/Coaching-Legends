@@ -1,5 +1,4 @@
-@import "../Globals.scss";
-
+@import '../Globals.scss';
 
 .left__sidebar {
   width: 20%;
@@ -39,56 +38,6 @@
 
       .search__for__users:focus {
         box-shadow: $secondary__color 0px 2px 8px;
-      }
-    }
-  }
-
-  .mainOf__sidebar {
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    overflow-y: scroll;
-
-    .chat__overview {
-      display: flex;
-      padding: 5px 10px;
-      justify-content: space-between;
-      border-bottom: 1px solid $gray__secondary__color;
-      align-items: center;
-
-      .profile__photo {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-
-      .textBox {
-        // near to profile photo
-        margin-left: -135px;
-        display: flex;
-        flex-direction: column;
-
-        .contactName {
-          font-weight: bold;
-        }
-      }
-      .imortant__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .unread__messages {
-          width: 20px;
-          height: 20px;
-          padding: 2px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: $primary__color;
-          border-radius: 50%;
-          color: $white__color;
-          font-weight: bold;
-        }
       }
     }
   }

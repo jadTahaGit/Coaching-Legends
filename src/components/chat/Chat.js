@@ -1,9 +1,9 @@
-import "./Chat.scss";
-import io from "socket.io-client";
-import woman from "../../assets/services/woman.jpg";
-import verified from "../../assets/home/verified.svg";
-import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import './Chat.scss';
+import io from 'socket.io-client';
+import woman from '../../assets/services/woman.jpg';
+import verified from '../../assets/home/verified.svg';
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import {
   USER_CONNECTED,
   PRIVATE_MESSAGE,
@@ -11,28 +11,28 @@ import {
   MESSAGE_SENT,
   MESSAGE_RECEIVED,
   LOGOUT,
-} from "./Events";
-import ChatSidebar from "./ChatSidebar";
+} from './Events';
+import ChatSidebar from './ChatSidebar';
 
 const Chat = () => {
   const location = useLocation();
-  const { seller } = location.state;
+  // const { seller } = location.state;
 
   const [chats, setChats] = useState([]);
   const [activeChat, setActiveChat] = useState(null);
   const [socket, setSocket] = useState(null);
 
   const [socketInfo, setSocketInfo] = useState({
-    id: "",
+    id: '',
     socketId: null,
-    username: "Ali",
+    username: 'Ali',
   });
 
   const initSocket = () => {
-    const socket = io("http://localhost:3001");
+    const socket = io('http://localhost:3001');
     setSocket(socket);
-    socket.on("connect", (message) => {
-      console.log("Connected");
+    socket.on('connect', (message) => {
+      console.log('Connected');
     });
     socket.emit(USER_CONNECTED, socketInfo.username, setInfoFromSocket);
     socket.on(PRIVATE_MESSAGE, addChat);
@@ -43,7 +43,7 @@ const Chat = () => {
   }, []);
 
   const setInfoFromSocket = (info) => {
-    console.log(info.id + " " + info.username + " " + info.socketId);
+    console.log(info.id + ' ' + info.username + ' ' + info.socketId);
     setSocketInfo(info);
   };
 
@@ -130,7 +130,7 @@ const Chat = () => {
           <div className="headOf__mainChat">
             <img src={verified} alt="" className="profile__photo" />
             <div className="textbox">
-              <div className="contactName">{seller}</div>
+              {/* <div className="contactName">{seller}</div> */}
               <div className="contact__name__info">
                 <div className="lastSeen">
                   <span>Last seen: 17:42</span>
@@ -148,7 +148,7 @@ const Chat = () => {
               </div>
               <div className="message__box__content">
                 <div className="message__box sent">
-                  Hey Man how are you doing?{" "}
+                  Hey Man how are you doing?{' '}
                 </div>
                 <div className="message__box sent">I am Jad</div>
                 <div className="message__box sent">.</div>
@@ -188,7 +188,7 @@ const Chat = () => {
               </div>
               <div className="message__box__content">
                 <div className="message__box sent">
-                  Hey Man how are you doing?{" "}
+                  Hey Man how are you doing?{' '}
                 </div>
                 <div className="message__box sent">
                   Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum

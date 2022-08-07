@@ -1,5 +1,6 @@
-import ideal from "../../assets/home/ideal.svg";
-import woman from "../../assets/services/woman.jpg";
+import ideal from '../../assets/home/ideal.svg';
+import woman from '../../assets/services/woman.jpg';
+import './ChatSidebar.scss';
 
 const ChatSidebar = () => {
   return (

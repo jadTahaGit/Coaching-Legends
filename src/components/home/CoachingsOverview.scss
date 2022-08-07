@@ -3,7 +3,6 @@
 .CoachingsOverview {
   background-color: $light__primary__color;
   position: relative;
-  overflow: hidden;
 
   * {
     margin: 0;
@@ -61,6 +60,113 @@
   .CoachingsOverview {
     .CO__container {
       padding: 4rem 8rem 8rem;
+      gap: 1.2rem;
+
+      .catagory {
+        .catagory__icon__wrapper {
+          img {
+            width: 3.2rem;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+
+        .catagory__Text__box {
+          .catagory__title {
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+          .catagory__numOfCoaches {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .CoachingsOverview {
+    .CO__container {
+      padding: 2rem 2rem 2rem;
+
+      .catagory {
+        gap: 1.2rem;
+        .catagory__icon__wrapper {
+          img {
+            width: 3.2rem;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+
+        .catagory__Text__box {
+          .catagory__title {
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+          .catagory__numOfCoaches {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .CoachingsOverview {
+    .CO__container {
+      padding: 2rem 2rem 2rem;
+
+      .catagory {
+        gap: 1.2rem;
+        .catagory__icon__wrapper {
+          img {
+            width: 3.2rem;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+
+        .catagory__Text__box {
+          .catagory__title {
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+          .catagory__numOfCoaches {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .CoachingsOverview {
+    .CO__container {
+      padding: 4rem 8rem 8rem;
+
+      .catagory {
+        .catagory__icon__wrapper {
+          img {
+            width: 3.2rem;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+
+        .catagory__Text__box {
+          .catagory__title {
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+          .catagory__numOfCoaches {
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
   }
 }
