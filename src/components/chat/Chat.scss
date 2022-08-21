@@ -1,4 +1,4 @@
-@import '../Globals.scss';
+@import "../Globals.scss";
 
 .Chat {
   // padding: 0 240px 80px; // not working
@@ -51,9 +51,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
+  }
+
+  .chat-room-container {
+    height: 100%;
+    width: 76.25%;
+
+    .chat-room {
+      display: grid;
+      grid-template: 8vh 1fr 8vh / 100%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+    }
+
+    .choose {
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+    }
+  }
+  @media screen and (max-width: 510px) {
+    .chat-room-container {
+      width: 100%;
+    }
   }
 
   .main__chat {

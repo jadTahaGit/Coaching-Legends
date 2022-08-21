@@ -1,0 +1,103 @@
+#side-bar {
+  box-sizing: border-box;
+  width: 33.75%;
+  height: 100%;
+  display: grid;
+  justify-content: stretch;
+  grid-template-rows: 8vh 5vh 5vh 1fr 8vh;
+  .heading {
+    box-sizing: border-box;
+    max-height: 65px;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // background: #2e2e4f;
+
+    .app-name {
+    }
+  }
+
+  .search {
+    background: #3e3e5e;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: black;
+    padding-left: 15px;
+    padding-right: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    .search-icon {
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    input {
+      width: 100%;
+      background: #3e3e5e;
+      flex-grow: 1;
+      box-sizing: border-box;
+      border: none;
+      color: #cac8ee;
+    }
+    input:focus {
+      outline: none;
+    }
+    input::placeholder {
+      color: #cac8ee;
+      opacity: 0.6;
+    }
+    .plus {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  .side-bar-select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .side-bar-select__option {
+      background: #484d79;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .side-bar-select__option.active {
+      background: #363656;
+    }
+  }
+
+  .users {
+    overflow-y: scroll;
+    background: #3e3e5e;
+    flex-grow: 1;
+  }
+  .users::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #cac8ee;
+  }
+  .users::-webkit-scrollbar {
+    width: 5px;
+    background-color: green;
+  }
+  .users::-webkit-scrollbar-thumb {
+    background-color: #484d79;
+  }
+
+  .current-user {
+  }
+}

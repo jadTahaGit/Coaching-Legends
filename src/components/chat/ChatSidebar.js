@@ -2,7 +2,7 @@ import ideal from '../../assets/home/ideal.svg';
 import woman from '../../assets/services/woman.jpg';
 import './ChatSidebar.scss';
 
-const ChatSidebar = () => {
+const ChatSidebar = (props) => {
   return (
     <div className="left__sidebar">
       <div className="headOf__sidebar">

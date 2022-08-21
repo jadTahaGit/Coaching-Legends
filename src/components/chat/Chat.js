@@ -1,9 +1,9 @@
-import './Chat.scss';
-import io from 'socket.io-client';
-import woman from '../../assets/services/woman.jpg';
-import verified from '../../assets/home/verified.svg';
-import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import "./Chat.scss";
+import io from "socket.io-client";
+import woman from "../../assets/services/woman.jpg";
+import verified from "../../assets/home/verified.svg";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   USER_CONNECTED,
   PRIVATE_MESSAGE,
@@ -11,8 +11,10 @@ import {
   MESSAGE_SENT,
   MESSAGE_RECEIVED,
   LOGOUT,
-} from './Events';
-import ChatSidebar from './ChatSidebar';
+} from "./Events";
+import ChatSidebar from "./ChatSidebar";
+import Messages from "./messages/Messages";
+import MessageInput from "./messages/MessageInput";
 
 const Chat = () => {
   const location = useLocation();
@@ -23,16 +25,16 @@ const Chat = () => {
   const [socket, setSocket] = useState(null);
 
   const [socketInfo, setSocketInfo] = useState({
-    id: '',
+    id: "",
     socketId: null,
-    username: 'Ali',
+    username: "Ali",
   });
 
   const initSocket = () => {
-    const socket = io('http://localhost:3001');
+    const socket = io("http://localhost:3001");
     setSocket(socket);
-    socket.on('connect', (message) => {
-      console.log('Connected');
+    socket.on("connect", (message) => {
+      console.log("Connected");
     });
     socket.emit(USER_CONNECTED, socketInfo.username, setInfoFromSocket);
     socket.on(PRIVATE_MESSAGE, addChat);
@@ -43,7 +45,7 @@ const Chat = () => {
   }, []);
 
   const setInfoFromSocket = (info) => {
-    console.log(info.id + ' ' + info.username + ' ' + info.socketId);
+    console.log(info.id + " " + info.username + " " + info.socketId);
     setSocketInfo(info);
   };
 
@@ -124,13 +126,56 @@ const Chat = () => {
   return (
     <>
       <div className="Chat">
-        <ChatSidebar />
+        <ChatSidebar
+          chats={chats}
+          user={socketInfo.username}
+          activeChat={activeChat}
+          setActiveChat={setActiveChat}
+        />
 
-        <div className="main__chat">
+        <div className="chat-room-container">
+          {activeChat !== null ? (
+            <div className="main__chat">
+              <div className="headOf__mainChat">
+                <img src={verified} alt="" className="profile__photo" />
+                <div className="textbox">
+                  <div className="contactName">{activeChat.name}</div>
+                  <div className="contact__name__info">
+                    <div className="lastSeen">
+                      <span>Last seen: 17:42</span>
+                    </div>
+                    <div className="localTime">
+                      <span>Local time: 18:30</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <Messages
+                messages={activeChat.messages}
+                user={socketInfo}
+                typingUsers={activeChat.typingUsers}
+              />
+              <MessageInput
+                sendMessage={(message) => {
+                  this.sendMessage(activeChat.id, message);
+                }}
+                sendTyping={(isTyping) => {
+                  this.sendTyping(activeChat.id, isTyping);
+                }}
+              />
+            </div>
+          ) : (
+            <div className="chat-room choose">
+              <h3>Choose a chat!</h3>
+            </div>
+          )}
+        </div>
+
+        {/* <div className="main__chat">
           <div className="headOf__mainChat">
             <img src={verified} alt="" className="profile__photo" />
             <div className="textbox">
-              {/* <div className="contactName">{seller}</div> */}
+              <div className="contactName">{seller}</div>
               <div className="contact__name__info">
                 <div className="lastSeen">
                   <span>Last seen: 17:42</span>
@@ -148,7 +193,7 @@ const Chat = () => {
               </div>
               <div className="message__box__content">
                 <div className="message__box sent">
-                  Hey Man how are you doing?{' '}
+                  Hey Man how are you doing?{" "}
                 </div>
                 <div className="message__box sent">I am Jad</div>
                 <div className="message__box sent">.</div>
@@ -188,7 +233,7 @@ const Chat = () => {
               </div>
               <div className="message__box__content">
                 <div className="message__box sent">
-                  Hey Man how are you doing?{' '}
+                  Hey Man how are you doing?{" "}
                 </div>
                 <div className="message__box sent">
                   Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
@@ -241,7 +286,7 @@ const Chat = () => {
               <button className="btn-primary">Send</button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
