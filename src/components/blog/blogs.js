@@ -7,6 +7,7 @@ import axios from "axios";
 const Blogs = () => {
 
     const [blogs, setBlogs] = useState([]);
+    const [loading, setLoading] = useState("block");
     useEffect(() => {
         try {
             axios
@@ -18,6 +19,7 @@ const Blogs = () => {
               .then((res) => {
                 if(res) {
                     setBlogs(res.data.result.blogs);
+                    setLoading("none");
                     console.log(res.data.result.blogs);
                 }
               });
@@ -32,6 +34,9 @@ const Blogs = () => {
                 <div className="page__row">
                     <h1 className="page__title">The Coachync Blog</h1>
                 </div>
+                <div className="page__row" style={{ display: loading }}>
+                    <h2>Loading...</h2>
+                </div>
                 <div className="blogs__row">
                     {
                         blogs && blogs.map(blog => {
@@ -44,7 +49,7 @@ const Blogs = () => {
                                     date={blog.date || "Blog date is missing"}
                                     readTime={blog.timeToRead || "Blog readTime is missing"}
                                     image={blog.imageURL || bike}
-                                    blogURL={"/blog?blogId=" + blog._id}
+                                    blogURL={"/blog/" + blog._id}
                                 />
                             )
                         })
