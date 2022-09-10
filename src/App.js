@@ -16,6 +16,7 @@ import Blogs from './components/blog/Blogs';
 import BlogsBs from './components/blog/BlogsBs';
 import Blog from './components/blog/Blog';
 import BlogBs from './components/blog/BlogBs';
+import AddBlog from './components/blog/AddBlog';
 
 function App() {
   return (
@@ -110,6 +111,14 @@ function App() {
             element={
               <Fragment>
                 <BlogBs />
+              </Fragment>
+            }
+          />
+          <Route
+            path="/addblog"
+            element={
+              <Fragment>
+                <AddBlog />
               </Fragment>
             }
           />
