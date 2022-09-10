@@ -64,8 +64,7 @@ const SignIn = (props) => {
       <div className="closeBtn">
         <button onClick={props.onClose}>X</button>
       </div>
-      <h1> Sign In to Coachync 
-      </h1>
+      <h1>Sign In to Coachync </h1>
       <input
         type="email"
         placeholder="Email"
