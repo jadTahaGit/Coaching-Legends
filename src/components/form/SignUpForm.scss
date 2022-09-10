@@ -8,11 +8,18 @@
     position: absolute;
     top: 8px;
     right: 10px;
-    color: black;
+    color: $black__color;
     font-weight: bold;
+
     button {
       background: none;
       border: none;
+      font-size: 20px;
+      transition: $transition;
+    }
+
+    button:hover {
+      color: $primary__color;
     }
   }
 
@@ -37,21 +44,28 @@
   .inputs {
     width: 100%;
     input {
+      width: 100%;
       display: block;
       background: #ffffff;
-      border: 1px solid #c4c4c4;
-      box-sizing: border-box;
+      border: 1px solid rgba(0, 0, 0, .7);
+      border-radius: 12px;
       height: 50px;
-      width: 100%;
-      padding: 5px 20px;
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 16px;
+      margin: 5% auto;
+      outline: none;
+      padding: 5px;
+      transition: .4s;
     }
+
     input:first-child {
       margin-bottom: 20px;
+    }
+
+    input:focus {
+      box-shadow: rgba(33, 99, 165, 0.3) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
   }
   .error {
@@ -63,18 +77,19 @@
   }
 
   .signUpBtn {
-    margin-top: 10px;
-    background-color: $primary__color;
-    color: white;
-    padding: 10px;
-    border: none;
     width: 100%;
+    padding-inline: 12px;
+    padding-block: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 0;
+    background-color: $primary__color;
+    color: $white__color;
+    transition: $transition;
+  }
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
+  .signUpBtn:hover {
+    box-shadow: rgba(33, 99, 165, 0.3) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
 
   .breakline {
