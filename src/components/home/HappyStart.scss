@@ -1,19 +1,23 @@
 @import '../Globals.scss';
 
 .HappyStart {
-  padding: 0 24rem 8rem;
+  padding: 0 16rem 8rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: center;
+  justify-content: center;
   background-color: $white__color;
   margin: 8rem;
   overflow: hidden;
 
   h1 {
     margin-bottom: -1.4rem;
+    text-align: center;
   }
+
   p {
     margin-bottom: -1.4rem;
+    text-align: center;
   }
 }
