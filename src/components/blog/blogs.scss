@@ -8,6 +8,7 @@
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;
+        text-decoration: none;
       }
 
     .blogs__container {
@@ -18,18 +19,36 @@
         margin-right: auto;
         margin-left: auto;
 
-        .blogs__row {
-            display: flex;
-            flex-direction: row;
+        .page__row {
             padding-top: 15px;
             padding-bottom: 15px;
-            gap: 30px;
 
             .page__title {
                 color: $primary__color;
                 margin-bottom: 10px;
                 font-size: 40px;
                 font-weight: 500;
+            }
+        }
+
+        .blogs__row {
+            display: grid;
+            flex-direction: row;
+            padding-top: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-bottom: 15px;
+            gap: 30px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .blogs__row {
+                grid-template-columns: 1fr 1fr;
+            }  
+        }
+
+        @media only screen and (max-width: 575px) {
+            .blogs__row {
+                grid-template-columns: 1fr;
             }
         }
     }

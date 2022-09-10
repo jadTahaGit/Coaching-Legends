@@ -23,11 +23,16 @@
         
         .card__title {
             margin-bottom: 5px;
+            color: $black__color;
 
             h2 {
                 font-size: 16px;
                 font-weight: bold;
             }
+        }
+
+        .card__paragraph {
+            color: $black__color;
         }
     }
 
@@ -37,7 +42,7 @@
         display: flex;
         flex-direction: row;
         gap: 20px;
-        color: $light__gray__color;
+        color: $light__gray__color !important;
     }
 }
 

@@ -1,83 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Blogs.scss";
 import BlogCard from "../ui/BlogCard";
 import bike from "../../assets/blog/bike.jpeg";
+import axios from "axios";
 
 const Blogs = () => {
+
+    const [blogs, setBlogs] = useState([]);
+    useEffect(() => {
+        try {
+            axios
+              .get("https://api-coachync.herokuapp.com/api/blogs", {
+                headers: {
+                  "Access-Control-Allow-Origin": "*"
+                }
+              })
+              .then((res) => {
+                if(res) {
+                    setBlogs(res.data.result.blogs);
+                    console.log(res.data.result.blogs);
+                }
+              });
+        } catch (error) {
+            console.log(error);
+        }
+    }, []);
+
     return (
         <div className="Blogs">
             <div className="blogs__container">
-                <div className="blogs__row">
+                <div className="page__row">
                     <h1 className="page__title">The Coachync Blog</h1>
                 </div>
                 <div className="blogs__row">
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                </div>
-                <div className="blogs__row">
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                </div>
-                <div className="blogs__row">
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
-                    <BlogCard
-                        title={"Why Cycling Improves My Thinking"}
-                        description={"I get clarity, and a big picture view, when i'm on two wheels. I'd return home knowing exactly what to do."}
-                        date={"Jun 12, 2022"}
-                        readTime={"8 min read"}
-                        image={bike}
-                    />
+                    {
+                        blogs && blogs.map(blog => {
+                            return (
+                                <BlogCard
+                                    id={blog._id}
+                                    key={blog._id}
+                                    title={blog.title || "Blog title is missing"}
+                                    description={blog.description || "Blog description is missing"}
+                                    date={blog.date || "Blog date is missing"}
+                                    readTime={blog.timeToRead || "Blog readTime is missing"}
+                                    image={blog.imageURL || bike}
+                                    blogURL={"/blog?blogId=" + blog._id}
+                                />
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>
