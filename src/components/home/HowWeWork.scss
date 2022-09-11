@@ -98,3 +98,18 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .HowWeWork {
+    padding: 6rem 4rem 8rem;
+
+    .steps {
+      .step {
+        img {
+          width: 32rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}
