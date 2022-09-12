@@ -96,10 +96,11 @@
 
 @media (max-width: 1500px) {
   .QuoteSection {
-    padding: 4rem 8rem 8rem;
+    padding: 4rem 8rem 0rem;
     > img {
       width: 44rem;
     }
+
     .right {
       h1 {
         font-size: 3.4rem;
@@ -114,6 +115,12 @@
         margin-top: -1rem;
         font-size: 2.4rem;
         line-height: 2.8rem;
+      }
+
+      img:nth-child(3) {
+        margin-top: -2rem;
+        margin-right: 6rem;
+        align-self: flex-end;
       }
     }
   }
