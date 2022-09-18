@@ -1,5 +1,28 @@
 @import '../Globals.scss';
 
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary__color;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1b2771;
+}
+
 .navIconWrapper {
   display: none;
   background-color: $white__color;
