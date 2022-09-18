@@ -14,6 +14,15 @@ import { useRef, useEffect } from "react";
 const Navbar = () => {
   const [signUpFormPopUp, setSignUpFormPopUp] = useState(false);
   const [signInFormPopUp, setSignInFormPopUp] = useState(false);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+    // clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const registerButtonHandler = () => {
     setSignUpFormPopUp(true);
@@ -62,7 +71,7 @@ const Navbar = () => {
       >
         <MenuIcon className="navIcon" name="reorder-three"></MenuIcon>
       </div>
-      <nav className="Navbar" ref={Navbar}>
+      <nav className={`Navbar ${offset > 150 ? "scrolled" : ""}`} ref={Navbar}>
         <CloseIcon
           className="closeIcon"
           ref={closeIcon}
