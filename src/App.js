@@ -13,9 +13,7 @@ import Chat from './components/chat/Chat';
 import Service from './components/servicePage/Service';
 import Home from './components/Home.js';
 import Blogs from './components/blog/Blogs';
-import BlogsBs from './components/blog/BlogsBs';
 import Blog from './components/blog/Blog';
-import BlogBs from './components/blog/BlogBs';
 import AddBlog from './components/blog/AddBlog';
 
 function App() {
@@ -91,26 +89,10 @@ function App() {
             }
           />
           <Route
-            path="/blogsbs"
-            element={
-              <Fragment>
-                <BlogsBs />
-              </Fragment>
-            }
-          />
-          <Route
             path="/blog"
             element={
               <Fragment>
                 <Blog />
-              </Fragment>
-            }
-          />
-          <Route
-            path="/blogbs"
-            element={
-              <Fragment>
-                <BlogBs />
               </Fragment>
             }
           />
