@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import 'animate.css';
-
 import Navbar from './components/general/Navbar';
 import Footer from './components/general/Footer';
 import Coaches from './components/Coaches';
