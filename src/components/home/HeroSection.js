@@ -5,13 +5,13 @@ const HeroSection = () => {
   return (
     <div className="HeroSection">
       <div className="relativeBox">
-        <img src={woman} alt="woman foto" className="heroImage" />
-        <h1 className="hero__heading">
+        <img src={woman} alt="woman foto" className="heroImage animate__animated animate__fadeIn" />
+        <h1 className="hero__heading animate__animated animate__bounce">
           Find Your <span className="Cookie">Coach,</span>
           <br />
           Find your Match
         </h1>
-        <div className="search__wrapper">
+        <div className="search__wrapper animate__animated animate__fadeInLeft">
           <input
             type="text"
             className="search__input"

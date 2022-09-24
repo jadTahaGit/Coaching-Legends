@@ -4,12 +4,22 @@
 
 .HeroSection {
   padding: 4rem 24rem 8rem;
-  background: $primary__color;
-  min-height: 80rem;
+  background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(33,99,165,1) 29%, rgba(33,165,152,1) 100%);
+  height: 100vh !important;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: -1;
+  background-size: 200% 200%;
+  animation: Animation 5s ease infinite;
+
+  @keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+  }
 
   .relativeBox {
     position: relative;
@@ -51,8 +61,8 @@
         $light__primary__color 0%,
         $secondary__color 100%
       );
-      border-radius: rem 1.2rem 1.2rem rem;
       border: none;
+      border-top: 1px solid $light__primary__color;
       color: $white__color;
     }
 
@@ -61,6 +71,11 @@
       font-size: 1.4rem;
       min-width: 25vw;
       border: none;
+      outline: none;
+    }
+
+    .search__input:focus {
+      box-shadow: rgba(33, 99, 165, 0.3) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
   }
 }
@@ -74,7 +89,7 @@
 @media (max-width: 1800px) {
   .HeroSection {
     padding: 4rem 18rem 8rem;
-    min-height: 64rem;
+    // min-height: 64rem;
     .relativeBox img {
       width: 52rem;
       bottom: -12rem;
@@ -86,7 +101,7 @@
 @media (max-width: 1500px) {
   .HeroSection {
     padding: 4rem 8rem 8rem;
-    min-height: 64rem;
+    // min-height: 64rem;
     .relativeBox img {
       width: 44rem;
       bottom: -8rem;
@@ -107,7 +122,7 @@
 @media (max-width: 1200px) {
   .HeroSection {
     padding: 4rem 8rem 8rem;
-    min-height: 64rem;
+    // min-height: 64rem;
     .relativeBox img {
       width: 44rem;
       bottom: -8rem;
