@@ -6,43 +6,41 @@ const Footer = (opacity) => {
     <div className="Footer" style={{ opacity: opacity }}>
       <div className="nav">
         <div className="links-box">
-          <h2>Title Section 1</h2>
+          <h2>Web Pages</h2>
           <div className="links">
             <Link to="#" className="link">
-              Link 1
+              HOME
             </Link>
             <Link to="#" className="link">
-              Link link 2
+              ABOUT US
             </Link>
             <Link to="#" className="link">
-              Link 3
+              BLOG
             </Link>
             <Link to="#" className="link">
-              Link 4
+              CONTACT
             </Link>
           </div>
         </div>
         <div className="links-box">
-          <h2>Title Section 2</h2>
+          <h2>Actions</h2>
           <div className="links">
             <Link to="#" className="link">
-              Link 1
+              LOGIN
             </Link>
             <Link to="#" className="link">
-              Link link 2
-            </Link>
-            <Link to="#" className="link">
-              Link 3
-            </Link>
-            <Link to="#" className="link">
-              Link 4
+              REGISTER
             </Link>
           </div>
         </div>
         <div className="links-box">
           <h2>Follow us</h2>
           <div className="social-links">
-            <Link to="#" className="link">
+            <a
+              href="https://www.instagram.com/coachync.official/"
+              target="_blank"
+              className="link"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-instagram"
@@ -60,8 +58,12 @@ const Footer = (opacity) => {
                 <circle cx="12" cy="12" r="3" />
                 <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
               </svg>
-            </Link>
-            <Link to="#" className="link">
+            </a>
+            <a
+              href="https://www.tiktok.com/@coachync"
+              target="_blank"
+              className="link"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-tiktok"
@@ -77,8 +79,8 @@ const Footer = (opacity) => {
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
               </svg>
-            </Link>
-            <Link to="#" className="link">
+            </a>
+            <a href="" className="link" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-facebook"
@@ -94,8 +96,12 @@ const Footer = (opacity) => {
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
               </svg>
-            </Link>
-            <Link to="#" className="link">
+            </a>
+            <a
+              href="https://www.linkedin.com/company/coachync/"
+              className="link"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-linkedin"
@@ -115,7 +121,7 @@ const Footer = (opacity) => {
                 <line x1="12" y1="16" x2="12" y2="11" />
                 <path d="M16 16v-3a2 2 0 0 0 -4 0" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
