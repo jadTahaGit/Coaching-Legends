@@ -40,7 +40,7 @@
     width: 55rem;
     height: auto;
     position: absolute;
-    bottom: -25rem;
+    bottom: -32rem;
     right: 0rem;
   }
 
@@ -113,11 +113,11 @@
 @media (max-width: 1500px) {
   .HeroSection {
     padding: 4rem 8rem 8rem;
-    // min-height: 64rem;
+    min-height: 68vh;
     .relativeBox img {
-      width: 44rem;
-      bottom: -8rem;
-      right: -2rem;
+      width: 38rem;
+      bottom: -14rem;
+      right: 4rem;
     }
 
     .hero__heading {

@@ -82,6 +82,14 @@
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  .Footer {
+    .nav {
+      padding: 4rem 6rem 8rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .Footer {
     .nav {
