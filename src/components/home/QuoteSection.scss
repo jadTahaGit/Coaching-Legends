@@ -128,7 +128,7 @@
 
 @media (max-width: 1200px) {
   .QuoteSection {
-    padding: 4rem 8rem 0rem;
+    padding: 4rem 8rem 4rem;
     > img {
       width: 32rem;
     }
@@ -162,6 +162,51 @@
       }
       img:nth-child(3) {
         margin-top: -3rem;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .QuoteSection {
+    padding: 2rem 4rem 2rem;
+    > img {
+      width: 22rem;
+      margin-bottom: -5rem;
+    }
+
+    .right {
+      h1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        line-height: 2.2rem;
+      }
+
+      button {
+        padding: 0.4rem 1rem;
+        font-size: 1.8rem;
+      }
+
+      img {
+        height: 4rem;
+        width: auto;
+      }
+
+      img:nth-child(1) {
+        margin-left: -4.2rem;
+        margin-bottom: -2rem;
+        align-self: flex-start;
+      }
+      img:nth-child(3) {
+        margin-top: -2rem;
+        margin-right: 0rem;
         align-self: flex-end;
       }
     }

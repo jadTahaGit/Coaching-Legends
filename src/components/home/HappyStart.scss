@@ -21,3 +21,11 @@
     text-align: center;
   }
 }
+
+@media (max-width: 900px) {
+  .HappyStart {
+    border-top: 2px solid $light__primary__color;
+    margin: 0px;
+    padding: 0 8rem 4rem;
+  }
+}
