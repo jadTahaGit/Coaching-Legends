@@ -40,6 +40,7 @@ const Footer = (opacity) => {
               href="https://www.instagram.com/coachync.official/"
               target="_blank"
               className="link"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,6 +64,7 @@ const Footer = (opacity) => {
               href="https://www.tiktok.com/@coachync"
               target="_blank"
               className="link"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +82,7 @@ const Footer = (opacity) => {
                 <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
               </svg>
             </a>
-            <a href="" className="link" target="_blank">
+            <a href="!#" className="link" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-brand-facebook"
@@ -101,6 +103,7 @@ const Footer = (opacity) => {
               href="https://www.linkedin.com/company/coachync/"
               className="link"
               target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
