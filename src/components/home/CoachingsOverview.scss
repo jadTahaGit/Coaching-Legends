@@ -146,12 +146,18 @@
 @media (max-width: 600px) {
   .CoachingsOverview {
     .CO__container {
-      padding: 4rem 8rem 8rem;
+      padding: 2rem;
 
       .catagory {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
         .catagory__icon__wrapper {
           img {
-            width: 3.2rem;
+            width: 2.4rem;
             height: auto;
             object-fit: contain;
           }
@@ -159,11 +165,13 @@
 
         .catagory__Text__box {
           .catagory__title {
-            font-size: 1.6rem;
+            text-align: center;
+            font-size: 1.2rem;
             font-weight: 500;
           }
           .catagory__numOfCoaches {
-            font-size: 1.4rem;
+            text-align: center;
+            font-size: 1rem;
           }
         }
       }
