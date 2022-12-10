@@ -1,16 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Blog.scss";
 import BlogCard from "../ui/BlogCard";
 import woman1 from "../../assets/coachProfile/woman1.png";
 import bike from "../../assets/blog/bike.jpeg";
+import axios from 'axios';
+import { useParams } from "react-router-dom";
 
 const Blog = () => {
+    const [blog, setBlog] = useState("");
+    const [loading, setLoading] = useState('block');
+    const params = useParams();
+
+    useEffect(() => {
+      try {
+        // https://api-coachync.herokuapp.com/api/blogs
+        axios
+          .get(`http://localhost:3001/api/blog/${params.id}`, {
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+            },
+          })
+          .then((res) => {
+            if (res.success) {
+              setBlog(res.content);
+              setLoading('none');
+              console.log(res);
+            }
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    }, [params.id]);
     return (
         <div className="Blog">
             <div className="blog__container">
                 <div className="blog__row">
                     <div className="left__side">
-                        <div className="blog__header">
+                        <div style={{ display: loading }}>
+                            <h2>Loading...</h2>
+                        </div>
+                        <div dangerouslySetInnerHTML={{ __html: blog }}></div>
+                        {/* <div className="blog__header">
                             <h1 className="page__title">Why Cycling Improves My Thinking</h1>
                             <img src={bike} alt="Blog" className="blog__image" />
                         </div>
@@ -76,7 +106,7 @@ const Blog = () => {
                         </p>
                         <p>
                             <a href="https://www.google.com" rel="noreferrer" target={"_blank"}>Learn more</a>
-                        </p>
+                        </p> */}
                         <div className="write__comment">
                             <textarea rows={"5"} className="write__comment__control" placeholder="Write a comment..."></textarea>
                             <input type="button" className="btn__primary" value="Submit" />
