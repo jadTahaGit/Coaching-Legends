@@ -170,3 +170,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .HeroSection {
+    .search__wrapper {
+      .search__input {
+        min-width: 5vw;
+      }
+
+      .search__btn {
+        padding: 1.4rem 1.5rem;
+      }
+    } 
+  }
+}
