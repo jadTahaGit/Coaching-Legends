@@ -6,7 +6,7 @@ import Overview from './leftSide/Overview';
 import Description from './leftSide/Description';
 import AboutTheSeller from './leftSide/AboutTheSeller';
 import FAQ from './leftSide/FAQ';
-import PackageSelector from '../ui/PackageSelector';
+import PackageSelector from '../ui/packageSelector/PackageSelector.js';
 
 const Service = () => {
   return (

@@ -7,6 +7,7 @@ import Navbar from './components/general/Navbar';
 import Footer from './components/general/Footer';
 import Coaches from './components/Coaches';
 import HomeBody from './components/services/Services';
+import AboutUs from './components/about/About';
 import CoachProfile from './components/profile/Profile';
 import NewProfile from './components/profile/NewProfile';
 import Chat from './components/chat/Chat';
@@ -101,6 +102,14 @@ function App() {
             element={
               <Fragment>
                 <AddBlog />
+              </Fragment>
+            }
+          />{' '}
+          <Route
+            path="/about-us"
+            element={
+              <Fragment>
+                <AboutUs />
               </Fragment>
             }
           />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import blueTick from './../../assets/service/blueTick.svg';
+import blueTick from '../../../assets/service/blueTick.svg';
 import { Link } from 'react-router-dom';
+import './PackageSelector.scss';
 
 const PackageSelector = () => {
   const [packageType, setPackageType] = useState('basic'); // Default package
@@ -85,7 +86,7 @@ const PackageSelector = () => {
   };
 
   return (
-    <div className="Right_side">
+    <div className="package-box">
       <div className="Plans_Wrapper">
         <div className="btns">
           <button className="btn basic" onClick={() => setPackageType('basic')}>
