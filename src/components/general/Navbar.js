@@ -1,15 +1,15 @@
-import "./Navbar.scss";
-import { Link } from "react-router-dom";
-import Light_Logo from "./../../assets/logo-light.svg";
-import searchIcon from "./../../assets/general/search.svg";
-import { Fragment, useState } from "react";
-import Modal from "../ui/Modal";
-import SignUpForm from "./../form/SignUpForm";
-import SignIn from "./../form/SignIn";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import { openNavbar, closeNavbar } from "./navbarRes.js";
-import { useRef, useEffect } from "react";
+import './Navbar.scss';
+import { Link } from 'react-router-dom';
+import Light_Logo from './../../assets/logo-light.svg';
+import searchIcon from './../../assets/general/search.svg';
+import { Fragment, useState } from 'react';
+import Modal from '../ui/Modal';
+import SignUpForm from './../form/SignUpForm';
+import SignIn from './../form/SignIn';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import { openNavbar, closeNavbar } from './navbarRes.js';
+import { useRef, useEffect } from 'react';
 
 const Navbar = () => {
   const [signUpFormPopUp, setSignUpFormPopUp] = useState(false);
@@ -71,7 +71,7 @@ const Navbar = () => {
       >
         <MenuIcon className="navIcon" name="reorder-three"></MenuIcon>
       </div>
-      <nav className={`Navbar ${offset > 150 ? "scrolled" : ""}`} ref={Navbar}>
+      <nav className={`Navbar ${offset > 150 ? 'scrolled' : ''}`} ref={Navbar}>
         <CloseIcon
           className="closeIcon"
           ref={closeIcon}
@@ -93,7 +93,7 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="nav__list">
-            <Link to="/search">About Us</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li className="nav__list">
             <Link to="/blogs">Blog</Link>
