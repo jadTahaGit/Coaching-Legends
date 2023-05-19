@@ -39,6 +39,7 @@
       text-align: center;
     }
     .big_Title {
+      font-weight: bold;
       margin-top: 3rem;
     }
     .mini_Title {
@@ -47,16 +48,15 @@
     }
 
     .differences__container {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
       justify-content: space-between;
 
       .differnce {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 25%;
         padding: 2rem;
 
         img {
@@ -66,6 +66,7 @@
         h2 {
           text-align: center;
           margin-bottom: 0.8rem;
+          font-weight: bold;
         }
 
         p {
@@ -82,8 +83,17 @@
     padding: 2rem;
 
     .searchIcon {
-      width: 8rem;
       margin-bottom: 0.6rem;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
     }
 
     .help__options__container {
@@ -107,7 +117,7 @@
         }
 
         h3 {
-          font-weight: 600;
+          font-weight: bold;
           margin-bottom: 0.6rem;
         }
         h3,
@@ -129,8 +139,13 @@
       width: 8rem;
     }
 
+    h1 {
+      font-weight: bold;
+    }
+
     p {
       margin-bottom: 10px;
+      text-align: center;
     }
   }
 }
@@ -167,16 +182,11 @@
       }
 
       .differences__container {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        justify-content: space-between;
 
         .differnce {
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 25%;
           padding: 2rem;
 
           img {
@@ -270,25 +280,13 @@
       overflow: hidden;
 
       .differences__container {
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
 
         .differnce {
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 1rem;
-
-          img {
-            width: 4.2rem;
-          }
-          h2 {
-            font-size: 1.4rem;
-          }
-
-          p {
-            font-size: 1rem;
-            line-height: 1.2rem;
-          }
         }
       }
     }
@@ -310,14 +308,13 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 8rem;
-        align-items: center;
-        justify-content: center;
 
         .help__option {
           max-width: 40rem;
           display: flex;
           flex-direction: column;
           align-items: center;
+          height: 100%;
 
           img {
             width: 4.2rem;

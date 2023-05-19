@@ -24,14 +24,14 @@
     z-index: 1;
     // margin-top: -20rem;
 
-    .catagory {
+    .category {
       padding: 2rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       gap: 2rem;
 
-      .catagory__icon__wrapper {
+      .category__icon__wrapper {
         img {
           width: 4rem;
           height: auto;
@@ -39,12 +39,12 @@
         }
       }
 
-      .catagory__Text__box {
-        .catagory__title {
+      .category__Text__box {
+        .category__title {
           font-size: 2rem;
           font-weight: 500;
         }
-        .catagory__numOfCoaches {
+        .category__numOfCoaches {
           font-size: 1.6rem;
         }
       }
@@ -62,8 +62,8 @@
       padding: 4rem 8rem 8rem;
       gap: 1.2rem;
 
-      .catagory {
-        .catagory__icon__wrapper {
+      .category {
+        .category__icon__wrapper {
           img {
             width: 3.2rem;
             height: auto;
@@ -71,12 +71,12 @@
           }
         }
 
-        .catagory__Text__box {
-          .catagory__title {
+        .category__Text__box {
+          .category__title {
             font-size: 1.6rem;
             font-weight: 500;
           }
-          .catagory__numOfCoaches {
+          .category__numOfCoaches {
             font-size: 1.4rem;
           }
         }
@@ -90,9 +90,9 @@
     .CO__container {
       padding: 2rem 2rem 2rem;
 
-      .catagory {
+      .category {
         gap: 1.2rem;
-        .catagory__icon__wrapper {
+        .category__icon__wrapper {
           img {
             width: 3.2rem;
             height: auto;
@@ -100,12 +100,12 @@
           }
         }
 
-        .catagory__Text__box {
-          .catagory__title {
+        .category__Text__box {
+          .category__title {
             font-size: 1.6rem;
             font-weight: 500;
           }
-          .catagory__numOfCoaches {
+          .category__numOfCoaches {
             font-size: 1.4rem;
           }
         }
@@ -119,9 +119,9 @@
     .CO__container {
       padding: 2rem 2rem 2rem;
 
-      .catagory {
+      .category {
         gap: 1.2rem;
-        .catagory__icon__wrapper {
+        .category__icon__wrapper {
           img {
             width: 3.2rem;
             height: auto;
@@ -129,12 +129,12 @@
           }
         }
 
-        .catagory__Text__box {
-          .catagory__title {
+        .category__Text__box {
+          .category__title {
             font-size: 1.6rem;
             font-weight: 500;
           }
-          .catagory__numOfCoaches {
+          .category__numOfCoaches {
             font-size: 1.4rem;
           }
         }
@@ -147,15 +147,16 @@
   .CoachingsOverview {
     .CO__container {
       padding: 2rem;
+      grid-template-columns: repeat(2, 1fr);
 
-      .catagory {
+      .category {
         padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        .catagory__icon__wrapper {
+        .category__icon__wrapper {
           img {
             width: 2.4rem;
             height: auto;
@@ -163,15 +164,13 @@
           }
         }
 
-        .catagory__Text__box {
-          .catagory__title {
+        .category__Text__box {
+          .category__title {
             text-align: center;
-            font-size: 1.2rem;
             font-weight: 500;
           }
-          .catagory__numOfCoaches {
+          .category__numOfCoaches {
             text-align: center;
-            font-size: 1rem;
           }
         }
       }

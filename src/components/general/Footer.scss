@@ -90,7 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 900px) {
   .Footer {
     .nav {
       padding: 2rem 8rem;
@@ -99,11 +99,25 @@
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 600px) {
   .Footer {
     .nav {
       padding: 1rem 4rem;
       grid-template-columns: 1fr;
+      row-gap: 20px;
+
+      .links-box {
+        text-align: center;
+
+        .links {
+          align-items: center;
+        }
+      }
+    }
+
+    .copyright {
+      flex-direction: column; 
+      gap: 10px;
     }
   }
 }
